@@ -1,4 +1,4 @@
-# [Client Side](../../README) / [Javascript](../README) / ESLint
+# [Client Side](../../README.md) / [Javascript](../README.md) / ESLint
 
 ## The tooling and support built around this open-source checker is some of the best in the JS community.
 
