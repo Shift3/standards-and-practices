@@ -18,24 +18,24 @@
     >**type(scope):body**  
 
     1. Commit **Type**: Select one of the following 7 commit types. These are your _only_ options for commit type:
-        * *feat* : A new feature for the application user. Rolling out a new module, new peice of funcitonality, etc. 
+        * *feat* : A new feature for the application user. Rolling out a new module, new piece of functionality, etc. 
         * *fix* : Bug fix to your production code. Dealing with GH Issues, fixing a bug, etc.
         * *docs* : Changes to your documentation. Adding a comment, editing a comment, changing README.md files, etc.
         * *style* : Changes to your code formatting. _This does **not** address CSS styling_ but rather the style of your code. Reformatting, adding semi-colons, etc.
-        * *refactor* : Refactor to production code. Upgrading a package and changing your code to meet the new demands, changin a **let** or a **const** name, etc.
+        * *refactor* : Refactor to production code. Upgrading a package and changing your code to meet the new demands, changing a **let** or a **const** name, etc.
         * *test* :  All things that apply to unit testing. Creating tests, refactoring tests, etc. No changes to production code occur.
         * *chore* : Updating gulp, webpack, package.json files. This is developer-facing _only_.
     
-    2. Commit **Scope**: Narrow the scope of the commit to a one or two word description and place it next, in parens
+    2. Commit **Scope**: Narrow the scope of the commit to a one or two word description in parentheses
     
     3. Message **Body**: If necessary, write a short sentence detailing pertinent information for other developers. This is normally unnecessary but some use cases are:
 
         * If the commit contains a new package you've added to the project
         * If the commit contains a change to your build that you need to notate
-        * If the commit is the last in a series that will become a Pull Request and you want to communicate something to your senior dev.
+        * If the commit is the last in a series that will become a Pull Request and you want to communicate something to your senior developer.
 
 ### Examples: 
-  * Say you have changed six files: 
+  * Say you have changed four files: 
     
     > app.component.ts
     > app.router.ts
@@ -43,7 +43,7 @@
     > login.component.scss
 
   * There are at least two _scopes_ being dealt with here: the **app.component** scope and the **login.component** scope.
-    * `git add` the  app.component.ts and the app.router.ts and create a commit for those files. 
+    * `git add` the  **app.component.ts** and the **app.router.ts** and create a commit for those files. 
         > `git commit -m "refactor(app-component): import user service and add routes"`        
             _Now you have 1 commit, dedicated to the **app.component** scope._  
     
