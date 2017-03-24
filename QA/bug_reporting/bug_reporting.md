@@ -3,8 +3,8 @@
 This is a simple template that we are going to begin to use for internal QA testing.
 The purpose of this template is to make it easier for a QA person or developer to report bugs and issues during development and also help developers identify and resolve bugs and issues faster.
 
-## Create Tags
-For each project the following tags `minor`, `major` and `catastrophic` must be created to really help filter issues on Github.
+## Create Labels
+For each project the following Labels `minor`, `major` and `catastrophic` must be created to really help filter issues on Github.
 #### to create new labels
 * On the Github repository of your project, click on `Issues`.
 * Click on the `Labels` buttons.
