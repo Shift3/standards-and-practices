@@ -2,12 +2,15 @@
 
 ```
 Master
+L- Staging
 L- Development
    L- *Feature Branch*
    L- *Bug fix branch*
 ```
 
-Master branch is for finalized, tested, and demo-ready code.
+Master branch is for finalized, tested, and production-ready code.
+
+Staging branch is for finalized, tested, and demo-ready code.
 
 Working branch will be development. Pushes to development require Pull Request and review.
 
@@ -27,6 +30,7 @@ When code is ready to be locked in for demo, a Pull Request from `development` t
 - Make sure to include your new task on the project board in the correct column
 
 ### Testing
+**Will Update with @malarconjr5 workflow**
 - When finished with the work on a task, move it into the "Testing" category
 - Coordinate with someone from your team to have them test it
 - When you are testing a task, make a comment on the tasks that says "I'm testing this."
@@ -34,16 +38,18 @@ When code is ready to be locked in for demo, a Pull Request from `development` t
   - If you run into bugs or issues, list them in your testing comment and notify the developer
 - Go back and forth between tester and developer until all issues fixed
 
+
 ### Finishing a task
 - If testing is complete, all issues fixed, move the task to "Done" and close the issue
 
 ### Git Commands
 - To clone a repository from github onto your local machine
   - `git clone https://github.com/Shift3/ancestreeLiveV3.git`
-- Add all changes to be tracked:  
-  - `git add .`  
+- Add all changes to be tracked:
+  - `git add .`
 - Commit tracked changes:
-  - `git commit -m "your commit message here"`
+  - `git commit -m "type(scope):body"`
+  - [Follow commit conventions found at this link](/conventions/commits.md)
 - Push changes up to github
   - `git push`
 
