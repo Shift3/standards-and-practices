@@ -8,11 +8,11 @@ L- Development
    L- *Bug fix branch*
 ```
 
-Master branch is for finalized, tested, and production-ready code.
+**Master** branch is for finalized, tested, and production-ready code.
 
-Staging branch is for finalized, tested, and demo-ready code.
+**Staging** branch is for finalized, tested, and demo-ready code.
 
-Working branch will be development. Pushes to development require Pull Request and review.
+Working branch will be **development**. Pushes to development require Pull Request and review.
 
 Sub-branches of development will be used to isolate tasks that are being worked on. These are for new features, fixes, or other tasks.
 
@@ -28,6 +28,10 @@ When code is ready to be locked in for demo, a Pull Request from `development` t
   - Description of work to be done
   - Labels to categorize what type of task it is
 - Make sure to include your new task on the project board in the correct column
+
+### Bug Fixing
+- If fixing a bug or issue reference the issue in the branch ex: `git checkout -b bugName_1`
+- Also, include the issue number in the commit message to link to the issue ex: `git commit -m "type(scope):body. resolves #1"`
 
 ### Testing
 **Will Update with @malarconjr5 workflow**
