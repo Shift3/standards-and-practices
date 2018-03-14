@@ -1,9 +1,5 @@
 # OOCSS (Object Oriented CSS) 
 
-[All you need to know about css](http://getbootstrap.com/css/#buttons)
-
-## Bootstrap is shit... but they know how to write some css...
-
 ``` 
 <a class="btn btn-primary"></a>
 <a class="btn btn-success"></a>
