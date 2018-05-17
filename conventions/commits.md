@@ -25,7 +25,7 @@
         * *refactor* : Refactor to production code. Upgrading a package and changing your code to meet the new demands, changing a **let** or a **const** name, etc.
         * *test* :  All things that apply to unit testing. Creating tests, refactoring tests, etc. No changes to production code occur.
         * *chore* : Updating gulp, webpack, package.json files. This is developer-facing _only_.
-    
+        * *workaround* : Temporary fix until a more robust solution is found or until other factors are resolved.
     2. Commit **Scope**: Narrow the scope of the commit to a one or two word description in parentheses
     
     3. Message **Body**: If necessary, write a short sentence detailing pertinent information for other developers. This is normally unnecessary but some use cases are:
