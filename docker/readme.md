@@ -38,8 +38,10 @@ Docker Compose File Documentation:
   - [Nodejs](./nodejs)
   - [Django](./django)
 
-Generally project should have three files for Docker support:
+Generally a project should have three files for Docker support:
 
    - Dockerfile
    - docker-compose.yml
    - .dockerignore (copy of .gitignore)
+
+With those files in place one can simply `docker-compose up` to get a running system.
