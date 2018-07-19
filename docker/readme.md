@@ -28,8 +28,18 @@ Docker File Documentation:
 
 ## Docker Compose Files
 
-Docker compose files are where we can define the architecture in our application so docker can create containers for every service we need. We can use the compose file to easily set things like environment variables, exposed ports, data volumes and networks for our docker containers to talk over. We normally use compose files for development and then switch to a stack file for production! 
+Docker compose files are where we can define the architecture in our application so docker can create containers for every service we need. We can use the compose file to easily set things like environment variables, exposed ports, data volumes and networks for our docker containers to talk over. We normally use compose files for development and then switch to a stack file for production!
 
 Docker Compose File Documentation:
 - [Docker Compose Docs](https://docs.docker.com/compose/compose-file/)
 
+## Example configurations:
+
+  - [Nodejs](./nodejs)
+  - [Django](./django)
+
+Generally project should have three files for Docker support:
+
+   - Dockerfile
+   - docker-compose.yml
+   - .dockerignore (copy of .gitignore)
