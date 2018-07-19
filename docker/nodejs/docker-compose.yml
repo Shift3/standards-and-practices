@@ -1,0 +1,22 @@
+version: "2"
+
+services:
+  api:
+    build: .
+    image: map_point_server
+    volumes:
+      - .:/usr/src/app/
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+    environment:
+      MONGO_URI: mongodb://mongo:27017/
+  mongo:
+    image: mongo
+    volumes:
+       - /data/db
+       # Use the line below instead for MongoDB (-v2.0)
+       #- /var/lib/mongodb/
+    ports:
+      - 27017
