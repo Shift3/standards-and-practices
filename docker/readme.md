@@ -8,6 +8,7 @@ Installing docker on different operating systems:
 - Mac: [Docker Installation for Mac](https://docs.docker.com/docker-for-mac/install/)
 - Ubuntu: [Docker Installation for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 - Windows: [Docker Installation for Windows Requires Windows Pro](https://docs.docker.com/docker-for-windows/install/)
+- Homebrew: `brew cask install docker` [Stackoverflow Resource](https://stackoverflow.com/questions/40523307/brew-install-docker-does-not-include-docker-engine)
 
 Install docker compose:
 - [Docker compose installation instructions](https://docs.docker.com/compose/install/)
