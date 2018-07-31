@@ -82,7 +82,7 @@ User.findOne({ _id }).then(function(user){
 
     const data = _pick(user, ['_id', 'first', 'last', 'role']);
     const m = Buffer.from(JSON.stringify(data)).toString('base64');
-    res.header(‘M-Data', m);        
+    res.header('M-Data', m);        
     next();
 });
 ```
