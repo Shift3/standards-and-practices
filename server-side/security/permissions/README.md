@@ -6,6 +6,8 @@ NPM Express - [express](https://www.npmjs.com/package/express)
 
 #### The following is reccomended to secure routes to the database and protect data from unauthorized users. If different methods are used, they must be as secure or better.
 
+### Middleware
+
 1. Only admin users should be allowed to use request intended exclusively for admin users.
 ```js
 /**
