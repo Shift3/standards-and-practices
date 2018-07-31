@@ -99,7 +99,7 @@ res.header('Access-Control-Expose-Headers', 'M-Data');
 ### Using Meta Data Header in Client
 Setting and reading a meta data header is not required, but can be used to improve the user experience.
 
-The client should contain a service providing a single point where all http requests are routed. As the request come in, a service can be used to set a value to the contents of the header. This information can then be used to update the user interface to match user information and permissions as they are changed.
+The client should contain a service providing a single point where all http requests are routed. As the requests come in, a service can be used to set a value to the contents of the header. This information can then be used to update the user interface to match user information and permissions as they are changed.
 
 ```js
 const mData = res.headers.get('m-data');
