@@ -69,15 +69,13 @@ User.findOne({ _id }).then(function(user){
     const verified = verify(req.headers.authorization.split(' ')[1], secret);
 
     if (!verified) {
-        res.status(401);
-        return res.json({error: 'Invalid authorization header'});  
+        return res.status(401).json({error: 'Invalid authorization header'});
     }
 
     req.current_user = user;
         
     if (!user.isActive) {
-        res.status(401);
-        return res.json({error: 'User not found.'});
+        return res.status(401).json({error: 'User not found.'});;
     }
 
     const data = _pick(user, ['_id', 'first', 'last', 'role']);
