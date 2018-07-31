@@ -33,7 +33,7 @@ router.route('/')
         token: jwt.sign(
           _omit(req.user.toJSON(),['password', 'ssn', 'sort', 'reset', 'secret', '__v']), 
           process.env.JWT_SECRET + user.secret,
-          { expiresIn: 30 * 24 * 60 * 60 * 1000 }
+          { expiresIn: 24 * 60 * 60 }                       // expires in 24 hours
         )
       });
   });
@@ -43,11 +43,11 @@ router.route('/')
 
 ### Creating Token
 ```js
-const reset = rando('Aa0', 16); // random string generation
+const reset = rando('Aa0', 16);                           // random string generation
 const token = jwt.sign(
-    { email: employee.email,  _id: employee._id},
+    { email: user.email,  _id: user._id},
     process.env.JWT_RESET_SECRET + reset,
-    { expiresIn: 60 * 30 }
+    { expiresIn: 60 * 30 }                                // expires in 30 minutes
   );
 
 user.reset = reset;
@@ -94,4 +94,32 @@ User.findOne({ _id }).then(function(user){
 
 ```js
 res.header('Access-Control-Expose-Headers', 'M-Data');
+```
+
+### Using Meta Data Header in Client
+Setting and reading a meta data header is not required, but can be used to improve the user experience.
+
+The client should contain a service providing a single point where all http requests are routed. As the request come in, a service can be used to set a value to the contents of the header. This information can then be used to update the user interface to match user information and permissions as they are changed.
+
+```js
+const mData = res.headers.get('m-data');
+
+if (mData) {
+    const user = JSON.parse(atob(mData));
+    this.context.setContext({ user });
+}
+```
+
+#### Angular Http vs HttpClient
+The header will be readable on the response if using Angular Http. If using Angular HttpClient, the header will not be readable unless observe response is set.
+
+```js
+export function authHeaders() {
+  const token = localStorage.getItem('auth_token');
+  const headers = new HttpHeaders({
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer ' + token
+  });
+  return { headers, observe: 'response' };
+}
 ```
