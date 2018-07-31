@@ -75,7 +75,7 @@ User.findOne({ _id }).then(function(user){
     req.current_user = user;
         
     if (!user.isActive) {
-        return res.status(401).json({error: 'User not found.'});;
+        return res.status(401).json({error: 'User not found.'});
     }
 
     const data = _pick(user, ['_id', 'first', 'last', 'role']);
