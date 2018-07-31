@@ -1,7 +1,11 @@
 # JSON Web Tokens
 
 ## This is a reccomendation for how to implement JSON web tokens. Projects choosing to implement them differently should provide the same level of security or better.
+### Links
+* NPM Node JSON Webtoken - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken/)
+* NPM Random Number Generator - [randomatic](https://www.npmjs.com/package/randomatic)
 
+### Using Secrets and Salt Values
 1. Tokens should be created and verified using a two section secret. One section should be stored in an .env file, the other should be a random string stored on the user record. This will allow for expiring tokens when a password is changed by also changing the random token on the user. Expiring the token in this way can also be useful in situations where only a single login is permitted by changing the token on login, but this is not required. Tokens should have an expiration date set.
 
 ```js
