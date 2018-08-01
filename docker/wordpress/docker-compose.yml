@@ -1,0 +1,42 @@
+version: '3'
+services:
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest # Change this to be version specific if desired
+    #restart: always - I don't like restart always since it will start on boot, leaving this in as an option. MW - 7/28/18
+    volumes:
+      - ./html:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_PASSWORD: p4ssw0rd!
+    ports:
+      - 8000:80 # Expose http and https
+      - 443:443 # Port exposure is as follows first_port is the port that will run on your computer's localhost, second is the port exposed by the docker container
+    networks:
+      - backend
+  db:
+    image: mysql:5.7
+    #restart: always
+    volumes:
+       - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: p4ssw0rd! # Remove this for production
+    networks:
+      - backend
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin/phpmyadmin
+    #restart: always
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: p4ssw0rd! # Password here needs to match the mysql one above
+    networks:
+      - backend
+networks:
+  backend:
+volumes:
+  db_data:
