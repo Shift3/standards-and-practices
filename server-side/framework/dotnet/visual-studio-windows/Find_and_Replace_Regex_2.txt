@@ -1,0 +1,21 @@
+Find (regex):
+
+^(?<LeadingWhitespace>\s+?)return new HttpResponseMessage\(HttpStatusCode\.(?<StatusCode>\w+?)\)\r?\n\s+?\{\r?\n\s+?Content \= new StringContent\((?<str>\".*?\")\)\r?\n\s+?\}\;\r?\n
+
+Replace:
+
+${LeadingWhitespace}return Request.CreateErrorResponse(HttpStatusCode.${StatusCode}, ${str}, ex);\r\n
+
+
+Example original text:
+
+                return new HttpResponseMessage(HttpStatusCode.BadRequest)
+                {
+                    Content = new StringContent("There has been a database error!")
+                };
+
+Example resulting text:
+
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "There has been a database error!", ex);
+				
+Note: This regex ended up replacing a few OK results, as well.
