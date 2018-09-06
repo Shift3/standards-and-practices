@@ -22,7 +22,7 @@
     Pre-PR checklist:   
     - [ ] Test the specific code you're submitting
     - [ ] Use a linter (esLint is probably going to be the standard) to take care of whitespace and styling
-    - [ ] Remove your console. s
+    - [ ] Remove your console references and debuggers
     - [ ] Make sure your code changes are uner 500 lines of code (break it up into more than 1 PR if it exceeds this)
 
 2. Submit your pull request and tag potential reviewers. Keep in mind that each reviewer should: 
@@ -53,7 +53,7 @@
         * Don’t forget to compliment the submitter on good stuff, too!
 
 2. Mark your review as one of the following: 
-    `Request Changes`: If there are bugs in the code or something unacceptable being introduced to the code base (swearing in comments, console. s etc.), you should block the PR and leave detailed comments as to why. If you block a PR and the author resubmits changes, get to them as quickly as you can and approve the PR once it's addressed
+    `Request Changes`: If there are bugs in the code or something unacceptable being introduced to the code base (swearing in comments, console references and debuggers, etc.), you should block the PR and leave detailed comments as to why. If you block a PR and the author resubmits changes, get to them as quickly as you can and approve the PR once it's addressed
     `Approve`: If the code looks good and you have no questions/concerns, or if the author has submitted fixes to a blocking PR, mark it as approved and Squash & Merge or just Merge the PR and delete the compare branch. 
     `Comment`: If you have comments/concerns but you are not blocking the author (no bugs) then mark the review as comment and leave your comments. Let the author know that they can merge if they don't want to address your concerns.
 
