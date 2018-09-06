@@ -23,7 +23,7 @@
     - [ ] Test the specific code you're submitting
     - [ ] Use a linter (esLint is probably going to be the standard) to take care of whitespace and styling
     - [ ] Remove your console references and debuggers
-    - [ ] Make sure your code changes are uner 500 lines of code (break it up into more than 1 PR if it exceeds this)
+    - [ ] Make sure your code changes are under 500 lines of code (break it up into more than 1 PR if it exceeds this)
 
 2. Submit your pull request and tag potential reviewers. Keep in mind that each reviewer should: 
     * Be either on your project or a quick study on the stack your project is in
