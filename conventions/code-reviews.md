@@ -50,7 +50,7 @@
 
         * Provide code examples, references, links, etc when applicable
 
-        * Don’t forget to compliment the sumitter on good stuff, too!
+        * Don’t forget to compliment the submitter on good stuff, too!
 
 2. Mark your review as one of the following: 
     `Request Changes`: If there are bugs in the code or something unacceptable being introduced to the code base (swearing in comments, console. s etc.), you should block the PR and leave detailed comments as to why. If you block a PR and the author resubmits changes, get to them as quickly as you can and approve the PR once it's addressed
