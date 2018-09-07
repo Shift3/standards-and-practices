@@ -1,5 +1,5 @@
 # Angular 2+ Client Side Permissions
-## Reccomendations for handling Angular app permission in client side code
+## Recommendations for handling Angular app permission in client side code
 1. Is user authorized.
 ```js
 // checking for local storage token or set cookie
