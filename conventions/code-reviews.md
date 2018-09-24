@@ -19,7 +19,7 @@
 
 1. Before you create your Pull Request or tag anyone in anything, double check that you're ready
 
-    Pre-PR checklist:   
+    Pre-PR checklist:
     - [ ] Test the specific code you're submitting
     - [ ] Use a linter (esLint is probably going to be the standard) to take care of whitespace and styling
     - [ ] Remove your console references and debuggers
@@ -32,7 +32,7 @@
 
 3. Add comments when you create the PR that explain its scope, purpose, and any quirky things that you had to do to the code to make it work. Explain as much as possible in these comments to let the reviewer know about the PR.  
 
-4. If you recieve a blocked review, fix up the issues and push the changes to your branch. Let the reviewer know when you have submitted the fix. Remember, we all make mistakes, and we all have room to grow. This is an opportunity to learn.
+4. If you receive a blocked review, fix up the issues and push the changes to your branch. Let the reviewer know when you have submitted the fix. Remember, we all make mistakes, and we all have room to grow. This is an opportunity to learn.
 
 ### Reviewer
 
@@ -52,13 +52,13 @@
 
         * Don’t forget to compliment the submitter on good stuff, too!
 
-2. Mark your review as one of the following: 
+2. Mark your review as one of the following:
     `Request Changes`: If there are bugs in the code or something unacceptable being introduced to the code base (swearing in comments, console references and debuggers, etc.), you should block the PR and leave detailed comments as to why. If you block a PR and the author resubmits changes, get to them as quickly as you can and approve the PR once it's addressed
-    `Approve`: If the code looks good and you have no questions/concerns, or if the author has submitted fixes to a blocking PR, mark it as approved and Squash & Merge or just Merge the PR and delete the compare branch. 
+    `Approve`: If the code looks good and you have no questions/concerns, or if the author has submitted fixes to a blocking PR, mark it as approved and Squash & Merge or just Merge the PR and delete the compare branch.
     `Comment`: If you have comments/concerns but you are not blocking the author (no bugs) then mark the review as comment and leave your comments. Let the author know that they can merge if they don't want to address your concerns.
 
 ## Results
-We have already had lots of success catching errors and bugs, as well as teaching each other what we know and sharing that knowledge in a way that normally doesn't happen. If you have a success story you have experienced, please submit a PR to this .md doc with your experience so you can share it!   
+We have already had lots of success catching errors and bugs, as well as teaching each other what we know and sharing that knowledge in a way that normally doesn't happen. If you have a success story you have experienced, please submit a PR to this .md doc with your experience so you can share it!
 Remember, this is a standard, so it isn't optional. _Never_ close your own Pull Requests.
 
 ## Resources
