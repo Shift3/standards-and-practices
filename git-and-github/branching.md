@@ -58,12 +58,12 @@ When code is ready to be locked in for demo, a Pull Request from `development` t
   - `git push`
 
 
-Get the latest changes:
-- Check out development
-    git checkout development
-- Pull from development
-    git pull
-- Change to my branch
-    git checkout your-branch-name
-- Merge from development
-    git merge development
+Get the latest changes:  
+- Check out development  
+    `git checkout development`
+- Pull from development  
+    `git pull`  
+- Change to my branch  
+    `git checkout your-branch-name`  
+- Merge from development  
+    `git merge development`
