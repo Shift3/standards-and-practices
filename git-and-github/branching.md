@@ -53,17 +53,17 @@ When code is ready to be locked in for demo, a Pull Request from `development` t
   - `git add .`
 - Commit tracked changes:
   - `git commit -m "type(scope):body"`
-  - [Follow commit conventions found at this link](/conventions/commits.md)
+  - [Follow commit conventions found at this link](commits.md)
 - Push changes up to github
   - `git push`
 
 
-Get the latest changes:
-- Check out development
-    git checkout development
-- Pull from development
-    git pull
-- Change to my branch
-    git checkout your-branch-name
-- Merge from development
-    git merge development
+Get the latest changes:  
+- Check out development  
+    `git checkout development`
+- Pull from development  
+    `git pull`  
+- Change to my branch  
+    `git checkout your-branch-name`  
+- Merge from development  
+    `git merge development`

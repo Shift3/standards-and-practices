@@ -1,7 +1,17 @@
-# [Client Side](../../README.md) / [Javascript](../README.md) / ESLint
+# ESLint and TSLint
 
-## The tooling and support built around this open-source checker is some of the best in the JS community.
+### Why lint our code?
 
-### Source: http://eslint.org/
+- Allow developers to create our own lint rules.
+- Analyze our code without executing it and before it is in production.
+- Catches potential bugs before they become serious.
+- ESLint for Javascript. TSLint for Typescript.
 
-To maintain code uniformity across multiple projects and avoid common Javascript errors while working, ESLint is an invaluable tool.
+### Resources
+
+- [ESLint](https://eslint.org) for [Javascript](https://www.npmjs.com/package/eslint)
+
+* [TSLint](https://www.npmjs.com/package/tslint) for [Typescript](https://palantir.github.io/tslint/usage/cli/)
+
+* [Shift3 Repo](https://github.com/Shift3/linting) for our in-house lint files.
+  - Please feel free to clone and commit code for starter ES/TSLint files.

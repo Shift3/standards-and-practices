@@ -2,32 +2,68 @@
 
 ## Reason for Repo
 
-* We are trying to set minimal standards for Shift3/Bitwise projects.
+* Set and maintain standards for Shift3/Bitwise projects.
 * Have a central repository where other Shift3/Bitwise members can share knowledge of best practices. 
 * Have a reference point to start a new project or answer questions on different topics.
 
-## IF SOMETHING IS MISSING OR INCOMPLETE, SUBMIT AN ISSUE PLEASE!
+[Click Here](/contributing.md) to contribute!
 
-When submitting readme edits, use this [Github-flavored Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-
-### If you want to contribute, here's how:
-1. Assign the issue for the change to yourself
-  * If there is no issue, create one.
-    * If you need to submit an issue, make sure the name is descriptive but brief, and in the comments, give a details, enumerated summary of what you hope to accomplish and how it will add value to the team.
-      > If you can't think of a way it will benefit the team, cease and desist!
-2. Clone the repository and create a new branch following the guidline __issueNumber-yourInitials__
-  * Example: 17-rh
-3. Write out a clear, concise .md file on your topic of choice, or edit one that has fallen out of currency or needs to be updated. Make sure you use the Markdown Cheatsheet linked above as a guidline.
-4. Push your code and create a PR, tagging one of the admins in the comments.
-5. Once approved, close the PR and delete your branch.
-
-### Code of Conduct
+## Code of Conduct
 1. No cussing, we're beyond that
 2. Keep the requests and issues professional and relevant to the work we're doing at Shift3/Bitwise
 3. Treat others with the same respect you would if you were talking to them in person. Don't be a jerk.
 4. Have fun and share your knowledge!
 
-#### This repository will never become a standard we can rely on if we don't keep it active and up-to-date..
+## New to Shift3? 
+### Here's what we expect you to know _before_ you write any code:
+  * Please read _all_ the links included
 
-Every little bit that adds to the conversation will benefit us all tremendously.
+#### Git
+* [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+  * Keep branches for master and development
+  * Branch off of development for features
+  * Request reviews on your Pull Requests
+  * Merge _reviewed_ code into development
+* [Branching](/git-and-github/branching.md) at Shift3
+* [Commit Messages](/git-and-github/commits.md) at Shift3  
+* [Using Github Projects](/git-and-github/project-setup.md) to communicate progress
 
+#### Code Review
+* [Code Review](/git-and-github/code-reviews.md#process) process at Shift3
+  * [Code Review Slides](https://docs.google.com/presentation/d/16S4qMbwdBT2u9c3-djHhSRXoUUytf12HGxloWh4y4cE/edit#slide=id.g35f391192_00)
+* [Bug Reporting](/QA/bug-reporting)
+
+#### Machine Setup
+
+  ##### Mac: Install:
+  * [Homebrew](https://brew.sh/)
+  * [nvm](https://www.wdiaz.org/how-to-install-nvm-with-homebrew/)
+  * [Slack](https://slack.com/downloads/osx)
+    - Sign into shift3tech.slack.com team with your work email
+  * Either [WebStorm](https://www.jetbrains.com/webstorm/download/#section=mac)(See below _before_ you install) or [Visual Studio Code](https://code.visualstudio.com/download)
+
+  ##### Windows: Install:
+  //TODO: Add these details
+
+
+#### Account Setup
+  #### You will need to schedule time with Greg Goforth, Corey Schuman, Chris Hawkins, or Jody Hicks to gain access to the following:
+
+  ##### AWS Account:
+  *  AWS is our primary platform for deployment (staging and production) so you should familiarize yourself with their [JavaScript SDK](https://aws.amazon.com/sdk-for-node-js/) and [whitepapers](https://aws.amazon.com/whitepapers/).
+
+  ##### Shift3 Standards & Practices Meetings: 
+  * Every two weeks the developers meet on Wednesday from 3:30pm - 4:00pm to discuss a new Standard or Practice for the company. These meetings are the place to voice your opinions on what we should be doing more of, less of, better at, etc. You are _highly_ encouraged to participate actively by leading a meeting on a topic of your choice. Ask Ryeker Herndon to add you to the GCal event so that you get reminders and emails.
+
+  ##### Frontend Masters:
+  * Shift3's main online teaching tool is Frontend Masters. They have courses on all of the platforms we employ at Shift3, and you should take advantage of as many as possible.
+
+  ##### WebStorm:
+  * If you prefer to use JetBrains' tooling, Shift3 provides us with WebStorm Suite for free. We also use Visual Studio and Visual Studio Code.
+
+  ##### Photoshop:
+  * If your job entails design work, you will need to get access to the Shift3 Adobe Photoshop license.
+
+## Contributing to Shift3
+  ### You are expected to contribute _something_ to our processes. You can do this in many different ways, such as leading a S&P meeting, writing up a markdown sheet for this repository on a topic you are passionate about, leading a meetup, or posting discussion topics in Slack's Shift3 #random channel.
+  #### [Click Here](/contributing.md) to start contributing.
