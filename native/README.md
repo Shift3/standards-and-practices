@@ -1,6 +1,6 @@
 # Native Development
 
-[React Native](/react-native/README.md)  
-[NativeScript](/nativescript/README.md)  
-[Xamarin](/xamarin/README.md)  
-[Ionic](/ionic/README.md)  
+[React Native](/native/react-native/README.md)  
+[NativeScript](/native/nativescript/README.md)  
+[Xamarin](/native/xamarin/README.md)  
+[Ionic](/native/ionic/README.md)  
