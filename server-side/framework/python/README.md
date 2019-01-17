@@ -2,4 +2,4 @@
 
 ## Frameworks for python
 
-* Django
+- [Django](django/README.md)
