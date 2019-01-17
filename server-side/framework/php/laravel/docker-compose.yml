@@ -19,7 +19,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_USER: homestead
       MYSQL_PASSWORD: secret
-      MYSQL_DATABASE: ircc
+      MYSQL_DATABASE: homestead
     volumes:
       - /var/lib/mysql
     ports:
