@@ -6,3 +6,4 @@
 - [Python](python/README.md) - [needs more info]
 - [Ruby](ruby/README.md) - [needs more info]
 - [.NET](dotnet/README.md) - [needs more info]
+- [PHP](php/README.md) - [needs more info]
