@@ -15,9 +15,6 @@ It is important that this readme is kept up-to-date throughout the project.
 # Example
 Here is an example readme file which can be used as a template for new projects:
 <br/>
-<br/>
-<br/>
-
 
 ```
 ```
@@ -73,6 +70,3 @@ Supports printing commands for the TSP100 Thermal Receipt Printer.
 
 ## Wiki
 - For information on Installation and API, see the [wiki](https://github.com/Shift3/MagtekCardReaderMiddleware/wiki)
-
-```
-```
