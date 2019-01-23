@@ -30,7 +30,10 @@
   - Merge _reviewed_ code into development
 - [Branching](/git-and-github/branching.md) at Shift3
 - [Commit Messages](/git-and-github/commits.md) at Shift3
+
+#### Project Setup
 - [Using Github Projects](/git-and-github/project-setup.md) to communicate progress
+- [Readme Guidelines](/git-and-github/readme-guidelines.md) to document projects
 
 #### Code Review
 
