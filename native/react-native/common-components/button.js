@@ -24,14 +24,16 @@ const styles = StyleSheet.create({
 
  const Button = props => {
   const { onPress, text, icon } = props;
-  let { backgroundColor, fontSize, width, height } = props;
-  if (!backgroundColor) backgroundColor = '#334B80';
-  if (!width) width = '80%';
-  if (!height) height = '8%';
-  if (!fontSize) fontSize = 20;
-  return (
-    <TouchableOpacity
-      style={[styles.button, { height, width, backgroundColor }]}
+  let defaults = {
+    backgroundColor: "#334B80",
+    width: "80%",
+    height: "8%",
+    fontSize: 20
+  },
+  options = Object.assign({}, defaults, props);
+return (
+  <TouchableOpacity
+    style={[styles.button, ({ height, width, backgroundColor } = options)]}
       onPress={onPress}
     >
       {icon ? <Image style={styles.icon} source={icon} /> : null}
