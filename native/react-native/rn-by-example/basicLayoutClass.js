@@ -83,6 +83,7 @@ class BasicLayoutClass extends Component {
         return(
             <View>
                 <Text>
+                    {/* We can execute JS between braces! */}
                     {this.state.helloMessage}
                 </Text>
             </View>
