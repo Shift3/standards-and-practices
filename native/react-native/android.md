@@ -24,7 +24,7 @@ You'll need to enable developer tools on your android device. The process for th
 **or**
 ###### In Android Studio with USB-Debbuging-enabled device connected to your machine:
 
-Press the Green Plan button and select the device you'd like to run your application on.
+Press the Green Play button and select the device you'd like to run your application on.
 
 ### Caveats to running applications on the emulator:
 
