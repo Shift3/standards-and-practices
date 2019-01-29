@@ -5,9 +5,9 @@ import { Text, View } from "react-native";
  * Hey! You forgot to import { Component }! 
  * 
  * Actually, this is what is called a functional or "stateless" componennt. As its name suggests,
- * it does not hold any state. You can't call setState here or use the
- * "this" reference. That sounds...  Not as good as the class, right? Well,
- * if you don't need any state or you want to break your code up into smaller
+ * it does not hold any state. It's "technically" a function, so we don't need to import Component.
+ * You can't call setState here or use the "this" reference. That sounds...  Not as good as the class, right? 
+ * Well, if you don't need any state or you want to break your code up into smaller
  * parts, this is the way to go! It's more efficient, too.
  */
 
