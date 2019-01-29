@@ -34,12 +34,12 @@ It does the following:
 
 USAGE
 ---------
-cloudfront-set-up.sh -d mydomain.com -s bucketName
+cloudfront-set-up.sh -d mydomain.com -b bucketName
 
 -d string
 Domain Name to create the SSL certificates under and to use for CloudFront.
 
--s string
+-b string
 S3 Bucket Name to create and attach to the CloudFront distribution.
 
 
