@@ -36,11 +36,22 @@ jobs:
       # run tests!
       - run: npm test
 
+      # Persist the specified paths into the workspace for use in downstream job. 
+      # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is 
+      # taken to be the root directory of the workspace.
+      # - persist_to_workspace:
+          # root: workspace
+          # paths:  # Must be relative path from root
+            # - my-output
+
   deploy:
     docker:
       - image: circleci/python:2.7-jessie
     working_directory: ~/repo
     steps:
+      # Must be absolute path or relative path from working_directory
+      # - attach_workspace:
+      #    at: /tmp/workspace
       - checkout
       - restore_cache:
           key: python-cache-v5

@@ -20,7 +20,15 @@ You can grab an example config from  [here](circle_ci_config.yml). Just change t
 * `build.image.steps`: Change the steps to fit your project needs. Read below for information about caching dependencies.
 * `deploy.run`: Change this if deploying to something other than `Elastic Beanstalk`
 
-The majority of the terms in the config are tool agnostic and pretty straightforward. However there is one pattern that needs an explanation:
+The majority of the terms in the config are tool agnostic and pretty straightforward. However there two things that need more information.
+
+#### Sharing data between jobs
+
+If your job creates an object that you want to share with any subsequent jobs (docker image, executable file, minimized file, etc), you can have CircleCI store it for you for the duration of the build.
+[Share data among jobs](https://circleci.com/docs/2.0/workflows#using-workspaces-to-share-data-among-jobs).
+
+Just uncomment the `persist_to_workspace` and `attach_to_workspace` sections and make sure to copy your files into the directory that you specify.
+
 
 #### Caching dependencies
 Since the build will running on every commit, one thing we want to avoid is installing dependencies every single time.
