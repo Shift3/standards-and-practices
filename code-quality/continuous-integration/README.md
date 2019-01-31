@@ -1,24 +1,26 @@
 # Continous Integration
 
 ## What service do we use?
+
 [CircleCI](http://circleci.com)
 
 It provides the least barrier to entry to get it up and running, since it’s on the cloud and not self-hosted like TeamCity or Jenkins. It also has the cheapest plans if we decided to upgrade from the Free Tier.
 
-## How to do I access it?
+## How do I access it?
+
 TBD (need to talk to Greg about creating a company account)
 
-
 ### Configuration
+
 CircleCI allows us to provide a `yml` configuration file that will do all of the work for us. It needs to be present in the following directory:
 
 `repo/.circleci/config.yml`
 
-You can grab an example config from  [here](circle_ci_config.yml). Just change the values of the following (if needed):
+You can grab an example config from [here](circle_ci_config.yml). Just change the values of the following (if needed):
 
-* `build.docker.image`: Change this to the image that you need to build your project. If you're using an AWS ECR image, you can pull it in as well. [Docs](https://circleci.com/blog/aws-ecr-auth-support/)
-* `build.image.steps`: Change the steps to fit your project needs. Read below for information about caching dependencies.
-* `deploy.run`: Change this if deploying to something other than `Elastic Beanstalk`
+- `build.docker.image`: Change this to the image that you need to build your project. If you're using an AWS ECR image, you can pull it in as well. [Docs](https://circleci.com/blog/aws-ecr-auth-support/)
+- `build.image.steps`: Change the steps to fit your project needs. Read below for information about caching dependencies.
+- `deploy.run`: Change this if deploying to something other than `Elastic Beanstalk`
 
 The majority of the terms in the config are tool agnostic and pretty straightforward. However there two things that need more information.
 
@@ -29,14 +31,13 @@ If your job creates an object that you want to share with any subsequent jobs (d
 
 Just uncomment the `persist_to_workspace` and `attach_to_workspace` sections and make sure to copy your files into the directory that you specify.
 
-
 #### Caching dependencies
+
 Since the build will running on every commit, one thing we want to avoid is installing dependencies every single time.
 
 The steps `save_cache` and `restore_cache` aim to mitigate that.
 
 CircleCI allows us to permanently save specific files in an internal cache. We specify this by providing a `path` to save and a `key` to save it under:
-
 
 ```
 - save_cache:
@@ -68,11 +69,9 @@ steps:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-        
-```
 
+```
 
 What it does is that it attempts to bring back the cache for the existing `package.json`. If none exists, then `npm install` will download everything. If it does, then no packages are installed.
 
 We then proceed to run the `save_cache` step for whenever our `package.json` does change.
-

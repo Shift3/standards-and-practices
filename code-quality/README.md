@@ -2,6 +2,4 @@
 
 ## Everything related to writing quality code
 
-
-## Continuous Integration(continous-integration/README>md)
-
+## [Continuous Integration](continuous-integration/README.md)
