@@ -57,9 +57,9 @@ jobs:
 
 Important changes inclue make sure the version of node is correct, and if you build our your project with `yarn` instead of `npm` that your install and test scripts are appropriate.
 
+---
 Tip from @carlosvargas:
 
---
 One thing to keep in mind with jest, is the `testEnvironment` (https://jestjs.io/docs/en/configuration#testenvironment-string). I had to switch mine to `node` by updating my `package.json` with
 
 ```
@@ -68,7 +68,7 @@ One thing to keep in mind with jest, is the `testEnvironment` (https://jestjs.io
   },
 ```
 You'll probably have to switch yours to do node environment in the future if you'll be doing server side tests only (Jest will bug you about it when you run the tests with a yellow warning).
---
+---
 
 So we've told CCI how to build our code, and what to run when testing, but chances are you don't have a method of testing. On to step 2!
 
