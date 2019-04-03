@@ -41,8 +41,13 @@ Docker Compose File Documentation:
 
 Generally a project should have three files for Docker support:
 
-   - Dockerfile
-   - docker-compose.yml
-   - .dockerignore (copy of .gitignore)
+  - Dockerfile
+  - docker-compose.yml
+  - .dockerignore (copy of .gitignore)
+
+## Image Repository Script
+
+Be sure to checkout the aws ECR script for quick image deployments
+  - [ECR Deployment Script](./bash-scripts/ecr-script)
 
 With those files in place one can simply `docker-compose up` to get a running system.
