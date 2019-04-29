@@ -8,7 +8,12 @@ It provides the least barrier to entry to get it up and running, since it’s on
 
 ## How do I access it?
 
-TBD (need to talk to Greg about creating a company account)
+- Go to [CircleCI](http://circleci.com).
+- Sign up using your Github credentials (this will allow Circle CI to see all of your projects).
+- Select the project that you want to add Circle CI to (You can change Github Organizations on the top left). If you don't own the project, it will ask you to contact the person who does.
+- Select the settings based on your project and an example CircleCI configuration will be generated for you.
+- Save that under `repo/.circleci/config.yml`.
+- Make a git push to your Github repo and CircleCI will trigger and process your configuration file.
 
 ### Configuration
 
@@ -16,7 +21,7 @@ CircleCI allows us to provide a `yml` configuration file that will do all of the
 
 `repo/.circleci/config.yml`
 
-You can grab an example config from [here](circle_ci_config.yml). Just change the values of the following (if needed):
+You can grab an example config from [here](circle_ci_config.yml) or when the CircleCI dashboard will generate one for you when setting up your project. Just change the values of the following (if needed):
 
 - `build.docker.image`: Change this to the image that you need to build your project. If you're using an AWS ECR image, you can pull it in as well. [Docs](https://circleci.com/blog/aws-ecr-auth-support/)
 - `build.image.steps`: Change the steps to fit your project needs. Read below for information about caching dependencies.
