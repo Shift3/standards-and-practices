@@ -21,7 +21,7 @@ CircleCI allows us to provide a `yml` configuration file that will do all of the
 
 `repo/.circleci/config.yml`
 
-You can grab an example config from [here](circle_ci_config.yml) or when the CircleCI dashboard will generate one for you when setting up your project. Just change the values of the following (if needed):
+You can grab an example config from [here](circle_ci_config.yml) or the CircleCI dashboard will generate one for you when setting up your project. Just change the values of the following (if needed):
 
 - `build.docker.image`: Change this to the image that you need to build your project. If you're using an AWS ECR image, you can pull it in as well. [Docs](https://circleci.com/blog/aws-ecr-auth-support/)
 - `build.image.steps`: Change the steps to fit your project needs. Read below for information about caching dependencies.
