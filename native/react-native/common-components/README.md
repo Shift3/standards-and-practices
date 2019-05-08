@@ -5,3 +5,4 @@ Below are links to some of the reusable components we have benefitted from in th
 [Button](button.js)  
 [Credit Card Input](creditCardInput.js)  
 [Error Handler](error-handler.js)  
+[Confirm Modal](modals/confirm-modal.js)
