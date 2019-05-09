@@ -114,60 +114,57 @@ const styles = StyleSheet.create({
  *    - cancelMessage: Text displayed in the cancel button
  */
 
-class ConfirmModal extends Component {
-
-    render() {
-        return (
-            <Modal
-                animationType="slide" // | "fade"
-                transparent={true}
-                visible={this.props.modalState.isConfirmModalVisible}
-                onRequestClose={() => this.props.configureConfirmModal(defaultModalState) }
-            >
-                <View style={styles.modalProper}>
-                    <View style={styles.modalWrap}>
-                        <View style={styles.modalHeader}>
-                            <Text adjustsFontSizeToFitWidth={true} numberOfLines={1} style={styles.modalHeaderText}>{this.props.modalState.titleMessage
-                                ? this.props.modalState.titleMessage.toUpperCase()
-                                : "ARE YOU SURE?"
+const ConfirmModal = (props) => {
+    return (
+        <Modal
+            animationType="slide" // | "fade"
+            transparent={true}
+            visible={props.modalState.isConfirmModalVisible}
+            onRequestClose={() => props.configureConfirmModal(defaultModalState)}
+        >
+            <View style={styles.modalProper}>
+                <View style={styles.modalWrap}>
+                    <View style={styles.modalHeader}>
+                        <Text adjustsFontSizeToFitWidth={true} numberOfLines={1} style={styles.modalHeaderText}>{props.modalState.titleMessage
+                            ? props.modalState.titleMessage.toUpperCase()
+                            : "ARE YOU SURE?"
+                        }</Text>
+                    </View>
+                    <View style={styles.modalBody}>
+                        <Text adjustsFontSizeToFitWidth={true} style={styles.bodyMessageText}>{props.modalState.bodyMessage
+                            ? props.modalState.bodyMessage
+                            : `To confirm, click ${props.modalState.confirmMessage ? props.modalState.confirmMessage : "OK"}`
+                        }
+                        </Text>
+                    </View>
+                    <View style={styles.modalButtons}>
+                        <TouchableHighlight
+                            style={[styles.button, { borderColor: "#E30007" }]}
+                            onPress={() => {
+                                props.configureConfirmModal(defaultModalState);
+                            }}>
+                            <Text style={[styles.buttonText, { color: "#E30007" }]}>{props.modalState.cancelMessage
+                                ? props.modalState.cancelMessage.toUpperCase()
+                                : "CANCEL"
                             }</Text>
-                        </View>
-                        <View style={styles.modalBody}>
-                            <Text adjustsFontSizeToFitWidth={true} style={styles.bodyMessageText}>{this.props.modalState.bodyMessage
-                                ? this.props.modalState.bodyMessage
-                                : `To confirm, click ${this.props.modalState.confirmMessage ? this.props.modalState.confirmMessage : "OK"}`
+                        </TouchableHighlight>
+                        <TouchableHighlight
+                            style={[styles.button, { borderColor: "#00FF00" }]}
+                            onPress={() => {
+                                if (props.modalState.confirmFunction) props.modalState.confirmFunction();
+                                props.configureConfirmModal(defaultModalState);
+                            }}>
+                            <Text style={[styles.buttonText, { color: "#00FF00" }]}>{props.modalState.confirmMessage
+                                ? props.modalState.confirmMessage.toUpperCase()
+                                : "OK"
                             }
                             </Text>
-                        </View>
-                        <View style={styles.modalButtons}>
-                            <TouchableHighlight
-                                style={[styles.button, { borderColor: "#E30007" }]}
-                                onPress={() => {
-                                    this.props.configureConfirmModal(defaultModalState);
-                                }}>
-                                <Text style={[styles.buttonText, { color: "#E30007" }]}>{this.props.modalState.cancelMessage
-                                    ? this.props.modalState.cancelMessage.toUpperCase()
-                                    : "CANCEL"
-                                }</Text>
-                            </TouchableHighlight>
-                            <TouchableHighlight
-                                style={[styles.button, { borderColor: "#00FF00" }]}
-                                onPress={() => {
-                                    if (this.props.modalState.confirmFunction) this.props.modalState.confirmFunction();
-                                    this.props.configureConfirmModal(defaultModalState);
-                                }}>
-                                <Text style={[styles.buttonText, { color: "#00FF00" }]}>{this.props.modalState.confirmMessage
-                                    ? this.props.modalState.confirmMessage.toUpperCase()
-                                    : "OK"
-                                }
-                                </Text>
-                            </TouchableHighlight>
-                        </View>
+                        </TouchableHighlight>
                     </View>
                 </View>
-            </Modal>
-        );
-    }
+            </View>
+        </Modal>
+    );
 }
 
 ConfirmModal.propTypes = {
