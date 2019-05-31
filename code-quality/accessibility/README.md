@@ -65,4 +65,10 @@ I would recommend giving the full standard a read, but here is a main summary of
 - Do you have start and end tags on all your elements?
 - Does your site work on all browsers?
 
+## Automated Testing Tools
 
+There are some nice tools that can be used to analyze a page. These two are Chrome browser extensions that are super simple to use. This won't cover everything; there are a lot of aspects that require manual review, but this is a good start. You simply activate the plugin on any page in your browser and a sidebar pops up assesing the page. The SI plug-in will even point out the code if you have the inspector open.
+
+- [WAVE Browser Extension for Chrome and Firefox](https://wave.webaim.org/extension/)
+
+-[SiteImprove Browser Extension](https://siteimprove.com/en-us/core-platform/integrations/browser-extensions/)
