@@ -10,7 +10,7 @@ The three package management systems I mentioned above all use a system of organ
   * Always have an up-to-date documented API (in our case, README.md for our projects or Wiki)
   * Increment your versions based on a **Major.Minor.Patch** format where:
     * **Major** changes are breaking, non-backwards compatible changes to your code base.
-    * **Minor** changes are new features or functionality that ius still backwards-compatable
+    * **Minor** changes are new features or functionality that is still backwards-compatible
     * **Patch** changes are bug fixes or hotfixes that only address issues and don't introduce anything new.
   * Releases should be unalterable and locked -- forever.
   * Initial development (so most of our lives) should be treated as 0.x.x so as to indicate that there is no release as yet.
