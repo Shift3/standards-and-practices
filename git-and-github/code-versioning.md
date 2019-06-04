@@ -22,7 +22,7 @@ This should be self-evident: more maintainable code makes our jobs easier! Seman
   * Provides markers for points in our development cycle such as releases, patches, hotfixes, etc.
   * Keeps in-development projects organized by allowing for pre-releases (ie. 0.1.0, 0.2.0) that can be mapped to specific milestones
   * Allows for quicker set-up time for new developers being added to your project
-  * Help us avoid introducing major breaking changes unintentionally for enforcing the major/minor/patch methodology.  
+  * Help us avoid introducing major breaking changes unintentionally by enforcing the major/minor/patch methodology.  
 
 ## How do I do it?  
 
