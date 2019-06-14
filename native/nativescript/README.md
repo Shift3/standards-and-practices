@@ -20,7 +20,7 @@ So to do that in IOS we have to do the following steps.
   width:100%
   height:100%.
   ```
-2- Add stacklayout element as a parent for input fields has bottom padding/margin value like 300.
+2- Give that stacklayout element (The parent of input fields) bottom padding or margin value like 300.
 
 *In your component class file:
 1- Call those input fields in your component class file like ```@ViewChild("email") emailField: ElementRef;```.
