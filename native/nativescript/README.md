@@ -15,7 +15,11 @@ So to do that in IOS we have to do the following steps.
 4- Define (returnPress) callback method for each input fields like ```(returnPress)="goToNextField($event)"```.
 
 *In your style sheet file:
-1- Give that scroll element full size. width,height:100%.
+1- Give that scroll element full size. 
+  ```
+  width:100%
+  height:100%.
+  ```
 2- Add stacklayout element as a parent for input fields has bottom padding/margin value like 300.
 
 *In your component class file:
