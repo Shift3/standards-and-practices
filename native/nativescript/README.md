@@ -11,7 +11,7 @@ So to do that in IOS we have to do the following steps.
 *In your UI (HTML/XML) file:
 1- Add scroll element as a main parent ```<ScrollView #scrollView>``` and give it #id.
 2- Give each input field #id.
-3- Define ```returnKeyType``` property for each input field and gibe them proper value like ```returnKeyType = "next" or returnKeyType = "done"```.
+3- Define ```returnKeyType``` property for each input field and give them proper value like ```returnKeyType = "next" or returnKeyType = "done"```.
 4- Define (returnPress) callback method for each input fields like ```(returnPress)="goToNextField($event)"```.
 
 *In your style sheet file:
