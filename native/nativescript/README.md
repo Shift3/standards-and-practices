@@ -6,7 +6,7 @@
 (Javascript garbage collection happens less frequently than Java garbage collection which might lead to Out Of Memory).
 
 ***Steps to solve keyboard is covering screen on IOS:***
-***Note:*** We are trying to imitate how android behaive and working(Scroll into focused input field and keep it on screen).
+***Note:*** We are trying to imitate how android behaves and works(Scroll into focused input field and keep it on screen).
 So to do that in IOS we have to do the following steps.
 *In your UI (HTML/XML) file:
 1- Add scroll element as a main parent ```<ScrollView #scrollView>``` and give it #id.
