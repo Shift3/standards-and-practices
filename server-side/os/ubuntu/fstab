@@ -1,0 +1,2 @@
+LABEL=cloudimg-rootfs	/	 ext4	defaults,discard	0 0
+tmpfs     /run/shm     tmpfs     defaults,noexec,nosuid     0     0
