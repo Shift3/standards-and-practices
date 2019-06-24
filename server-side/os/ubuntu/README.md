@@ -5,3 +5,4 @@
 Listed below are links to some configuration files for Ubuntu 18.04 LTS, partially implementing the recommendations from the page linked above. The path given for each file is the path where the file should be placed on the target Ubuntu system.
 
 * [/etc/fstab](./fstab) - The line to take note of is `tmpfs     /run/shm     tmpfs     defaults,noexec,nosuid     0     0`. The purpose of this line is to secure shared memory. Add this line to whatever else is in `/etc/fstab` initially after Ubuntu is installed.
+* [/etc/sysctl.conf](./sysctl.conf) - You should probably replace the entire contents of this file with what I have here. Almost every setting in the original file needs to be changed, unfortunately. These settings increase network security, among other things.
