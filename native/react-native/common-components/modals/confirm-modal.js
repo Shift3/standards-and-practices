@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Modal, Text, TouchableHighlight, View, StyleSheet } from "react-native";
 import { connect } from "react-redux";
 import { PropTypes } from "prop-types";
@@ -8,23 +8,11 @@ const mapStateToProps = state => ({
     modalState: state.modalState
 });
 
-/**
- * Basic shape of state.modalState (referenced above in mapStateToProps), which should go in your reducer for this Redux property:
- *    confirmModalState: {
-        isConfirmModalVisible: false,
-        titleMessage: "",
-        bodyMessage: "",
-        confirmFunction: null,
-        confirmMessage: "",
-        cancelMessage: ""
-    };
- */
-
 const mapDispatchToProps = dispatch => ({
     configureConfirmModal: (modalStateObject) => dispatch(configureConfirmModal(modalStateObject))
 });
 
-//We use this to reset the modal when we're done with it.
+// * Basic shape of state.modalState (referenced above in mapStateToProps), which should go in your reducer for this Redux property:
 const defaultModalState = {
     isConfirmModalVisible: false,
     titleMessage: "",
@@ -35,67 +23,7 @@ const defaultModalState = {
 };
 
 const styles = StyleSheet.create({
-    bodyMessageText: {
-        color: "#000",
-        fontFamily: "Oswald-Regular",
-        paddingHorizontal: 12,
-        textAlign: "center",
-    },
-    button: {
-        alignItems: "center",
-        borderColor: "#000",
-        borderRadius: 4,
-        borderWidth: 2,
-        justifyContent: "center",
-        paddingHorizontal: 25,
-        paddingVertical: 10,
-        width: "40%"
-    },
-    buttonText: {
-        fontFamily: "Lato-Bold"
-    },
-    modalBody: {
-        alignItems: "center",
-        flex: 0.75,
-        justifyContent: "center",
-        padding: 20
-    },
-    modalButtons: {
-        alignSelf: "center",
-        flexDirection: "row",
-        justifyContent: "space-around",
-        marginBottom: 10,
-        width: "100%",
-    },
-    modalHeader: {
-        alignItems: "center",
-        backgroundColor: "#333",
-        borderTopLeftRadius: 5,
-        borderTopRightRadius: 5,
-        justifyContent: "center"
-    },
-    modalHeaderText: {
-        color: "#FFF",
-        fontFamily: "Lato-Bold",
-        fontSize: 18,
-        fontWeight: "bold",
-        padding: 12,
-        textAlign: "center"
-    },
-    modalProper: {
-        alignItems: "center",
-        backgroundColor: "rgba(0,0,0,0.7)",
-        flex: 1,
-        flexDirection: "column",
-        justifyContent: "center"
-    },
-    modalWrap: {
-        backgroundColor: "#FFF",
-        borderRadius: 5,
-        height: "25%",
-        justifyContent: "flex-start",
-        width: "85%",
-    }
+   // Styles can be added here.
 });
 
 /**
@@ -167,6 +95,7 @@ const ConfirmModal = (props) => {
     );
 }
 
+//Prop Types
 ConfirmModal.propTypes = {
     configureConfirmModal: PropTypes.func,
     modalState: PropTypes.shape({
