@@ -190,12 +190,11 @@ resource "aws_elastic_beanstalk_application" "ng_beanstalk_application" {
 }
 
 # Beanstalk Environment
-resource "aws_elastic_beanstalk_environment" "ng_beanstalk_application_environment" {
+resource "aws_elastic_beanstalk_environment" "main" {
   name                = "${var.application_name}-${var.application_environment}"
   application         = "${aws_elastic_beanstalk_application.ng_beanstalk_application.name}"
   solution_stack_name = "${var.solution_stack}"
   tier                = "WebServer"
-  setting             = ["${var.environment_variables}"]
   depends_on          = ["aws_acm_certificate_validation.cert"]
 
   setting {
@@ -228,5 +227,18 @@ resource "aws_elastic_beanstalk_environment" "ng_beanstalk_application_environme
     name      = "MaxSize"
 
     value = "${var.max_size}"
+  }
+}
+
+# Create Route 53 
+resource "aws_route53_record" "www" {
+  zone_id = "${data.aws_route53_zone.zone.id}"
+  name = "${var.api_domain_name}"
+  type = "A"
+
+  alias {
+    name                   = "${aws_elastic_beanstalk_environment.main.cname}"
+    zone_id                = "${var.zone_alias_id}"
+    evaluate_target_health = true
   }
 }
