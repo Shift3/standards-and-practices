@@ -41,3 +41,5 @@ So to do that in IOS we have to do the following steps.
 - Angular implementation tutorial: [https://docs.nativescript.org/angular/start/introduction](https://docs.nativescript.org/angular/start/introduction?_ga=2.154685112.1027288421.1557440601-1272203479.1537481082)
 - Sidekick tool: [https://www.nativescript.org/nativescript-sidekick](https://www.nativescript.org/nativescript-sidekick?_ga=2.188359464.1027288421.1557440601-1272203479.1537481082)
 
+- S&P sample project includes unit test: https://github.com/Shift3/SP-NativeScript
+
