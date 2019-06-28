@@ -13,3 +13,5 @@ Firewall issues. Be sure to open the appropriate ports through AWS’ / Azure’
 Environment variable conflicts. As it turns out, if you use both `env_file` and `environment` in a `docker-compose.yml` file, they conflict with each other. Use `env_file`, and skip the `environment` entry.
 
 In the `nginx` site config, note that server names do not need to be unique to a specific block. At one point, the config I was using had a server name as simply `_`. The result was that trying to visit the site without specifying `https`, resulted in the browser literally attempting to redirect to `https://_`.
+
+Sample config files from this project are located [here](../../../os/ubuntu/README.md) for Ubuntu itself, and [here](../../../tools/nginx/README.md) for nginx.
