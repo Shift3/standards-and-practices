@@ -8,7 +8,7 @@ This project was a Dockerized Django web app using a Postgres variant called Pos
 
 Firewall issues. Be sure to open the appropriate ports through AWS’ / Azure’s firewall. (SSH, HTTP, HTTPS, possibly others.) Also, I recommend that you use an internal firewall, such as `ufw`. (`ufw` is an Ubuntu firewall tool — actually a front end for `iptables` — which allows you to lock down all ports except the ones that really need to be open.) Be sure to open the appropriate ports through that as well — and to allow communication within Docker’s internal network(s), if needed.
 
-`gunicorn` configuration issues. In the Ultra-Gro site, gunicorn had a host whitelist built into the .py settings file. I had to add the external domain name to it ([ultra-gro.shift3sandbox.com](https://ultra-gro.shift3sandbox.com), in this case). I was able to do this using environment settings.
+`gunicorn` configuration issues. In the Ultra-Gro site, gunicorn had a host whitelist built into the .py settings file. I had to add the external domain name to it ([ultra-gro.shift3sandbox.com](https://ultra-gro.shift3sandbox.com), in this case). I was able to do this using environment settings, specifically an environment variable named `ALLOWED_HOSTS`.
 
 Environment variable conflicts. As it turns out, if you use both `env_file` and `environment` in a `docker-compose.yml` file, they conflict with each other. Use `env_file`, and skip the `environment` entry.
 
