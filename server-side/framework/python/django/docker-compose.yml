@@ -1,0 +1,54 @@
+version: "3.7"
+services:
+  db:
+    image: mdillon/postgis:10
+    restart: on-failure
+    volumes:
+      - pg_data:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+    networks:
+      - ug_net_1
+  cache:
+    image: redis
+    restart: on-failure
+    networks:
+      - ug_net_1
+  web:
+    image: ultra_gro
+    build: ./app
+    volumes:
+      - ./app/:/usr/src/app/
+    environment:
+      - DATABASE_URL
+      - CACHE_URL
+      - SQL_ENGINE
+      - SQL_DATABASE
+      - SQL_USER
+      - SQL_PASSWORD
+      - SQL_HOST
+      - SQL_PORT
+      - SECRET_KEY
+      - UG_SUPERUSER_USERNAME
+      - UG_SUPERUSER_EMAIL
+      - UG_SUPERUSER_FNAME
+      - UG_SUPERUSER_LNAME
+    restart: on-failure
+    command: python /usr/src/app/manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - cache
+    networks:
+      - ug_net_1
+
+volumes:
+  pg_data:
+
+networks:
+  ug_net_1:

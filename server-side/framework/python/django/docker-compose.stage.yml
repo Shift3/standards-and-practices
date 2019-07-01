@@ -1,0 +1,36 @@
+version: "3.7"
+services:
+  db:
+    image: mdillon/postgis:10
+    restart: always
+    volumes:
+      - pg_data:/var/lib/postgresql/data/
+    env_file: ./stage.env
+    networks:
+      - ug_net_1
+  cache:
+    image: redis
+    restart: always
+    env_file: ./stage.env
+    networks:
+      - ug_net_1
+  web:
+    image: ultra_gro
+    container_name: ultra-gro_web
+    build: ./app
+    env_file: ./stage.env
+    restart: always
+    command: gunicorn UGPF_SALES.wsgi:application -c UGPF_SALES/gunicorn.conf.py --bind 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - cache
+    networks:
+      - ug_net_1
+
+volumes:
+  pg_data:
+
+networks:
+  ug_net_1:
