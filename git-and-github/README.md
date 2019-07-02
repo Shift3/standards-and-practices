@@ -7,3 +7,5 @@
 - [Commit Messages](commits.md) the Shift3/Karma way
 - [Setting up Projects](project-setup.md) in Github
 - [Readme Guidelines](/git-and-github/readme-guidelines.md) to document project
+- [Pull Request Template](/git-and-github/PULL_REQUEST_TEMPLATE.md)
+- [Issue Template](/git-and-github/ISSUE_TEMPLATE.md)
