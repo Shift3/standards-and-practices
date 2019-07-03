@@ -1,4 +1,4 @@
-
+_This goes in your project's root directory under `.github/` folder_
 ## Changes
 _List Changes Introduced by this PR_
 1. Item 1
@@ -15,6 +15,7 @@ _What neeeds to be done before testing_
 - [] Change DB values in x collection to y.
 
 ## Testing Steps
+#### If you are not a member of this project, _skip this step_
 _How do the users test this change?_
 1. Navigate to x screen
 2. Click on y button

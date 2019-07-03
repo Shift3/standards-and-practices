@@ -1,3 +1,4 @@
+_This goes in your project's root directory under `.github/`_
 ## Expected Behavior/Desired Use Case
 _If this is a bug, report what **should** be happening. If it's a feature, describe what this **should** implement._
 
