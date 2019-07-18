@@ -10,17 +10,6 @@ _Describe the problem or feature._
 ## Approach
 _How does this change address the problem?_
 
-## Pre-Testing TODOs
-_What neeeds to be done before testing_
-- [] Change DB values in x collection to y.
-
-## Testing Steps
-#### If you are not a member of this project, _skip this step_
-_How do the users test this change?_
-1. Navigate to x screen
-2. Click on y button
-3. Observe z result
-
 ## Learning
 _Describe the research stage_
 

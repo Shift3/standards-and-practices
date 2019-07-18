@@ -11,5 +11,22 @@ _Describe what is currently happening._
   2.
   3.
 
-## Specifications
+## Pre-Testing TODOs
+_What neeeds to be done before testing_
+1. Change DB values in x collection to y.
+
+## Testing Steps
+#### If you are not a member of this project, _skip this step_
+_How do the users test this change?_
+1. Navigate to x screen
+2. Click on y button
+3. Observe z result
+
+## Environment
 _If this is a bug, please provide **OS Version** and **Platform/Browser**, otherwise, delete this section_
+
+## Learning
+_Describe the research stage_
+
+_Links to blog posts, patterns, libraries or addons that could be used to solve this problem_
+
