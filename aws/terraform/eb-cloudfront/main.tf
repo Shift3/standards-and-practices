@@ -22,12 +22,19 @@ resource "aws_acm_certificate" "cert" {
 resource "aws_acm_certificate" "cert_cloudfront_east" {
   provider          = "aws.east"
   domain_name       = "${var.web_domain_name}"
+  subject_alternative_names = ["www.${var.web_domain_name}"]
   validation_method = "DNS"
 }
 
 resource "aws_acm_certificate" "cert_cloudfront_west" {
   domain_name       = "${var.web_domain_name}"
+  subject_alternative_names = ["www.${var.web_domain_name}"]
   validation_method = "DNS"
+}
+
+resource "aws_acm_certificate_validation" "cert" {
+  certificate_arn         = "${aws_acm_certificate.cert.arn}"
+  validation_record_fqdns = ["${aws_route53_record.cert_validation.fqdn}"]
 }
 
 resource "aws_route53_record" "cert_validation" {
@@ -38,18 +45,26 @@ resource "aws_route53_record" "cert_validation" {
   ttl     = 60
 }
 
-resource "aws_acm_certificate_validation" "cert" {
-  certificate_arn         = "${aws_acm_certificate.cert.arn}"
-  validation_record_fqdns = ["${aws_route53_record.cert_validation.fqdn}"]
-}
-
 resource "aws_route53_record" "cert_validation_east" {
-  name    = "${aws_acm_certificate.cert_cloudfront_east.domain_validation_options.0.resource_record_name}"
-  type    = "${aws_acm_certificate.cert_cloudfront_east.domain_validation_options.0.resource_record_type}"
+  name    = "${aws_acm_certificate.cert_cloudfront_west.domain_validation_options.0.resource_record_name}"
+  type    = "${aws_acm_certificate.cert_cloudfront_west.domain_validation_options.0.resource_record_type}"
   zone_id = "${data.aws_route53_zone.zone.id}"
-  records = ["${aws_acm_certificate.cert_cloudfront_east.domain_validation_options.0.resource_record_value}"]
+  records = ["${aws_acm_certificate.cert_cloudfront_west.domain_validation_options.0.resource_record_value}"]
   ttl     = 60
 }
+
+resource "aws_route53_record" "cert_validation_west_www" {
+  name    = "${aws_acm_certificate.cert_cloudfront_west.domain_validation_options.1.resource_record_name}"
+  type    = "${aws_acm_certificate.cert_cloudfront_west.domain_validation_options.1.resource_record_type}"
+  zone_id = "${data.aws_route53_zone.zone.id}"
+  records = ["${aws_acm_certificate.cert_cloudfront_west.domain_validation_options.1.resource_record_value}"]
+  ttl     = 60
+}
+
+#resource "aws_acm_certificate_validation" "cert_cloudfront_east" {
+#  certificate_arn         = "${aws_acm_certificate.cert_cloudfront_west.arn}"
+#  validation_record_fqdns = ["${aws_route53_record.cert_validation_east.fqdn}"]
+#}
 
 resource "aws_s3_bucket" "web_bucket" {
   bucket = "${var.web_domain_name}"
@@ -98,7 +113,7 @@ resource "aws_cloudfront_distribution" "prod_distribution" {
     origin_id   = "S3-${aws_s3_bucket.web_bucket.bucket}"
   }
 
-  aliases = ["${var.cnames}"]
+  aliases = ["${var.web_domain_name}", "www.${var.web_domain_name}"]
 
   # By default, show index.html file
   default_root_object = "index.html"
@@ -171,11 +186,6 @@ resource "aws_cloudfront_distribution" "prod_distribution" {
     acm_certificate_arn = "${aws_acm_certificate.cert_cloudfront_east.arn}"
     ssl_support_method  = "sni-only"
   }
-}
-
-# S3 Bucket for storing Elastic Beanstalk task definitions
-resource "aws_s3_bucket" "ng_beanstalk_deploys" {
-  bucket = "${var.application_name}-deployments"
 }
 
 # Elastic Container Repository for Docker images
