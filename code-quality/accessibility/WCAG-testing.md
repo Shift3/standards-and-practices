@@ -1,4 +1,4 @@
-#WCAG Testing Procedure
+# WCAG Testing Procedure
 
 This is the procedure that has been used to test the FUSD WordPress sites
 
