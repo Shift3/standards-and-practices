@@ -48,15 +48,15 @@ Once you click the icon, it will display the issues on the left side of the page
 
 One thing this plugin does is group the issues according to the WCAG rule that they apply to. You can click on the issue and view all the instances:
 
-[SI Instances](screens/si-category.png)
+![SI Instances](screens/si-category.png)
 
 From there you can click on the instances and you will receive more details:
 
-[SI More Details](screens/si-more-details.png)
+![SI More Details](screens/si-more-details.png)
 
 You can also view the offending code with this plugin, but you must first have your inspector open. Once you do, click on the sections labeled, "View code snippet in DevTools" and you can see the code:
 
-[SI Code Snippet example](screens/si-code.png)
+![SI Code Snippet example](screens/si-code.png)
 
 There are some things that will always flag as an alert in this plugin because they must always be reviews, such as time-based content. The SI plugin will also ask you to review ARIA labels and landmarks to ensure they are both descriptive and appropriately applied.
 
@@ -64,15 +64,15 @@ There are some things that will always flag as an alert in this plugin because t
 
 This one is pretty straight forward, simply click the icon to test all the links on your page:
 
-[Link Checker Icon](screens/link-icon.png)
+![Link Checker Icon](screens/link-icon.png)
 
 A box on the top right will display how many links were checked and any errors are they arise:
 
-[Link Checker Result](screens/link-result.png)
+![Link Checker Result](screens/link-result.png)
 
 The link checker will also color any links on the page green or red based on whether or not they pass:
 
-[Link Checker Colors](screens/link-color.png)
+![Link Checker Colors](screens/link-color.png)
 
 ## Keyboard Testing
 
