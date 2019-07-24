@@ -32,7 +32,7 @@ This will display any Error and Alerts on the page. Errors should always be fixe
 
 You don't need to worry about the other categories; the next automated test will present your ARIA landmarks in a way that's easier to evaluate, but this can be helpful to get an overview of the features and landmarks of your page.
 
-One neat feature is that when this is active, you will see on the bottom of the page a small green tab labeled **<code>**. Clicking this will pull up the pages code similar to the inspector. If you open this tab and then click on a particular error or alert on the left side, the code section will be highlighted like this:
+One neat feature is that when this is active, you will see on the bottom of the page a small green tab labeled **`<code>`**. Clicking this will pull up the pages code similar to the inspector. If you open this tab and then click on a particular error or alert on the left side, the code section will be highlighted like this:
 
 ![WAVE code example](screens/wave-code.png)
 
