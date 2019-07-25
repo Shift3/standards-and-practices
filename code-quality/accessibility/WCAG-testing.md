@@ -16,11 +16,11 @@ The link checker, on the other hand, should be done on as much of the site as po
 
 ### WAVE
 
-Make sure that you don't have any ancillary dashboards present on the site. For example, if you are logged into a WordPress admin account and then go to that page, you wil have the WP admin bar on the top of the screen. You don't want that; automated testers will hit that as well. Once that's taken care of, simply navigate to the website you wish to test and then click the WAVE icon in your browser:
+Make sure that you don't have any ancillary dashboards present on the site. For example, if you are logged into a WordPress admin account and then go to that page, you will have the WP admin bar on the top of the screen. You don't want that; automated testers will hit that as well. Once that's taken care of, simply navigate to the website you wish to test and then click the WAVE icon in your browser:
 
 ![WAVE Icon illustration](screens/wave-before.png)
 
-This will display several landmark on the screen and a summary on the left side
+This will display several landmarks on the screen and a summary on the left side
 
 ![WAVE Active on a page](screens/wave-after.png)
 
@@ -28,11 +28,11 @@ Clicking on the "Contrast" tab will display details on any contrast errors in yo
 
 ![WAVE Details](screens/wave-details.png)
 
-This will display any Error and Alerts on the page. Errors should always be fixed. Alerts will can sometimes be ignored. For example, any link to a PDF file will prompt an alert because PDFs can't be tested automatically. Clicking the blue **i** next to the alert will give you a more detailed descripion as to why this is a problem and how it can be remedied.
+This will display any Error and Alerts on the page. Errors should always be fixed. Alerts can sometimes be ignored. For example, any link to a PDF file will prompt an alert because PDFs can't be tested automatically. Clicking the blue **i** next to the alert will give you a more detailed descripion as to why this is a problem and how it can be remedied.
 
 You don't need to worry about the other categories; the next automated test will present your ARIA landmarks in a way that's easier to evaluate, but this can be helpful to get an overview of the features and landmarks of your page.
 
-One neat feature is that when this is active, you will see on the bottom of the page a small green tab labeled **`<code>`**. Clicking this will pull up the pages code similar to the inspector. If you open this tab and then click on a particular error or alert on the left side, the code section will be highlighted like this:
+One neat feature that comes with WAVE displays a small green tab labeled **`<code>`**. Clicking this will pull up the page's code similar to the inspector. If you open this tab and then click on a particular error or alert on the left side, the code section will be highlighted like this:
 
 ![WAVE code example](screens/wave-code.png)
 
@@ -46,7 +46,7 @@ Once you click the icon, it will display the issues on the left side of the page
 
 ![SI Issues example](screens/si-result.png)
 
-One thing this plugin does is group the issues according to the WCAG rule that they apply to. You can click on the issue and view all the instances:
+This plugin groups the issues according to the WCAG rule that they apply to. You can click on the issue and view all the instances:
 
 ![SI Instances](screens/si-category.png)
 
@@ -58,7 +58,7 @@ You can also view the offending code with this plugin, but you must first have y
 
 ![SI Code Snippet example](screens/si-code.png)
 
-There are some things that will always flag as an alert in this plugin because they must always be reviews, such as time-based content. The SI plugin will also ask you to review ARIA labels and landmarks to ensure they are both descriptive and appropriately applied.
+There are some things that will always flag as an alert in this plugin because they must always be manually reviewed, such as time-based content or text inside pictures. The SI plugin will also ask you to review ARIA labels and landmarks to ensure they are both descriptive and appropriately applied.
 
 ### Link Checker
 
@@ -66,7 +66,7 @@ This one is pretty straight forward, simply click the icon to test all the links
 
 ![Link Checker Icon](screens/link-icon.png)
 
-A box on the top right will display how many links were checked and any errors are they arise:
+A box on the top right will display how many links were checked and any errors that arise:
 
 ![Link Checker Result](screens/link-result.png)
 
@@ -76,7 +76,7 @@ The link checker will also color any links on the page green or red based on whe
 
 ## Keyboard Testing
 
-The site must be fully navigable with a keyboard only, and any actions that are vital to the function of your app/site must be doable with only a keyboard. For this test, you will want to go through every single instance of you application and make sure navigation and functionality are properly retained.
+The site must be fully navigable with a keyboard only, and any actions that are vital to the function of your app/site must be doable with only a keyboard. For this test, you will want to go through every single instance of your application and make sure navigation and functionality are properly retained.
 
 Two main things to look for:
 
@@ -96,7 +96,7 @@ The same principles for keyboard testing go here, does the site/app function on 
 
 Make sure to go through other aspects of the [WCAG Guidelines](https://www.w3.org/TR/WCAG21/) that would require manual review. The SI plugin does a pretty good job of making sure you check the important stuff. Some common questions:
 
-- If content on the page changes be sure it is handled appropraitely.
-- If there's any timelimit on a page be sure it can be disabled.
+- If content on the page changes be sure it is handled appropriately.
+- If there's any time limit on a page be sure it can be disabled.
 - If there is automated action (such as autoplay a video/sound, or a carousel), there must be an option to disable it.
 
