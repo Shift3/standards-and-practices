@@ -16,7 +16,7 @@ The link checker, on the other hand, should be done on as much of the site as po
 
 ### WAVE
 
-Simply navigate to the website you wish to test and then click the WAVE icon in your browser:
+Make sure that you don't have any ancillary dashboards present on the site. For example, if you are logged into a WordPress admin account and then go to that page, you wil have the WP admin bar on the top of the screen. You don't want that; automated testers will hit that as well. Once that's taken care of, simply navigate to the website you wish to test and then click the WAVE icon in your browser:
 
 ![WAVE Icon illustration](screens/wave-before.png)
 
@@ -38,7 +38,7 @@ One neat feature is that when this is active, you will see on the bottom of the 
 
 ### SiteImprove
 
-The Site improve plugin works in a similar fashion to the WAVE plugin, but will also alert you to things that require manual review. Just like the WAVE plugin, you simply click the icon, although it's ridiculously difficult to see:
+The Site improve plugin works in a similar fashion to the WAVE plugin, but will also alert you to things that require manual review. As before, make sure that you don't have any CMS admin bars like WordPress active. Just like the WAVE plugin, you simply click the icon, although it's ridiculously difficult to see:
 
 ![SI logo](screens/si-icon.png)
 
