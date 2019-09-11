@@ -6,8 +6,13 @@ Xamarin projects employ C#.  As such, you should follow Shift3's best practices 
 
 https://stackoverflow.com/questions/3048800/how-can-i-set-visual-studio-to-use-kr-style-bracketing
 
+By default, Visual Studio uses the more spacious Allman style.
+
+## Three Projects - But Concentrate on Shared
+Concentrate your business logic and general layout / styles in the shared project.  An Android and iOS project each are provided in standard Xamarin solutions for custom renderers and platform specific code (still written in C#).  Use custom renderers to perform explicit mutations on elements as they are drawn per platform.  For instance, adding a custom border to an Android text-entry.
+
 ## Know Your Layout Tools
-Research `Grid`, `StackLayout` and `RelativeLayout`.  Know what they do and use them *appropriately*.  Don't use `Grid` when you need `StackLayout`, etc.  Don't needlessly nest layouts.  And don't use `AbsoluteLayout` unless you totally need to for a legitimate reason.  And your reason probably isn't.
+Research `Grid`, `StackLayout` and `RelativeLayout`.  Know what they do and use them *appropriately*.  Don't use `Grid` when you need `StackLayout`, etc.  Don't needlessly nest layouts.  And don't use `AbsoluteLayout` unless you totally need to for a legitimate reason.
 
 https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/layouts
 
