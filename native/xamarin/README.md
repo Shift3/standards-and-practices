@@ -7,11 +7,11 @@ Xamarin projects employ C#.  As such, you should follow Shift3's best practices 
 https://stackoverflow.com/questions/3048800/how-can-i-set-visual-studio-to-use-kr-style-bracketing
 
 ## Know Your Layout Tools
-Research `Grid`, `StackLayout` and `RelativeLayout`.  Know what they do and use them *appropriately*.  Don't use `Grid` when you need `StackLayout`, etc.  Don't needlessly nest layouts.  And don't use `AbsoluteLayout` unless you totally need to for a legitamate reason.  And your reason probably isn't.
+Research `Grid`, `StackLayout` and `RelativeLayout`.  Know what they do and use them *appropriately*.  Don't use `Grid` when you need `StackLayout`, etc.  Don't needlessly nest layouts.  And don't use `AbsoluteLayout` unless you totally need to for a legitimate reason.  And your reason probably isn't.
 
 https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/layouts
 
-## Use MVVM and Databinding
+## Use MVVM and Data Binding
 Code-behind should be used as a last resort but there are certainly reasons to extend your view in your code-behind file.  Don't be a purist, but always endeavor to bind properties and `Command` members.  When commands aren't exposed as a `BindableProperty` member then use `EventToCommand` pattern.
 
 ## Use Shell
@@ -26,3 +26,4 @@ I got what you need right here:
 - FrontDeskKiosk, https://github.com/Shift3/fusd-front-desk-kiosk, for Prism implementation, Prism navigation, error-handling, and how to build a custom, reusable control that extends XAML vocabulary.  Targets Android and Windows, UWP.
 - KidWatcher, https://github.com/Shift3/FUSDMonitoringAppXamarin, for job building, intents, running as a background worker, etc.  There's basic UI.  Xamarin.Android.
 - Clair, https://github.com/Shift3/sinclair-scanner-application, for Xamarin Shell, Forms, camera and linking an application in response to URL clicks (https://github.com/Shift3/sinclair-scanner-application/pull/137).  Targets Android and iOS.
+
