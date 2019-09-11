@@ -22,15 +22,17 @@ Remember, in Xamarin, `z-index` is controlled by the order elements are describe
 Code-behind should be used as a last resort but there are certainly reasons to extend your view in your code-behind file.  Don't be a purist, but always endeavor to bind properties and `Command` members.  When commands aren't exposed as a `BindableProperty` member then use `EventToCommand` pattern.
 
 ## Use Shell
-Xamarin Shell has a glut of benefits.  URL-ish, abstracted navigation is one of them, among others.  Note that this technology is new to Xamarin Forms but do indeed attempt to use it unless you need a completely custom UI and flyout menu.  There are still some growing pains.  For example, as of 09/11/2019 they still don't have a bindable, XAML-based back-button override that works without crashing.
+Xamarin Shell has a glut of benefits.  URL-ish, abstracted navigation is one of them, among others.
+
+Note that this technology is new to Xamarin Forms but do indeed attempt to use it unless you need a completely custom UI and custom flyout menu.  There are still some small growing pains.  For example, as of 09/11/2019 they still don't have a bindable, XAML-based back-button override that works without crashing.  Freunlaven!
 
 ## Consider Using Prism
-Prism is a library that also provides a navigation service, simplified MVVM, dependency injection and simplified EventToCommand (https://prismlibrary.github.io/docs/xamarin-forms/EventToCommandBehavior.html) behavior.  It may be a good fit for your Xamarin application and is used in at least one (as of writing this) Shift3 project, FrontDeskKiosk (https://github.com/Shift3/fusd-front-desk-kiosk).
+Prism is a library that also provides a navigation service, simplified MVVM, dependency injection and simplified EventToCommand (https://prismlibrary.github.io/docs/xamarin-forms/EventToCommandBehavior.html) behavior.  It may be a good fit for your Xamarin application and is used in at least one (as of writing this) Shift3 project, FrontDeskKiosk (https://github.com/Shift3/fusd-front-desk-kiosk).  Xamarin Shell steals a bit of thunder from Prism, however, so it may be less useful if Shell is employed.
 
-## Examples Are For Pros, Bruh
+## Examples Are For Pruhs, Bruhs
 I got what you need right here:
 
-- FrontDeskKiosk, https://github.com/Shift3/fusd-front-desk-kiosk, for Prism implementation, Prism navigation, error-handling, and how to build a custom, reusable control that extends XAML vocabulary.  Targets Android and Windows, UWP.
-- KidWatcher, https://github.com/Shift3/FUSDMonitoringAppXamarin, for job building, intents, running as a background worker, etc.  There's basic UI.  Xamarin.Android.
-- Clair, https://github.com/Shift3/sinclair-scanner-application, for Xamarin Shell, Forms, camera and linking an application in response to URL clicks (https://github.com/Shift3/sinclair-scanner-application/pull/137).  Targets Android and iOS.
+- FrontDeskKiosk : https://github.com/Shift3/fusd-front-desk-kiosk, for Prism implementation, Prism navigation, error-handling, and how to build a custom, reusable control that extends XAML vocabulary.  Targets Android and Windows, UWP.
+- KidWatcher : https://github.com/Shift3/FUSDMonitoringAppXamarin, for job building, intents, running as a background worker, etc.  There's basic UI.  Xamarin.Android.
+- Clair : https://github.com/Shift3/sinclair-scanner-application, for Xamarin Shell, Forms, camera and linking an application in response to URL clicks (https://github.com/Shift3/sinclair-scanner-application/pull/137).  Targets Android and iOS.
 
