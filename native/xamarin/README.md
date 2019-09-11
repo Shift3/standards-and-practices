@@ -9,12 +9,14 @@ https://stackoverflow.com/questions/3048800/how-can-i-set-visual-studio-to-use-k
 By default, Visual Studio uses the more spacious Allman style.
 
 ## Three Projects - But Concentrate on Shared
-Concentrate your business logic and general layout / styles in the shared project.  An Android and iOS project each are provided in standard Xamarin solutions for custom renderers and platform specific code (still written in C#).  Use custom renderers to perform explicit mutations on elements as they are drawn per platform.  For instance, adding a custom border to an Android text-entry.
+Xamarin projects targeting mobile devices typically have three projects in one solution.  Structure your business logic and general layout / styles in the *shared project*.  An Android and iOS project each are provided in Xamarin solutions for custom renderers and platform specific stuff (still written in C#).  Use custom renderers, for example, to perform explicit mutations on elements as they are drawn per platform.  For instance, adding a custom border to an Android text entry control.
 
 ## Know Your Layout Tools
-Research `Grid`, `StackLayout` and `RelativeLayout`.  Know what they do and use them *appropriately*.  Don't use `Grid` when you need `StackLayout`, etc.  Don't needlessly nest layouts.  And don't use `AbsoluteLayout` unless you totally need to for a legitimate reason.
+Research `Grid`, `StackLayout` and `RelativeLayout`, Et al.  Know what they do and use them *appropriately*.  Do not use `Grid` when you need `StackLayout`, etc.  Don't needlessly nest layouts, please.  And don't use `AbsoluteLayout` unless you totally need to for a legitimate reason.
 
 https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/layouts
+
+Remember, in Xamarin, `z-index` is controlled by the order elements are described in the XAML documents.  And you *can* use negative margins.
 
 ## Use MVVM and Data Binding
 Code-behind should be used as a last resort but there are certainly reasons to extend your view in your code-behind file.  Don't be a purist, but always endeavor to bind properties and `Command` members.  When commands aren't exposed as a `BindableProperty` member then use `EventToCommand` pattern.
