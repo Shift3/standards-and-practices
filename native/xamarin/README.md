@@ -37,4 +37,4 @@ I got what you need right here:
 - Clair : https://github.com/Shift3/sinclair-scanner-application, for Xamarin Shell, Forms, camera and linking an application in response to URL clicks (https://github.com/Shift3/sinclair-scanner-application/pull/137).  Targets Android and iOS.
 
 ## Deployment
-See the Clair project right above.  Deployment documentation to do Android (Play Store) and iOS (App Store) are pretty detailed.
+See the Clair project right above.  Deployment documentation to do Android (Play Store) and iOS (App Store) is pretty detailed there, along with screenshots.
