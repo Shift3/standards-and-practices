@@ -1,7 +1,7 @@
 # Xamarin
 So, you think you can "Xam?"  I don't know if you think that you can!  At any rate, I'm here to help you and when that doesn't work... to tell you what to do.
 
-## Follow C# Best Practices And Then Some
+## Follow C# Best Practices and Then Some
 Xamarin projects employ C#.  As such, you should follow Shift3's best practices for C#.  Consider K&R style and expression body syntax when possible to keep code LOC as readable and *concise* as possible.  Don't make us read three lines for one expression.
 
 https://stackoverflow.com/questions/3048800/how-can-i-set-visual-studio-to-use-kr-style-bracketing
@@ -11,7 +11,7 @@ By default, Visual Studio uses the more spacious Allman style.
 ## Three Projects - But Concentrate on Shared
 Xamarin projects targeting mobile devices typically have three projects in one solution.  Structure your business logic and general layout / styles in the *shared project*.  An Android and iOS project each are provided in Xamarin solutions for custom renderers and platform specific stuff (still written in C#).  Use custom renderers, for example, to perform explicit mutations on elements as they are drawn per platform.  For instance, adding a custom border to an Android text entry control.
 
-## Know Your Layout Tools
+## Know the Layout Tools
 Research `Grid`, `StackLayout` and `RelativeLayout`, Et al.  Know what they do and use them *appropriately*.  Do not use `Grid` when you need `StackLayout`, etc.  Don't needlessly nest layouts, please.  And don't use `AbsoluteLayout` unless you totally need to for a legitimate reason.
 
 https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/layouts
@@ -24,10 +24,10 @@ Code-behind should be used as a last resort but there are certainly reasons to e
 ## Use Shell
 Xamarin Shell has a glut of benefits.  URL-ish, abstracted navigation is one of them, among others.  Note that this technology is new to Xamarin Forms but do indeed attempt to use it unless you need a completely custom UI and flyout menu.  There are still some growing pains.  For example, as of 09/11/2019 they still don't have a bindable, XAML-based back-button override that works without crashing.
 
-## Consider Prism
+## Consider Using Prism
 Prism is a library that also provides a navigation service, simplified MVVM, dependency injection and simplified EventToCommand (https://prismlibrary.github.io/docs/xamarin-forms/EventToCommandBehavior.html) behavior.  It may be a good fit for your Xamarin application and is used in at least one (as of writing this) Shift3 project, FrontDeskKiosk (https://github.com/Shift3/fusd-front-desk-kiosk).
 
-## Want Examples?  Who Doesn't?
+## Examples Are For Pros, Bruh
 I got what you need right here:
 
 - FrontDeskKiosk, https://github.com/Shift3/fusd-front-desk-kiosk, for Prism implementation, Prism navigation, error-handling, and how to build a custom, reusable control that extends XAML vocabulary.  Targets Android and Windows, UWP.
