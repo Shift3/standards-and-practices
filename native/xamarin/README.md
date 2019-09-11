@@ -36,3 +36,5 @@ I got what you need right here:
 - KidWatcher : https://github.com/Shift3/FUSDMonitoringAppXamarin, for job building, intents, running as a background worker, etc.  There's basic UI.  Xamarin.Android.
 - Clair : https://github.com/Shift3/sinclair-scanner-application, for Xamarin Shell, Forms, camera and linking an application in response to URL clicks (https://github.com/Shift3/sinclair-scanner-application/pull/137).  Targets Android and iOS.
 
+## Deployment
+See the Clair project right above.  Deployment documentation to do Android (Play Store) and iOS (App Store) are pretty detailed.
