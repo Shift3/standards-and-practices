@@ -10,6 +10,9 @@
     _In some projects, Epics will be exactly copied from Feature Sets, but this won't always be the case._
   2. Inside each project board, use Github's automation settings to make the project automated KANBAN style.  
   [Reference](https://help.github.com/en/articles/about-automation-for-project-boards)
+  3. Create an additional project board to track the others (one board to rule them all!) as follows:  
+    * Create a note for each of your epics/project boards  
+    * Make a markdown link in each note to the corresponding project board  
   3. Open as many issues as you need to complete each epic.  
     Remember: follow Shift3's [branching guide](branching.md) when you start working on these issues.
 
