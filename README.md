@@ -67,6 +67,11 @@
 - Install the regular version of Visual Studio (as opposed to Visual Studio Code). Visual Studio Community Edition may be sufficient, or you may need a paid license for Visual Studio Professional, Enterprise, or similar. Either way, ask your PM (Project Manager).
 - Ask your Project Manager if you need to install anything else.
 
+Using Chocolatey has several advantages:
+1. You can install most of the software you need just by running a single script.
+2. You can update all of this software later, by running `choco upgrade all`, as Administrator.
+3. Chocolatey will automatically skip installing browser toolbars and junk like that.
+
 #### Account Setup
 
 #### You will need to schedule time with Greg Goforth, Corey Schuman, Chris Hawkins, or Jody Hicks to gain access to the following:
