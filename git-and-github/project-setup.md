@@ -1,16 +1,22 @@
-# Project Setup
+## Project Board Setup
 
-## Take your SOW (Statement of Work) and identify:
+### Take your SOW (Statement of Work) and identify:
   1. Feature Sets
   2. Epics
   3. Issues
 
-## Once you Have these,  
-  1. Create a [project board](https://help.github.com/articles/about-project-boards/#creating-and-viewing-project-boards) tied to each Feature Set.  
-  [Reference](https://docs.google.com/presentation/d/1NwVO0zkUWCTK0dDTLfVdAEn1H2GnWDg-Zs0tsrDvW5A/edit#slide=id.g34929561f0_2_107)
-  2. Inside each project board, create a Column for each Epic  
-  [Reference](https://docs.google.com/presentation/d/1NwVO0zkUWCTK0dDTLfVdAEn1H2GnWDg-Zs0tsrDvW5A/edit#slide=id.g34929561f0_2_128)
+### Once you Have these:  
+  1. Create a [project board](https://help.github.com/articles/about-project-boards/#creating-and-viewing-project-boards) tied to each Epic.  
+    _In some projects, Epics will be exactly copied from Feature Sets, but this won't always be the case._
+  2. Inside each project board, use Github's automation settings to make the project automated KANBAN style.  
+  [Reference](https://help.github.com/en/articles/about-automation-for-project-boards)
+  3. Create an additional project board to track the others (one board to rule them all!) as follows:  
+    * Create a note for each of your epics/project boards  
+    * Make a markdown link in each note to the corresponding project board  
   3. Open as many issues as you need to complete each epic.  
     Remember: follow Shift3's [branching guide](branching.md) when you start working on these issues.
 
-* This is your Project Manager's primary way of identifying your progress, so make sure you are updating these boards often with your progress.
+### Example from Shift3:
+  [Sinclair Project Boards](https://github.com/Shift3/sinclair-scanner-application/projects)
+
+* This is your Project Manager's primary way of identifying your progress, so make sure check the automated progress and tweak anything that needs to be changed as the project progresses.
