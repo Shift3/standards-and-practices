@@ -24,6 +24,7 @@
     - [ ] Use a linter (esLint is probably going to be the standard) to take care of whitespace and styling
     - [ ] Remove your console references and debuggers
     - [ ] Make sure your code changes are under 500 lines of code (break it up into more than 1 PR if it exceeds this)
+    - [ ] Your PR should be based from the development branch, and not from other open PRs. If you MUST have stair-stepped PRs for a valid reason, please include justification in the PR and reference to the PRs which this new PR depends on.
 
 2. Submit your pull request and tag potential reviewers. Keep in mind that each reviewer should: 
     * Be either on your project or a quick study on the stack your project is in
