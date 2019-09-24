@@ -65,6 +65,7 @@
 - After running shutup10, restart Windows if necessary.
 - Install Android Studio.
 - Install the regular version of Visual Studio (as opposed to Visual Studio Code). Visual Studio Community Edition may be sufficient, or you may need a paid license for Visual Studio Professional, Enterprise, or similar. Either way, ask your PM (Project Manager).
+- You may wish to use the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/faq).
 - Ask your Project Manager if you need to install anything else.
 
 Using Chocolatey has several advantages:
