@@ -1,0 +1,20 @@
+REM Note: upgrade is the recommended choco subcommand / verb for scripted installations
+choco upgrade 7zip
+choco upgrade adoptopenjdk
+choco upgrade boostnote
+choco upgrade filezilla
+choco upgrade Firefox
+choco upgrade git
+choco upgrade GoogleChrome
+choco upgrade libreoffice-fresh
+choco upgrade microsoft-teams
+choco upgrade notepadplusplus
+choco upgrade nvm
+choco upgrade python2
+choco upgrade python3
+choco upgrade shutup10
+choco upgrade slack
+choco upgrade sysinternals
+choco upgrade vscode
+choco upgrade WinPcap
+choco upgrade wireshark

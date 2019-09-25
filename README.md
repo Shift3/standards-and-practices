@@ -54,9 +54,24 @@
   - Sign into shift3tech.slack.com team with your work email
 - Either [WebStorm](https://www.jetbrains.com/webstorm/download/#section=mac)(See below _before_ you install) or [Visual Studio Code](https://code.visualstudio.com/download)
 
-##### Windows: Install:
+##### Windows:
 
-//TODO: Add these details
+- (Optional) Install a third-party antivirus product of your choice.
+- Activate Windows using a valid license key. If you don't already have one, ask HR about getting one.
+- Install all available Microsoft updates, restarting your computer as necessary.
+- Install the [Chocolatey package manager for Windows](https://chocolatey.org/install).
+- Open either PowerShell or Command Prompt (your choice) with Administrator privileges. Run, or copy and paste, the [install-apps-via-chocolatey.cmd](./install-apps-via-chocolatey.cmd) script to install a number of programs you will probably need. (Feel free to peek at this file's contents to see what it contains.)
+- From the same PowerShell or Command Prompt window, run the command `shutup10`. Here, you can easily configure a number of settings to have Windows respect your privacy a little more.
+- After running shutup10, restart Windows if necessary.
+- Install Android Studio.
+- Install the regular version of Visual Studio (as opposed to Visual Studio Code). Visual Studio Community Edition may be sufficient, or you may need a paid license for Visual Studio Professional, Enterprise, or similar. Either way, ask your PM (Project Manager).
+- You may wish to use the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/faq).
+- Ask your Project Manager if you need to install anything else.
+
+Using Chocolatey has several advantages:
+1. You can install most of the software you need just by running a single script.
+2. You can update all of this software later, by running `choco upgrade all`, as Administrator.
+3. Chocolatey will automatically skip installing browser toolbars and junk like that.
 
 #### Account Setup
 

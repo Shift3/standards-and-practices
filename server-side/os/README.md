@@ -1,3 +1,4 @@
-# os
+# Production Server Operating Systems
 
-## this should contain info about each os production servers use
+* [Ubuntu](./ubuntu/README.md)
+* [Windows](./windows/README.md)
