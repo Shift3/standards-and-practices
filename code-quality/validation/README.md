@@ -2,11 +2,7 @@
 
 # Input Validation 
 
-Input validation is is your first line of defense when creating a secure application. 
-
-## What is input validation?
-
-Input validation is the practice of limiting the data that is processed by your application to the subset that you know you can handle. 
+Input validation is is your first line of defense when creating a secure application.  
 
 ## Whitelist or Blacklist? 
 
@@ -42,7 +38,7 @@ Input validation using blacklisting is generally more challenging to implement s
 /([!"#$%&'()*+,\-./:;<=>?@[\]^_`{|}~])+/g
 ```
 
-## RegEx Email Validation Example
+## RegEx Email Validation Example (JavaScript)
 
 - An email is a string (a subset of ASCII characters) separated into two parts by @ symbol, a "personal_info" and a domain, that is personal_info@domain. The length of the personal_info part may be up to 64 characters long and domain name may be up to 253 characters.
 
