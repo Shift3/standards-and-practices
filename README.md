@@ -62,8 +62,8 @@
 - Open PowerShell with Administrator privileges. Run `Set-ExecutionPolicy RemoteSigned`. Type Y and press Enter to confirm that you want to make this change.
 - Install the [Chocolatey package manager for Windows](https://chocolatey.org/install).
 - Reopen PowerShell with Administrator privileges, if necessary. Run the [install-apps-via-chocolatey.ps1](./install-apps-via-chocolatey.ps1) script to install a number of programs you will probably need. (Feel free to peek at this file's contents to see what it contains.)
-- From the same PowerShell window, run the command `oosu10`. Here, you can easily configure a number of settings to have Windows respect your privacy a little more.
-- After running `oosu10`, restart Windows if necessary.
+- (Optional) From the same PowerShell window, run the command `oosu10`. Here, you can easily configure a number of settings to have Windows respect your privacy a little more. Just make sure you understand what each setting does before you change it.
+- After running `oosu10`, restart Windows (if applicable).
 - Install Android Studio.
 - Install the regular version of Visual Studio (as opposed to Visual Studio Code). Visual Studio Community Edition may be sufficient, or you may need a paid license for Visual Studio Professional, Enterprise, or similar. Either way, ask your PM (Project Manager).
 - You may wish to use the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/faq).
