@@ -43,8 +43,10 @@ Input validation using blacklisting is generally more challenging to implement s
 - An email is a string (a subset of ASCII characters) separated into two parts by @ symbol, a "personal_info" and a domain, that is personal_info@domain. The length of the personal_info part may be up to 64 characters long and domain name may be up to 253 characters.
 
 ```javascript
-/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+/^\w+(?:[\.-]?\w+)*@\w+(?:[\.-]?\w+)*(?:\.\w{2,24})+$/
 ```
+
+- Fun fact: The longest Top Level domain in English is .cancerresearch which 14 characters. The longest currently in existance is 24 characters.
 
 ### The personal_info part contains the following ASCII characters:
 
@@ -77,6 +79,12 @@ Input validation using blacklisting is generally more challenging to implement s
 - [String.prototype.match() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
 
 - [RegExp.prototype.test() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
+
+## Additional Resources for RegEx
+
+- In depth tutorial on RegEx - [regular-expressions.info](https://www.regular-expressions.info/tutorial.html)
+- "RegEx Debugging" tool - [regex101.com ](https://regex101.com/)
+- Another "RegEx Debugging" tool- [regexr.com](https://regexr.com/)
 
 
 
