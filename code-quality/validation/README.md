@@ -2,7 +2,7 @@
 
 # Input Validation 
 
-Input validation is is your first line of defense when creating a secure application.  
+Input validation is your first line of defense when creating a secure application.  
 
 ## Whitelist or Blacklist? 
 
@@ -12,9 +12,9 @@ Input validation using blacklisting is generally more challenging to implement s
 
 ## RegEx Password Validation Examples (JavaScript)
 
-- Mininum length of any 6 chars but newline: 
+- Mininum length of any 8 chars but newline: 
 ```javascript
-/^.{6,}$/
+/^.{8,}$/
 ```
 
 - Check for at least one uppercase character: 
@@ -40,13 +40,15 @@ Input validation using blacklisting is generally more challenging to implement s
 
 ## RegEx Email Validation Example (JavaScript)
 
+- DISCLAIMER: RegEx email validation should not be your sole source of email validation, rather it should be used to help your UI display an `invalid email` message. Whenever possible, one should include a process to confirm a given email address (e.g. send an email for the user confirm their email address).
+
 - An email is a string (a subset of ASCII characters) separated into two parts by @ symbol, a "personal_info" and a domain, that is personal_info@domain. The length of the personal_info part may be up to 64 characters long and domain name may be up to 253 characters.
 
 ```javascript
 /^\w+(?:[\.-]?\w+)*@\w+(?:[\.-]?\w+)*(?:\.\w{2,24})+$/
 ```
 
-- Fun fact: The longest Top Level domain in English is .cancerresearch which 14 characters. The longest currently in existance is 24 characters.
+- Fun fact: The longest Top Level domain in English is .cancerresearch which is 14 characters. The longest currently in existence is 24 characters.
 
 ### The personal_info part contains the following ASCII characters:
 
