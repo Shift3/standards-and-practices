@@ -4,7 +4,7 @@
 
 - Writing the Acceptance Test lets the dev review their work. It can be very helpful in confirming that features are complete and that all edge cases are handled when describing what to do to a tester.
 - Acceptance testing helps find problems that the dev might not have experienced: issues coming from different hardware/environments, or a tester performing an action in a different way than the devs. Developers can get too close to their work and not approach their product the same way an end user does.
-- Acceptance testing saves time and frustration. It is better to find issues from someone who can explain and demonstrate how they caused it, rather than from an upset client. It's also easier to fix an issue earlier in the development timeframe than later when potentially more functionality is built on top of the problem.
+- Acceptance testing saves money, time, and frustration. It is better to find issues from someone who can explain and demonstrate how they caused it, rather than from an upset client. It's also easier to fix an issue earlier in the development timeframe than later when potentially more functionality is built on top of the problem.
 
 ## How to create an Acceptance Test
 
