@@ -22,7 +22,7 @@
 
 ## When to create an Acceptance Test
 
-- Acceptance Tests must be written any time you want QA to review. A developer can choose when they want to hand off for test. Once the Acceptance Tests are written, PMs will schedule QA.
+- Acceptance Tests must be written any time you want QA to review. A developer can choose when they want to hand off for test. Once the Acceptance Tests are written, PMs will schedule QA. QA should be minimally done ahead of the project's UAT milestone.
 
 ### Requirements to Schedule QA Time
 
