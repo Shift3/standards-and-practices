@@ -72,3 +72,9 @@ There are some nice tools that can be used to analyze a page. These two are Chro
 - [WAVE Browser Extension for Chrome and Firefox](https://wave.webaim.org/extension/)
 
 -[SiteImprove Browser Extension](https://siteimprove.com/en-us/core-platform/integrations/browser-extensions/)
+
+## VoiceOver (Mac)
+
+Mac has a built in screen reader named "VoiceOver". This can be used to familiarize yourself with how someone who depends on a screen reader experiences your site. Feel free to print out the PDF below to have a set of instructions handy.
+
+[Commands for Activating and Operating Voiceover](./VoiceOverCommands.pdf)
