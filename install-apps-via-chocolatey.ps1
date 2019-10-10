@@ -8,18 +8,13 @@ $ToInstall = @(
     'Firefox',
     'git',
     'GoogleChrome',
-    # 'libreoffice-fresh',
     'microsoft-teams',
-    'notepadplusplus',
     'nvm',
-    'python2',
     'python3',
     'shutup10',
     'slack',
     'sysinternals',
-    'vscode',
-    'WinPcap',
-    'wireshark'
+    'vscode'
 )
 
 $ToInstall | ForEach-Object {
