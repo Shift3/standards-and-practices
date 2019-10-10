@@ -59,7 +59,7 @@
 - (Optional) Install a third-party antivirus product of your choice.
 - Activate Windows using a valid license key. If you don't already have one, ask HR about getting one.
 - Install all available Microsoft updates, restarting your computer as necessary.
-- Open PowerShell with Administrator privileges. Run `Set-ExecutionPolicy RemoteSigned`. Type Y and press Enter to confirm that you want to make this change.
+- Open PowerShell with Administrator privileges. Run `Set-ExecutionPolicy RemoteSigned`. Type Y and press Enter to confirm that you want to make this change. (If you don't perform this step, you will not be able to run **any** PowerShell scripts on your system.)
 - Install the [Chocolatey package manager for Windows](https://chocolatey.org/install).
 - Reopen PowerShell with Administrator privileges, if necessary. Run the [install-apps-via-chocolatey.ps1](./install-apps-via-chocolatey.ps1) script to install a number of programs you will probably need. (Feel free to peek at this file's contents to see what it contains.)
 - (Optional) From the same PowerShell window, run the command `oosu10`. Here, you can easily configure a number of settings to have Windows respect your privacy a little more. Just make sure you understand what each setting does before you change it.
