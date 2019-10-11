@@ -32,7 +32,6 @@ Input validation using blacklisting is generally more challenging to implement s
 /([0-9]+)/g
 ```
 
-
 - Check for at least one special character:
 ```javascript
 /([!"#$%&'()*+,\-./:;<=>?@[\]^_`{|}~])+/g
@@ -44,23 +43,23 @@ Input validation using blacklisting is generally more challenging to implement s
 
 - An email is a string (a subset of ASCII characters) separated into two parts by @ symbol, a "personal_info" and a domain, that is personal_info@domain. The length of the personal_info part may be up to 64 characters long and domain name may be up to 253 characters.
 
-- WARNING: The following RegEx email validation is permissive by design so proper care **must** be taken to sanitize (i.e. remove any illegal characters) from the input string before being sent to your database to prevent a [SQL injection](https://www.owasp.org/index.php/SQL_Injection) or similar injection attacks.  
+- WARNING: The following RegEx email validation is permissive by design so proper care **must** be taken to sanitize (i.e. remove any illegal characters) from the input string before reaching your database to prevent a [SQL injection](https://www.owasp.org/index.php/SQL_Injection) or similar injection attacks.  
 
 ```javascript
 /^(?:\w+\S*)@+(?:\w+\S*)(?:\.+\w+\S{1,})*$/
 ```
-
-- Fun fact: The longest Top Level domain(TDL) in English is .cancerresearch which is 14 characters. The longest currently in existence is 24 characters.
 
 ### The personal_info (before the @ symbol) and domain name (after the @ symbol but before the . symbol):
 
 - Must start with an alphanumeric character.
 - Can contain any characters of any length except whitespace.
 
-### The TDL (e.g com, org, net, in, us, info): 
+### The Top Level domain(TDL) (e.g com, org, net, in, us, info): 
 - Must start with an alphanumeric character.
 - Can contain and end with any characters of any length except whitespace.
 - Must be at least two characters long.
+
+#### Fun fact: The longest TDL in English is .cancerresearch which is 14 characters. The longest currently in existence is 24 characters.
 
 ## Javascript methods to use with RegEx
 
@@ -73,7 +72,3 @@ Input validation using blacklisting is generally more challenging to implement s
 - In depth tutorial on RegEx - [regular-expressions.info](https://www.regular-expressions.info/tutorial.html)
 - "RegEx Debugging" tool - [regex101.com ](https://regex101.com/)
 - Another "RegEx Debugging" tool- [regexr.com](https://regexr.com/)
-
-
-
-
