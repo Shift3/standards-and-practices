@@ -58,7 +58,7 @@
     * `Approve`: If the code looks good and you have no questions/concerns, or if the author has submitted fixes to a blocking PR, mark it as approved.  
     * `Comment`: If you have comments/concerns but you are not blocking the author (no bugs) then mark the review as comment and leave your comments. Let the author know that they can merge if they don't want to address your concerns.
 
-3. If you are a maintainer for the project you can Squash & Merge or just Merge the PR and delete the compare branch once it is approved. If you are not a maintainer for the project, do NOT merge the PR. Leave it for the author or maintainers.
+3. If you are a maintainer for the project you can Squash & Merge or just Merge the PR and delete the compare branch once it is approved. If you are not a maintainer for the project, **DO NOT MERGE THE PR**. Leave it for the author or maintainers.
 
 ## Results
 We have already had lots of success catching errors and bugs, as well as teaching each other what we know and sharing that knowledge in a way that normally doesn't happen. If you have a success story you have experienced, please submit a PR to this .md doc with your experience so you can share it!
