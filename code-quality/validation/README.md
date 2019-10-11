@@ -44,37 +44,23 @@ Input validation using blacklisting is generally more challenging to implement s
 
 - An email is a string (a subset of ASCII characters) separated into two parts by @ symbol, a "personal_info" and a domain, that is personal_info@domain. The length of the personal_info part may be up to 64 characters long and domain name may be up to 253 characters.
 
+- WARNING: The following RegEx email validation is permissive by design so proper care **must** be taken to sanitize (i.e. remove any illegal characters) from the input string before being sent to your database to prevent a [SQL injection](https://www.owasp.org/index.php/SQL_Injection) or similar injection attacks.  
+
 ```javascript
-/^\w+(?:[\.-]?\w+)*@\w+(?:[\.-]?\w+)*(?:\.\w{2,24})+$/
+/^(?:\w+\S*)@+(?:\w+\S*)(?:\.+\w+\S{1,})*$/
 ```
 
-- Fun fact: The longest Top Level domain in English is .cancerresearch which is 14 characters. The longest currently in existence is 24 characters.
+- Fun fact: The longest Top Level domain(TDL) in English is .cancerresearch which is 14 characters. The longest currently in existence is 24 characters.
 
-### The personal_info part contains the following ASCII characters:
+### The personal_info (before the @ symbol) and domain name (after the @ symbol but before the . symbol):
 
-- Uppercase (A-Z) and lowercase (a-z) English letters.
-- Digits (0-9).
-- Characters ! # $ % & ' * + - / = ? ^ _ ` { | } ~
-- Character . ( period, dot or fullstop) provided that it is not the first or last character and it will not come one after the other.
+- Must start with an alphanumeric character.
+- Can contain any characters of any length except whitespace.
 
-### The domain name (e.g com, org, net, in, us, info) part contains letter digits, hyphens, and dots. 
-
-### Examples of valid email id's
-
-- mysite@ourearth.com
-- my.ownsite@ourearth.org
-- mysite@you.me.net
-
-### Examples of invalid email id's
-
-- mysite.ourearth.com (@ is not present)
-- mysite@.com.my (tld (Top Level domain) can not start with dot ".")
-- @you.me.net (No character before @)
-- mysite123@gmail.b (".b" is not a valid tld)
-- mysite@.org.org (tld can not start with dot ".")
-- .mysite@mysite.org (an email should not be start with ".")
-- mysite()*@gmail.com (here the regular expression only allows character, digit, underscore, and dash)
-- mysite..1234@yahoo.com (double dots are not allowed)
+### The TDL (e.g com, org, net, in, us, info): 
+- Must start with an alphanumeric character.
+- Can contain and end with any characters of any length except whitespace.
+- Must be at least two characters long.
 
 ## Javascript methods to use with RegEx
 
