@@ -45,7 +45,7 @@ Input validation using blacklisting is generally more challenging to implement s
 
 ### Code Example:
 ```javascript
-/^(?:\S+)@+(?:\S+)(?:\.+\S{2,})$/
+/^(?:\S+)@(?:\S+)(?:\.+\S{2,})$/
 ```
 
 ### The personal_info (before the @ symbol) and domain name (after the @ symbol but before the . symbol):
