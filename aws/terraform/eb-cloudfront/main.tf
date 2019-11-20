@@ -20,16 +20,16 @@ resource "aws_acm_certificate" "cert" {
 }
 
 resource "aws_acm_certificate" "cert_cloudfront_east" {
-  provider          = "aws.east"
-  domain_name       = "${var.web_domain_name}"
+  provider                  = "aws.east"
+  domain_name               = "${var.web_domain_name}"
   subject_alternative_names = ["www.${var.web_domain_name}"]
-  validation_method = "DNS"
+  validation_method         = "DNS"
 }
 
 resource "aws_acm_certificate" "cert_cloudfront_west" {
-  domain_name       = "${var.web_domain_name}"
+  domain_name               = "${var.web_domain_name}"
   subject_alternative_names = ["www.${var.web_domain_name}"]
-  validation_method = "DNS"
+  validation_method         = "DNS"
 }
 
 resource "aws_acm_certificate_validation" "cert" {
@@ -60,11 +60,6 @@ resource "aws_route53_record" "cert_validation_west_www" {
   records = ["${aws_acm_certificate.cert_cloudfront_west.domain_validation_options.1.resource_record_value}"]
   ttl     = 60
 }
-
-#resource "aws_acm_certificate_validation" "cert_cloudfront_east" {
-#  certificate_arn         = "${aws_acm_certificate.cert_cloudfront_west.arn}"
-#  validation_record_fqdns = ["${aws_route53_record.cert_validation_east.fqdn}"]
-#}
 
 resource "aws_s3_bucket" "web_bucket" {
   bucket = "${var.web_domain_name}"
@@ -171,7 +166,7 @@ resource "aws_cloudfront_distribution" "prod_distribution" {
   }
 
   # Distributes content to US and Europe
-  price_class = "PriceClass_All"
+  price_class = "PriceClass_100"
 
   # Restricts who is able to access this content
   restrictions {
@@ -186,6 +181,8 @@ resource "aws_cloudfront_distribution" "prod_distribution" {
     acm_certificate_arn = "${aws_acm_certificate.cert_cloudfront_east.arn}"
     ssl_support_method  = "sni-only"
   }
+
+  depends_on = ["aws_acm_certificate.cert_cloudfront_east"]
 }
 
 # Elastic Container Repository for Docker images
@@ -240,11 +237,11 @@ resource "aws_elastic_beanstalk_environment" "main" {
   }
 }
 
-# Create Route 53 
+# Create Route 53
 resource "aws_route53_record" "www" {
   zone_id = "${data.aws_route53_zone.zone.id}"
-  name = "${var.api_domain_name}"
-  type = "A"
+  name    = "${var.api_domain_name}"
+  type    = "A"
 
   alias {
     name                   = "${aws_elastic_beanstalk_environment.main.cname}"

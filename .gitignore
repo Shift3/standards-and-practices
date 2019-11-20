@@ -5,3 +5,8 @@
 .DS_Store
 node_modules
 npm-debug.log
+
+# Terraform files
+.terraform
+.terraform.tfstate*
+terraform.tfstate*
