@@ -6,7 +6,7 @@
 - Have a central repository where other Shift3/Bitwise members can share knowledge of best practices.
 - Have a reference point to start a new project or answer questions on different topics.
 
-[Click Here](/contributing.md) to contribute!
+[Click Here](/standards/contributing.md) to contribute!
 
 ## Code of Conduct
 
@@ -28,22 +28,22 @@
   - Branch off of development for features
   - Request reviews on your Pull Requests
   - Merge _reviewed_ code into development
-- [Branching](/git-and-github/branching.md) at Shift3
-- [Commit Messages](/git-and-github/commits.md) at Shift3
+- [Branching](/standards/branching.md) at Shift3
+- [Commit Messages](/standards/commits.md) at Shift3
 
 #### Code Versioning
-- [Shift3 SemVer](/git-and-github/code-versioning.md)
+- [Shift3 SemVer](/standards/code-versioning.md)
 
 #### Project Setup
-- [Using Github Projects](/git-and-github/project-setup.md) to communicate progress
-- [Readme Guidelines](/git-and-github/readme-guidelines.md) to document projects
+- [Using Github Projects](/standards/project-setup.md) to communicate progress
+- [Readme Guidelines](/standards/readme-guidelines.md) to document projects
 
 #### Code Review
 
-- [Code Review](/git-and-github/code-reviews.md#process) process at Shift3
+- [Code Review](/standards/code-reviews.md#process) process at Shift3
   - [Code Review Slides](https://docs.google.com/presentation/d/16S4qMbwdBT2u9c3-djHhSRXoUUytf12HGxloWh4y4cE/edit#slide=id.g35f391192_00)
-- [Acceptance Testing](/QA/acceptance-testing/README.md)
-- [Bug Reporting](/QA/bug-reporting/README.md)
+- [Acceptance Testing](/standards/acceptance-testing/README.md)
+- [Bug Reporting](/standards/bug-reporting/README.md)
 
 #### Machine Setup
 
@@ -62,7 +62,7 @@
 - Install all available Microsoft updates, restarting your computer as necessary.
 - Open PowerShell with Administrator privileges. Run `Set-ExecutionPolicy RemoteSigned`. Type Y and press Enter to confirm that you want to make this change. (If you don't perform this step, you will not be able to run **any** PowerShell scripts on your system.)
 - Install the [Chocolatey package manager for Windows](https://chocolatey.org/install).
-- Reopen PowerShell with Administrator privileges, if necessary. Run the [install-apps-via-chocolatey.ps1](./install-apps-via-chocolatey.ps1) script to install a number of programs you will probably need. (Feel free to peek at this file's contents to see what it contains.)
+- Reopen PowerShell with Administrator privileges, if necessary. Run the [install-apps-via-chocolatey.ps1](/best-practices/development-tools/windows-setup/install-apps-via-chocolatey.ps1) script to install a number of programs you will probably need. (Feel free to peek at this file's contents to see what it contains.)
 - (Optional) From the same PowerShell window, run the command `oosu10`. Here, you can easily configure a number of settings to have Windows respect your privacy a little more. Just make sure you understand what each setting does before you change it.
 - After running `oosu10`, restart Windows (if applicable).
 - Install Android Studio.
@@ -85,7 +85,10 @@ Using Chocolatey has several advantages:
 
 ##### Shift3 Standards & Practices Meetings:
 
-- Every two weeks the developers meet on Wednesday from 3:30pm - 4:00pm to discuss a new Standard or Practice for the company. These meetings are the place to voice your opinions on what we should be doing more of, less of, better at, etc. You are _highly_ encouraged to participate actively by leading a meeting on a topic of your choice. Ask Ryeker Herndon to add you to the GCal event so that you get reminders and emails.
+###### Meetings are now split into two types:
+
+- *Presentations*: Once a month the developers meet on Wednesday from 4:00pm - 5:00pm to discuss a new Standard or Practice for the company. A developer at Shift3 will propose a new tool or standard to be adopted, and there will be an open forum to discuss. You are _highly_ encouraged to participate actively by leading a meeting on a topic of your choice. Ask Ryeker Herndon to add you to the GCal event so that you get reminders and emails.
+- *Workshops*: Once a month we will do a deep dive into a topic of interest for our workflow and/or processes. These will typically take longer than 1 hour, and will be a classroom/workshop setting. One developer will lead the workshop and the goal will be to produce developers who are proficient at a skill or process that will help us in our work.
 
 ##### Frontend Masters:
 
@@ -101,6 +104,6 @@ Using Chocolatey has several advantages:
 
 ## Contributing to Shift3
 
-### You are expected to contribute _something_ to our processes. You can do this in many different ways, such as leading a S&P meeting, writing up a markdown sheet for this repository on a topic you are passionate about, leading a meetup, or posting discussion topics in Slack's Shift3 #random channel.
+### You are expected to contribute _something_ to our processes. You can do this in many different ways, such as leading a S&P meeting, writing up a markdown sheet for this repository on a topic you are passionate about, leading a workshop, or posting discussion topics in Bitwise's #shift-3-technical-discussions channel.
 
-#### [Click Here](/contributing.md) to start contributing.
+#### [Click Here](/standards/contributing.md) to start contributing.
