@@ -13,7 +13,8 @@ _Describe what is currently happening._
 
 ## Potential Fixes
 _How do you suggest we fix this bug?_
-1. Code better
+1. Suggestion 1 description
+2. Suggestion 2 description
 
 ## Environment
 _Please provide **OS Version** and **Platform/Browser**_
