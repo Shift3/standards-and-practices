@@ -1,32 +1,16 @@
-_This goes in your project's root directory under `.github/`_
-## Expected Behavior/Desired Use Case
-_If this is a bug, report what **should** be happening. If it's a feature, describe what this **should** implement._
+## Issue Templates
+#### Github has updated the process for adding issue templates to your repositories.
 
-## Actual/Current Behavior
-_Describe what is currently happening._
+Follow the [step by step guide](https://help.github.com/en/github/building-a-strong-community/configuring-issue-templates-for-your-repository)
 
+### - OR -
 
-## Steps to Reproduce the Problem/Implement this feature
-  1.
-  2.
-  3.
+#### To add issue templates to your repository:
 
-## Pre-Testing TODOs
-_What neeeds to be done before testing_
-1. Change DB values in x collection to y.
-
-## Testing Steps
-#### If you are not a member of this project, _skip this step_
-_How do the users test this change?_
-1. Navigate to x screen
-2. Click on y button
-3. Observe z result
-
-## Environment
-_If this is a bug, please provide **OS Version** and **Platform/Browser**, otherwise, delete this section_
-
-## Learning
-_Describe the research stage_
-
-_Links to blog posts, patterns, libraries or addons that could be used to solve this problem_
-
+1. Go to your repository's `Settings` tab
+2. Under the `Options` section, scroll down to **Features**
+3. Make sure **Issues** option is selected (check the box) and click the `Set up templates` button
+4. Select which type of template you want to set up. Github has pre-configured templates that you can choose to use. You can edit the default templates if you need to, or you can add a custom template manually
+5. Once you are happy with the template, click on the green `Propose changes` button at the top right of the page
+6. Fill out the commit information that pops up. Choose the option to create a new branch and start a pull request rather than committing directly to your default branch
+7. Have your team review and approve your pull request. Once it is closed, you will have issue templates
