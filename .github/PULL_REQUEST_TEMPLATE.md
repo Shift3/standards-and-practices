@@ -1,4 +1,3 @@
-_This goes in your project's root directory under `.github/PULL_REQUEST_TEMPLATE/` folder_
 ## Changes
 _List Changes Introduced by this PR_
 1. Item 1
@@ -12,6 +11,7 @@ _Describe the research stage_
 
 _Links to blog posts, patterns, libraries or addons used to solve this problem_
 
+_If this closes an issue, name it here. If it doesn't, remove this line_
 Closes #000
 
 
