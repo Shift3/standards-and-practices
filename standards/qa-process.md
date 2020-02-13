@@ -13,6 +13,8 @@
   - Ready for Retest
   - Done
   - Rejected
+  
+  ![project board](./assets/qa-process/4.png)
 
 - PM or Lead Dev will create the “QA Sprint” issue with:
   - Short project or feature description
@@ -25,6 +27,7 @@
   - Definition of Done
   - Acceptance Test in Markdown Format.
 
+  ![qa sprint issue](./assets/qa-process/2.png)
 
 ## Project Assigned
 1. PM or Lead Dev reaches out to Corey to schedule QA 
@@ -54,10 +57,14 @@ a. PM sends an email to qa@shift3tech.com. Answer the following questions:
 1. QA Testers will create a “Working” issue to work from, copy the Acceptance Test from the “QA Sprint” issue into the first comment, and use that to check off each tested feature.
 2. Discussions should occur constantly within the “Working” issue, tagging people as necessary.
 
+  ![github comments](./assets/qa-process/3.png)
+
 3. QA can generate new issues for discovered problems.
 Issue will be labeled with “Pending” and “QA Sprint”
 Issue will be assigned to relevant milestone and project board
 Issue will be assigned to Point of Contact
+
+  ![labels](./assets/qa-process/1.png)
 
 4. When the issue is ready for Retest and deployed to a new test version, the issue will be moved to “Ready for Retest”. QA members will be assigned and notified. 
 5. If the test is successful, QA Tester adds the “Testing Passed” label to the issue. Issue assigned to POC.
@@ -67,10 +74,14 @@ Issue will be assigned to Point of Contact
 ## For PM/Lead Developer:
 1. Discussions should occur constantly within the “Working” issue, tagging people as necessary.
 
+ ![github comments](./assets/qa-process/3.png)
+
 2. PM/Lead Dev can generate new issues for discovered problems.
 a. Issue will be labeled with “Pending” and “QA Sprint”
 b. Issue will be assigned to relevant milestone and project board
 c. Issue will be assigned to Point of Contact
+
+  ![project board columns](./assets/qa-process/5.png)
 
 3. POC will review the new issues. “Pending” label will be removed. Comments added as necessary. New labels will be applied based on required actions:
 a. Labels:  
@@ -80,6 +91,8 @@ a. Labels:
  **iv.** ...  
 4. PM/Lead Dev will drag issues into the accepted or rejected column of the Project Board and update the labels to match the column. Accepted issues are assigned to developers. Rejected issues are unassigned.
 
+  ![project board columns](./assets/qa-process/5.png)
+
 5. Developers will drag items into the “In Progress” board when addressing the issue. The developer will add the “In Progress” issue label.
 6. When the issue is ready for Retest and deployed to a new test version, the issue will be dragged to “Ready for Retest”. The issue label should be updated from “In Progress” to “Ready for Retest”. QA members will be assigned.
 7. If the issue is marked as “Testing Failed”, drag the item to “In Progress”
@@ -88,7 +101,11 @@ a. Labels:
 ## For Developer:
 1. Discussions should occur constantly within the “Working” issue, tagging people as necessary.
 
+  ![github comments](./assets/qa-process/3.png)
+
 2. Developers will drag items into the “In Progress” board when addressing the issue. The developer will add the “In Progress” issue label.
+
+  ![project board columns](./assets/qa-process/5.png)
 
 3. When the issue is ready for Retest and deployed to a new test version, the issue will be dragged to “Ready for Retest”. The issue label should be updated from “In Progress” to “Ready for Retest”. QA members will be assigned. Assigned developer will notify the QA team of EVERY PUSH! This is important because a push can work perfectly fine on one end, but break on QA’s end if they haven’t emptied the cache and hard reloaded. 
 4. If the test is successful, QA Tester adds the “Testing Passed” label to the issue. Issue assigned to POC.
