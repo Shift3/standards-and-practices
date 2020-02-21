@@ -10,7 +10,7 @@ With SDK 32 and lower, Expo has given it End-Of-Life status. This is mostly beca
 
 ## Expo upgrade process
 
-On the [official walkthrough for upgrading the Expo SDK]("https://docs.expo.io/versions/latest/workflow/upgrading-expo-sdk-walkthrough/") they **strongly recommend** that you upgrade your SDK incrementally, instead of going straight from 32 to 36.
+On the [official walkthrough for upgrading the Expo SDK](https://docs.expo.io/versions/latest/workflow/upgrading-expo-sdk-walkthrough/) they **strongly recommend** that you upgrade your SDK incrementally, instead of going straight from 32 to 36.
 
 They also list breaking changes for each step which you should definitely study. The big one is the import structure change from the first step.
 
@@ -36,6 +36,8 @@ With this step complete, you should (as of Feb. 2020) be able to have a working 
 
 ## 33 to 34
 
+If you attempt to upgrade the SDK without commit the changes from the first update, you will get a warning about making changes on a dirty branch. It is very much recommended that you make a new branch for each stage of the upgrade. You can always delete the unneeded branches when you are done.
+
 The command listed on the walkthrough should now work, `expo upgrade 34.0.0`. You will get questions about upgrading your simulators, I answered no to both.
 
 At this point, things start to get a little dicey. The first error you will likely encounter involves custom fonts; you will get an error saying that the font is not properly loaded through `Font.loadAsync`, even if you are doing so properly. To resolve this, you must takek the following steps:
@@ -47,5 +49,30 @@ At this point, things start to get a little dicey. The first error you will like
  - Run `npm install` again
  - Start the app with `expo start -c`
 
- This should solve the font problem, and if your app now correctly loads, great! But you may now be getting a different error if you are using `react-navigation`, and that is that the older methods from v3.x do not work.
+ This should solve the font problem, and if your app now correctly loads, great! But you may now be getting a different error if you are using `react-navigation`, and that is because the older methods from v3.x do not work.
+
+When I performed an `npm uninstall` and `npm install` it gave me version 4, even with the most recent version being version 5. Looking back, this is likely due to the package name in 5 being changed to `@react-navigation/native`.
+
+I would highly recommend reading the react-navigation documentation for whichever version you are changing to
+- [Version 4.x](https://reactnavigation.org/docs/en/4.x/getting-started.html)
+- [Version 5.x](https://reactnavigation.org/docs/en/getting-started.html)
+
+For both 4.x and 5.x you will have to `expo install` a series of dependencies that are listed on the documentation. You will likely get a number of erroneous imports, be sure to check the documentation for importing the different types of navigators. This is especially important if you are using any kind of Tab Navigation. Don't worry about the navigation options, while some have changed a bit, these will not cause the app to crash.
+
+While the following may not hold true if you decide to upgrade to 5.x, but if you correctly update your imports and package you may notice the following error: "Invariant Violation: requireNativeComponent: "RNCSafeAreaView" was not found in the UIManager.". In my research, I found this was a conflict between one of the react-navigation sub packages, and the version of the expo SDK. In other words, react-navigation won't work on any SDK version that isn't 36. That means the next two upgrade will be done blind without having a functional app in between.
+
+## 34 to 35
+
+The cli command in the documentation, `expo upgrade 35.0.0` worked fine for me, although I couldn't verify with a 100% certainty thanks to the react-navigation issue above. You will get the same prompts about updating simulators, go ahead and answer no. If you were geting the RNCSafeView error before, you will still be getting that again here.
+
+## 35 to 36
+
+This time, the command is simply `expo upgrade`, although that is because at the time of this writing the current SDK is version 36. In the future, that may not be the case the command would likely by `expo upgrade 36.0.0` You may notice that the font error from our upgrade to 34 is back! Fortunately, the solution is the same, except you do not have to do any edits to the package.json. Simply delete the `node_modules` folder, delete the `package-lock.json`, run an `npm install` and start the builder with `expo start -c`.
+
+At this point your app should load. If you upgraded react-navigation in the process, take a good hard look at your title bars and navigation structure to make sure everything is okay. Some CSS you may have passed to `navigationOptions` will no longer work. Fortunately, most of these are now give as warnings in the console. For example, with react-navigation 3.x, I was passing `display: none` to hide the title bar, which no longer works.
+
+If you used a date picker back in SDK 32, you will get a deprecation warning in the console and it will point you to the newer version. Be careful, as while the android version behaves much as the previous one did, the iOS one no longer gives the date picker its own modal and just drops the picker in your component.
+
+You may also get deprecation warnings from older methods of React (i.e. if you use componentWillReceiveProps). Update as you see fit.
+
 
