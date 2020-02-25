@@ -6,8 +6,8 @@ This section describes Shift3 standards to be applied to all projects. Code revi
 ### Setting up a Repository
 - [Setting up Projects](project-setup.md) in Github
 - [Readme File Guidelines](readme-guidelines.md) to document project
-- [Pull Request Template](PULL_REQUEST_TEMPLATE.md)
-- [Issue Template](ISSUE_TEMPLATE.md)
+- [Pull Request Template](pull-request-template.md)
+- [Issue Template](issue-template.md)
 
 ### Managing Code, Commits, and Reviews
 - [Managing Branches](branching.md) in your projects
@@ -17,7 +17,7 @@ This section describes Shift3 standards to be applied to all projects. Code revi
 ### Testing and QA
 - [Acceptance Testing](acceptance-testing.md)
 - [Bug Reporting](bug-reporting.md)
-When you are ready for the QA team to test your software, please review and follow the [QA Process](../processes/qa-process.md).
+- When you are ready for the QA team to test your software, please review and follow the [QA Process](../processes/qa-process.md).
 
 ### Releases
 - [Code Versioning](code-versioning.md)
