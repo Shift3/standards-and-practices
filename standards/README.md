@@ -1,11 +1,26 @@
-# Git & Github
+# Standards
+This section describes Shift3 standards to be applied to all projects. Code reviews should be used to identify when these standards are not applied.
 
-## How do we do code at Shift3?
+## How do we do build software at Shift3?
 
-- [Managing Branches](branching.md) in your projects
-- [How to do Code Reviews](code-reviews.md) the right way
-- [Commit Messages](commits.md) the Shift3/Karma way
+### Setting up a Repository
 - [Setting up Projects](project-setup.md) in Github
-- [Readme Guidelines](/git-and-github/readme-guidelines.md) to document project
-- [Pull Request Template](/git-and-github/PULL_REQUEST_TEMPLATE.md)
-- [Issue Template](/git-and-github/ISSUE_TEMPLATE.md)
+- [Readme File Guidelines](readme-guidelines.md) to document project
+- [Pull Request Template](PULL_REQUEST_TEMPLATE.md)
+- [Issue Template](ISSUE_TEMPLATE.md)
+
+### Managing Code, Commits, and Reviews
+- [Managing Branches](branching.md) in your projects
+- [Commit Messages](commits.md) the Shift3/Karma way
+- [How to do Code Reviews](code-reviews.md) the right way
+
+### Testing and QA
+- [Acceptance Testing](acceptance-testing.md)
+- [Bug Reporting](bug-reporting.md)
+When you are ready for the QA team to test your software, please review and follow the [QA Process](../processes/qa-process.md).
+
+### Releases
+- [Code Versioning](code-versioning.md)
+
+### Contributing
+- [Contributing](contributing.md)
