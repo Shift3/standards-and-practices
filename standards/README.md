@@ -15,9 +15,17 @@ This section describes Shift3 standards to be applied to all projects. Code revi
 - [How to do Code Reviews](code-reviews.md) the right way
 
 ### Testing and QA
-- [Acceptance Testing](acceptance-testing.md)
-- [Bug Reporting](bug-reporting.md)
-- When you are ready for the QA team to test your software, please review and follow the [QA Process](../processes/qa-process.md).
+#### [Acceptance Testing](acceptance-testing.md)
+- Why Acceptance Tests are important
+- How to write an Acceptance Test
+
+#### [Bug Reporting](bug-reporting.md) 
+- Github labels for Issue management
+- Bug reporting template
+#### [QA Process](../processes/qa-process.md)  
+- How to setup your repository for a QA sprint
+- How to schedule QA time
+- How to perform QA
 
 ### Releases
 - [Code Versioning](code-versioning.md)
