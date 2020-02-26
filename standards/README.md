@@ -6,7 +6,7 @@ This section describes Shift3 standards to be applied to all projects. Code revi
 
 ### Setting up a Repository
 
-#### [Setting up Projects](project-setup.md) in GitHub
+#### [Setting up Projects in GitHub](project-setup.md)
 
 - What project boards should contain
 - How to create project boards
@@ -17,30 +17,30 @@ This section describes Shift3 standards to be applied to all projects. Code revi
 - Required structure for readme
 - Example readme documentation
 
-#### [Pull Request Template](pull-request-template.md)
+#### [Pull Request Templates](pull-request-template.md)
 
 - How to set up Pull Request templates
 - Sample Pull Request template
 
-#### [Issue Template](issue-template.md)
+#### [Issue Templates](issue-template.md)
 
 - How to set up Issue templates
 
 ### Managing Code, Commits, and Reviews
 
-#### [Managing Branches](branching.md) in your projects
+#### [Managing Branches](branching.md)
 
 - Explanation of Shift3 branch structure
 - Git flow at Shift3
 - List of Git commands
 
-#### [Commit Messages](commits.md) the Shift3/Karma way
+#### [Commit Messages the Shift3/Karma way](commits.md)
 
 - Commit message guidelines
 - How to format commit messages
 - Commit message examples
 
-#### [How to do Code Reviews](code-reviews.md) the right way
+#### [Code Reviews](code-reviews.md)
 
 - The code review process
 - Resources for code review
