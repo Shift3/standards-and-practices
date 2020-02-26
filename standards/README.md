@@ -2,7 +2,7 @@
 
 This section describes Shift3 standards to be applied to all projects. Code reviews should be used to identify when these standards are not applied.
 
-## How do we do build software at Shift3?
+## How we build software at Shift3
 
 ### Setting up a Repository
 
