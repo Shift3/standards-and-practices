@@ -12,9 +12,9 @@ This section describes Shift3 standards to be applied to all projects. Code revi
 - How to create project boards
 - Example project board
 
-#### [Readme File Guidelines](readme-guidelines.md) to document project
+#### [Project Readme Guidelines](readme-guidelines.md)
 
-- Required structure for readme
+- Required structure for project readme
 - Example readme documentation
 
 #### [Pull Request Templates](pull-request-template.md)
