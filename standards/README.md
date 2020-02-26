@@ -6,16 +6,44 @@ This section describes Shift3 standards to be applied to all projects. Code revi
 
 ### Setting up a Repository
 
-- [Setting up Projects](project-setup.md) in Github
-- [Readme File Guidelines](readme-guidelines.md) to document project
-- [Pull Request Template](pull-request-template.md)
-- [Issue Template](issue-template.md)
+#### [Setting up Projects](project-setup.md) in GitHub
+
+- What project boards should contain
+- How to create project boards
+- Example project board
+
+#### [Readme File Guidelines](readme-guidelines.md) to document project
+
+- Required structure for readme
+- Example readme documentation
+
+#### [Pull Request Template](pull-request-template.md)
+
+- How to set up Pull Request templates
+- Sample Pull Request template
+
+#### [Issue Template](issue-template.md)
+
+- How to set up Issue templates
 
 ### Managing Code, Commits, and Reviews
 
-- [Managing Branches](branching.md) in your projects
-- [Commit Messages](commits.md) the Shift3/Karma way
-- [How to do Code Reviews](code-reviews.md) the right way
+#### [Managing Branches](branching.md) in your projects
+
+- Explanation of Shift3 branch structure
+- Git flow at Shift3
+- List of Git commands
+
+#### [Commit Messages](commits.md) the Shift3/Karma way
+
+- Commit message guidelines
+- How to format commit messages
+- Commit message examples
+
+#### [How to do Code Reviews](code-reviews.md) the right way
+
+- The code review process
+- Resources for code review
 
 ### Testing and QA
 
@@ -23,10 +51,11 @@ This section describes Shift3 standards to be applied to all projects. Code revi
 
 - Why Acceptance Tests are important
 - How to write an Acceptance Test
+- Acceptance Test example
 
 #### [Bug Reporting](bug-reporting.md)
 
-- Github labels for Issue management
+- GitHub labels for Issue management
 - Bug reporting template
 
 #### [QA Process](../processes/qa-process.md)
@@ -37,8 +66,15 @@ This section describes Shift3 standards to be applied to all projects. Code revi
 
 ### Releases
 
-- [Code Versioning](code-versioning.md)
+#### [Code Versioning](code-versioning.md)
+
+- What is Git Tagging?
+- Explanation of SemVer
+- How to set up versioning in a project
+- Versioning resources
 
 ### Contributing
 
-- [Contributing](contributing.md)
+#### [Contributing](contributing.md)
+
+- How to contribute to the Shift3 Standards & Practices Repository
