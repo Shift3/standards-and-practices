@@ -14,7 +14,7 @@ On the [official walkthrough for upgrading the Expo SDK](https://docs.expo.io/ve
 
 They also list breaking changes for each step which you should definitely study. The big one is the import structure change from the first step.
 
-You will also want to make sure that you **make sure you expo cli is current**. You can `npm uninstall -g expo-cli` and `npm install -g expo-cli` just to be certain. The first stage of the upgrade (32 to 33) did not work correctly when I used an older cli.
+You will also want to **make sure your expo cli is current**. You can `npm uninstall -g expo-cli` and `npm install -g expo-cli` just to be certain. The first stage of the upgrade (32 to 33) did not work correctly when I used an older cli.
 
 ## 32 to 33
 
@@ -40,7 +40,7 @@ If you attempt to upgrade the SDK without commit the changes from the first upda
 
 The command listed on the walkthrough should now work, `expo upgrade 34.0.0`. You will get questions about upgrading your simulators, I answered no to both.
 
-At this point, things start to get a little dicey. The first error you will likely encounter involves custom fonts; you will get an error saying that the font is not properly loaded through `Font.loadAsync`, even if you are doing so properly. To resolve this, you must takek the following steps:
+At this point, things start to get a little dicey. The first error you will likely encounter involves custom fonts; you will get an error saying that the font is not properly loaded through `Font.loadAsync`, even if you are doing so properly. To resolve this, you must take the following steps:
 
  - In your `package.json` make the following changes
     - `expo` should be `34.0.3`
@@ -59,7 +59,7 @@ I would highly recommend reading the react-navigation documentation for whicheve
 
 For both 4.x and 5.x you will have to `expo install` a series of dependencies that are listed on the documentation. You will likely get a number of erroneous imports, be sure to check the documentation for importing the different types of navigators. This is especially important if you are using any kind of Tab Navigation. Don't worry about the navigation options, while some have changed a bit, these will not cause the app to crash.
 
-While the following may not hold true if you decide to upgrade to 5.x, but if you correctly update your imports and package you may notice the following error: "Invariant Violation: requireNativeComponent: "RNCSafeAreaView" was not found in the UIManager.". In my research, I found this was a conflict between one of the react-navigation sub packages, and the version of the expo SDK. In other words, react-navigation won't work on any SDK version that isn't 36. That means the next two upgrade will be done blind without having a functional app in between.
+While the following may not hold true if you decide to upgrade to 5.x, but if you correctly update your imports and packages you may notice the following error: "Invariant Violation: requireNativeComponent: "RNCSafeAreaView" was not found in the UIManager.". In my research, I found this was a conflict between one of the react-navigation sub packages, and the version of the expo SDK. In other words, react-navigation won't work on any SDK version that isn't 36. That means the next two upgrade will be done blind without having a functional app in between.
 
 ## 34 to 35
 
@@ -69,10 +69,24 @@ The cli command in the documentation, `expo upgrade 35.0.0` worked fine for me, 
 
 This time, the command is simply `expo upgrade`, although that is because at the time of this writing the current SDK is version 36. In the future, that may not be the case the command would likely by `expo upgrade 36.0.0` You may notice that the font error from our upgrade to 34 is back! Fortunately, the solution is the same, except you do not have to do any edits to the package.json. Simply delete the `node_modules` folder, delete the `package-lock.json`, run an `npm install` and start the builder with `expo start -c`.
 
-At this point your app should load. If you upgraded react-navigation in the process, take a good hard look at your title bars and navigation structure to make sure everything is okay. Some CSS you may have passed to `navigationOptions` will no longer work. Fortunately, most of these are now give as warnings in the console. For example, with react-navigation 3.x, I was passing `display: none` to hide the title bar, which no longer works.
+You will also need to perform the same reinstallation of the Expo app on your simulators just like you did going from SDK 32 to 33 to avoid a react mismatch error.
+
+At this point your app should load. If you upgraded react-navigation in the process, take a good hard look at your title bars and navigation structure to make sure everything is okay. Some CSS you may have passed to `navigationOptions` will no longer work. Fortunately, most of these are now given as warnings in the console. For example, with react-navigation 3.x, I was passing `display: none` to hide the title bar, which no longer works.
 
 If you used a date picker back in SDK 32, you will get a deprecation warning in the console and it will point you to the newer version. Be careful, as while the android version behaves much as the previous one did, the iOS one no longer gives the date picker its own modal and just drops the picker in your component.
 
 You may also get deprecation warnings from older methods of React (i.e. if you use componentWillReceiveProps). Update as you see fit.
 
+## Making sure your SDK changes stick
+
+One roadblock I ran into was that when I was using the expo builder to create my app binaries, I noticed the SDK version was still at `32.0`. Upon further inspection, I noticed that *none* of my changes to `app.json` were sticking.
+
+The reason for this is that if you use `--no-publish` as a means to avoid an over-the-air (OTA) update, **the builder will think that you are recreating the same build that had previously been published and use the app.json from the last released build**. That can be... a bummer, and you won't find out until you try to upload the .apk to the Google Play store and it shoots errors out at you, or you submit it to apple and it fails a review with a react-native mismatch error.
+
+You can disable OTA updates with a change to the `app.json` file, but what's worth noting here is that **an SDK update will not trigger an OTA update**. Those updates only work between the same versions of the SDK, so if you're worried about users prematurely grabbing a version with a newer SDK, don't be.
+
+
+## 36 to 37??
+
+At the time of this writing (3/3/2020), SDK 37 hasn't even been released yet. The reason for this note is a deprecation I received from Apple went transmitting the .ipa to the App Store via the Transporter application: "ITMS-90809", a warning for using `UIWebView`. Apple has said they will stop accepting apps that use this in December of 2020. Expo has already stated in an issue report that this will be fixed in SDK 37. This means that anything released in 2021 or beyond will need an SDK update at that time.
 
