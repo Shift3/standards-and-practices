@@ -36,7 +36,7 @@ With this step complete, you should (as of Feb. 2020) be able to have a working 
 
 ## 33 to 34
 
-If you attempt to upgrade the SDK without commit the changes from the first update, you will get a warning about making changes on a dirty branch. It is very much recommended that you make a new branch for each stage of the upgrade. You can always delete the unneeded branches when you are done.
+If you attempt to upgrade the SDK without committing the changes from the first update, you will get a warning about making changes on a dirty branch. It is very much recommended that you make a new branch for each stage of the upgrade. You can always delete the unneeded branches when you are done.
 
 The command listed on the walkthrough should now work, `expo upgrade 34.0.0`. You will get questions about upgrading your simulators, I answered no to both.
 
