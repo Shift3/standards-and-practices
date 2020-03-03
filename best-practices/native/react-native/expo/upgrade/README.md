@@ -53,7 +53,7 @@ At this point, things start to get a little dicey. The first error you will like
 
 When I performed an `npm uninstall` and `npm install` it gave me version 4, even with the most recent version being version 5. Looking back, this is likely due to the package name in 5 being changed to `@react-navigation/native`.
 
-I would highly recommend reading the react-navigation documentation for whichever version you are changing to
+I would highly recommend reading the react-navigation documentation for whichever version you are changing to:
 - [Version 4.x](https://reactnavigation.org/docs/en/4.x/getting-started.html)
 - [Version 5.x](https://reactnavigation.org/docs/en/getting-started.html)
 
