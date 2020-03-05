@@ -43,7 +43,7 @@ The command listed on the walkthrough should now work, `expo upgrade 34.0.0`. Yo
 At this point, things start to get a little dicey. The first error you will likely encounter involves custom fonts; you will get an error saying that the font is not properly loaded through `Font.loadAsync`, even if you are doing so properly. To resolve this, you must take the following steps:
 
  - In your `package.json` make the following changes
-    - `expo` should be `34.0.3`
+    - `expo` should be `~34.0.3`
     - `expo-font` should be `6.0.1`
  - Delete your `node_modules` folder **and** your `package-lock.json`
  - Run `npm install` again
@@ -59,7 +59,7 @@ I would highly recommend reading the react-navigation documentation for whicheve
 
 For both 4.x and 5.x you will have to `expo install` a series of dependencies that are listed on the documentation. You will likely get a number of erroneous imports, be sure to check the documentation for importing the different types of navigators. This is especially important if you are using any kind of Tab Navigation. Don't worry about the navigation options, while some have changed a bit, these will not cause the app to crash.
 
-While the following may not hold true if you decide to upgrade to 5.x, but if you correctly update your imports and packages you may notice the following error: "Invariant Violation: requireNativeComponent: "RNCSafeAreaView" was not found in the UIManager.". In my research, I found this was a conflict between one of the react-navigation sub packages, and the version of the Expo SDK. In other words, react-navigation won't work on any SDK version that isn't 36. That means the next two upgrade will be done blind without having a functional app in between.
+While the following may not hold true if you decide to upgrade to 5.x, but if you correctly update your imports and packages you may notice the following error: `Invariant Violation: requireNativeComponent: "RNCSafeAreaView" was not found in the UIManager.`. In my research, I found this was a conflict between one of the react-navigation sub packages, and the version of the Expo SDK. In other words, react-navigation won't work on any SDK version that isn't 36. That means the next two upgrade will be done blind without having a functional app in between.
 
 ## 34 to 35
 
@@ -75,7 +75,7 @@ At this point your app should load. If you upgraded react-navigation in the proc
 
 If you used a date picker back in SDK 32, you will get a deprecation warning in the console and it will point you to the newer version. Be careful, as while the android version behaves much as the previous one did, the iOS one no longer gives the date picker its own modal and just drops the picker in your component.
 
-You may also get deprecation warnings from older methods of React (i.e. if you use componentWillReceiveProps). Update as you see fit.
+You may also get deprecation warnings from older methods of React (i.e. if you use `componentWillReceiveProps`). Update as you see fit.
 
 ## Making sure your SDK changes stick
 
