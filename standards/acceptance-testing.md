@@ -1,6 +1,6 @@
 # Acceptance Testing
 
-## Why Acceptance Tests are Important
+## Purpose
 
 - Writing the Acceptance Test lets the dev review their work. It can be very helpful in confirming that features are complete and that all edge cases are handled when describing what to do to a tester.
 - Acceptance testing helps find problems that the dev might not have experienced: issues coming from different hardware/environments, or a tester performing an action in a different way than the devs. Developers can get too close to their work and not approach their product the same way an end user does.
