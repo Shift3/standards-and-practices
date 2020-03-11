@@ -1,5 +1,9 @@
 # Acceptance Testing
 
+## What is Acceptance Testing
+
+- At Shift3, Acceptance Testing is testing to simulate real world end user scenarios. It is primarily handled by the QA team, who test the project from the same perspective as a user. They test on staging and production environments (not local ones), and without the inside and technical perspective of the developers who built the project.
+
 ## Purpose
 
 - Writing Acceptance Tests lets the developer review their work. It can be very helpful in confirming that features are complete and that all edge cases are handled when describing what to do to a tester.
