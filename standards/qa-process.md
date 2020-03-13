@@ -29,14 +29,17 @@
 
   ![qa sprint issue](./assets/qa-process/2.png)
 
-## Project Assigned
-1. PM or Lead Dev reaches out to Corey to schedule QA 
-a. PM sends an email to qa@shift3tech.com. Answer the following questions:  
- **i.** Project and Client Name
- **ii.** Task description  
- **iii.** Due Date  
- **iv.** Names of PM and Lead Dev  
-2. Corey receives the project and assigns it to the QA team / PM on monday.com. Deadline is set up, a timeline is scheduled, and calendar invites are sent.
+## Scheduling QA
+1. PM (or lead dev) sends an email to qa@shift3tech.com. If the lead dev sends the email, cc your PM on the email. 
+  - Provide the following details:  
+```
+    - Project and client name
+    - Billable to client?
+    - Task description  
+    - Due date (or estimate of testing time required)  
+    - Names of PM and lead dev 
+```
+2. QA leads receives the project and assigns it to the QA team / PM on monday.com. Deadline is set up, a timeline is scheduled, and calendar invites are sent.
 
 ## Testing Kickoff
 1. Testing kickoff meeting occurs. PM or Dev will introduce the QA team to the Project-Under-Test.
@@ -50,6 +53,7 @@ a. PM sends an email to qa@shift3tech.com. Answer the following questions:
 2. Team is assigned to the project repo on Github in order to post issues and coordinate with developers.
 3. If applicable, review for each user types abilities and limitations.
 4. Credentials are given to the team.
+5. If QA is billable to the client, such as for T&M projects, PM will add the QA team to the Tick project.
 
 # Testing Process
 ## For QA:
