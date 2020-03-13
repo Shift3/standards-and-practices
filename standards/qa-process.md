@@ -53,7 +53,7 @@
 2. Team is assigned to the project repo on Github in order to post issues and coordinate with developers.
 3. If applicable, review for each user types abilities and limitations.
 4. Credentials are given to the team.
-5. If QA is billable to the client, such as for T&M projects, add the QA team to the Tick project.
+5. If QA is billable to the client, such as for T&M projects, PM will add the QA team to the Tick project.
 
 # Testing Process
 ## For QA:
