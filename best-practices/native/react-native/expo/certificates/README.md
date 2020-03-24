@@ -6,7 +6,7 @@ Both the Google Play store and the Apple store have their own form of unique cre
 
 ### iOS Credentials
 
-Apple has three different credentials that need to be managed: The Distribution Certificate, the Provisioning Profile, and the Push notification certificate. Expo does a good write up on these [on their App Signing Site](https://docs.expo.io/versions/latest/distribution/app-signing/) for initial study on what these do.
+Apple has three different credentials that need to be managed in an Expo project: The Distribution Certificate, the Provisioning Profile, and the Push notification certificate. Expo does a good write up on these [on their App Signing Site](https://docs.expo.io/versions/latest/distribution/app-signing/) for initial study on what these do. There are two different types of Distribution certificates, Development and Production. The development is used to sign the app for use on local devices, just as through Visual Studio or XCode, but the build cannot be submitted to the app store. A Production certificate can be sent to the App store for either full production release or testing via TestFlight. Expo only deals with Production certificates, so you don't need to worry about the difference between the two, but if you end up having to use a different platform to build such as Xamarin Studio, this is useful information to have.
 
 ### Google Credentials
 
