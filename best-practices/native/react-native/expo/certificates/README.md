@@ -24,7 +24,7 @@ Much like iOS, Expo will ask if you'd like Expo to handle this for you, or if yo
 
 To reduce the volatility of relying on a keystore, Google did introduce its own version of app signing. Expo has a good writeup on this also on their [App Signing Site](https://docs.expo.io/versions/latest/distribution/app-signing/).
 
-## So what happens if anyhing expires?
+## So what happens if anything expires?
 
 Android keystores do not expire, or at least they haven't in the 13 months I've been using one. But the Distribution certificate and Provisioning profiles do, after 12 months. You can go to the "Certificates" section in the App Store Connect page for the desired apple account to see when these expire to give youreself a heads up. What may catch you is that if you try a build with expired credentials, Expo doesn't always tell you, at least not directly. When you attempt to build, it will simply say "Build failed". You will have to go to the link that expo gives you to track the progess of your builds, and go through the logs to find where it errored. In my case, the offending error was `Error: codesign ident not present in find-identity:`.
 
@@ -32,7 +32,7 @@ Before we start clearing and revoking credentials, it's important to understand 
 
 When we get to updating Push Notification Tokens, these **will affect apps in production**. More on this topic when I have to update them next month (jr).
 
-You can use `expo build:ios --clear-dist-certs` to clear the Distribution certificate, or `expo build:ion --clear-provisioning-profile` to clear the Provisioning profile, or both. This will wipe the cert from Expos server, but **will not revoke the appropriate certificate on the app store connect page**. Futhermore, if you clear the Distribution certificate from expo servers and try to have Expo create another, it may attempt to create to many certificates and you will get an error.
+You can use `expo build:ios --clear-dist-certs` to clear the Distribution certificate, or `expo build:ios --clear-provisioning-profile` to clear the Provisioning profile, or both. This will wipe the cert from Expos server, but **will not revoke the appropriate certificate on the app store connect page**. Futhermore, if you clear the Distribution certificate from expo servers and try to have Expo create another, it may attempt to create to many certificates and you will get an error.
 
 Provisional profiles work in a similar fashion. If you clear them from the Expo server, it doesn't remove the expired profile from Apple's side. Instead of trying to create a new one, however, it will grab the expired profile, which will again cause an error. This means to refresh your desired credential, you must:
 
