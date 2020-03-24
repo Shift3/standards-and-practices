@@ -20,7 +20,7 @@ When you first go to do a build using `expo build:ios`, it will ask for the appr
 
 ### Android
 
-Much like iOS, Expo will ask if you'd like Expo to handle this for you, or if you want to supply your own files. For your first `expo build:android`, you'll want expo to handle this for you. This will create a keystore and register that keystore via Google as being required to submit builds. This makes that keystore file extremely important. **Be sure to run `expo fetch:android:keystore` immediately after the first build is created, and store the file that it creates inside the respective vault**. If someone else goes to build this project, they will need tha keystore file, and will have to select 'Supply my own files' instead of letting Expo handle it for them.
+Much like iOS, Expo will ask if you'd like Expo to handle this for you, or if you want to supply your own files. For your first `expo build:android`, you'll want expo to handle this for you. This will create a keystore and register that keystore via Google as being required to submit builds. This makes that keystore file extremely important. **Be sure to run `expo fetch:android:keystore` immediately after the first build is created, and store the file that it creates inside the respective vault**. If someone else goes to build this project, they will need that keystore file, and will have to select 'Supply my own files' instead of letting Expo handle it for them.
 
 To reduce the volatility of relying on a keystore, Google did introduce its own version of app signing. Expo has a good writeup on this also on their [App Signing Site](https://docs.expo.io/versions/latest/distribution/app-signing/).
 
