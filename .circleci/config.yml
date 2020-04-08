@@ -1,0 +1,9 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:latest
+    steps:
+      - checkout
+      - run: gem install awesome_bot
+      - run: awesome_bot --allow-redirect `find . -name "*.md"`
