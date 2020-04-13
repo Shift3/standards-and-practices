@@ -6,7 +6,7 @@ This covers how to add continuous integration with Circle CI on your React Nativ
 
 Go to the Circle CI page [here](https://circleci.com/) and log in using Github. You will usually be redirected to a list of repos, but if not, the add projects tab on the left will take you there. This will give you access to add CI to all your personal repos, as well as repos in your organizations. Find the project that you want to add.
 
-By default, you may not have access to add the repo. If you dont, we will see the "Contact Repo Admin":
+By default, you may not have access to add the repo. If you don't, we will see the "Contact Repo Admin":
 
 ![contact-admin](./screens/locked-repo.png)
 
