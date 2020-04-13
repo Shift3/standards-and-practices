@@ -1,12 +1,12 @@
 # Circle CI Setup (React Native - Expo)
 
-This covers how to add continuous integration with Circle CI on your React Native project. This assumes that he project was made via expo: `expo init`, **not** via `create-react-native-app`.
+This covers how to add continuous integration with Circle CI on your React Native project. This assumes that the project was made via expo: `expo init`, **not** via `create-react-native-app`.
 
 ## Step 1: Set up the repo
 
 Go to the Circle CI page [here](https://circleci.com/) and log in using Github. You will usually be redirected to a list of repos, but if not, the add projects tab on the left will take you there. This will give you access to add CI to all your personal repos, as well as repos in your organizations. Find the project that you want to add.
 
-You may notice that you don't have access add the project and that it asks you to "Contact Repo Admin" like so:
+By default, you may not have access to add the repo. If you dont, we will see the "Contact Repo Admin":
 
 ![contact-admin](./screens/locked-repo.png)
 
