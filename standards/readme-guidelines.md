@@ -67,6 +67,3 @@ Supports printing commands for the TSP100 Thermal Receipt Printer.
   - Copy the release notes into the release description textbox
   - Attach the installer zip file in the upload area
   - Click `Publish Release`
-
-## Wiki
-- For information on Installation and API, see the [wiki](https://github.com/Shift3/MagtekCardReaderMiddleware/wiki)
