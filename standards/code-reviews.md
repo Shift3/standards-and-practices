@@ -70,8 +70,6 @@ Remember, this is a standard, so it isn't optional. _Never_ close your own Pull 
 
 [Lessons learned from former Google Code Reviewers](https://blog.fullstory.com/what-we-learned-from-google-code-reviews-arent-just-for-catching-bugs/)
 
-[9 Tips from a Code Review Skeptic](https://blog.fogcreek.com/effective-code-reviews-9-tips-from-a-converted-skeptic/)
-
 [How to become a better code reviewer](https://blog.asana.com/2016/12/7-ways-to-uplevel-your-code-review-skills/)
 
 [Digital Ocean's Effective Code Review Tips](https://blog.digitalocean.com/how-to-conduct-effective-code-reviews/)
