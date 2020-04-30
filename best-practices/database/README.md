@@ -16,6 +16,9 @@
 
 ## SQL
 
+### Ubuntu
+* Instructions on how to setup PostgreSQL locally from [Digital Ocean](https://www.digitalocean.com/community/tutorial_collections/how-to-install-and-use-postgresql). First pick the version of Ubuntu you are running and then follow the instructions. 
+
 ### TODO:
 
 ```
