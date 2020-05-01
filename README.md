@@ -42,8 +42,8 @@
 
 - [Code Review](/standards/code-reviews.md#process) process at Shift3
   - [Code Review Slides](https://docs.google.com/presentation/d/16S4qMbwdBT2u9c3-djHhSRXoUUytf12HGxloWh4y4cE/edit#slide=id.g35f391192_00)
-- [Acceptance Testing](/standards/acceptance-testing/README.md)
-- [Bug Reporting](/standards/bug-reporting/README.md)
+- [Acceptance Testing](/standards/acceptance-testing.md)
+- [Bug Reporting](/standards/bug-reporting.md)
 
 #### Machine Setup
 
