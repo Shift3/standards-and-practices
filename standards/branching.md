@@ -16,8 +16,14 @@ Working branch will be **development**. Pushes to development require Pull Reque
 
 Sub-branches of development will be used to isolate tasks that are being worked on. These are for new features, fixes, or other tasks.
 
-Create feature/fix/task branches to perform your work in. Include your initials so we keep track of who owns branches easily.
-For example, if I'm (Corey) working on an bug fix task, I'll create a branch such as `cts-fix-uploader`.
+Create feature/fix/task branches to perform your work in.
+Keep to the standard `<initials>-<issue#>-<small-description>`.
+Where:
+* `<initials>` are your initials. This helps everyone keep track of who owns branches easily.
+* `<issue#>` is the github issue number this branch relates to.
+* `<small-description>` is a small description usually no more than 3 words.
+
+For example, if I'm (Corey) working on an bug fix task, I'll create a branch such as `cts-111-fix-uploader`.
 
 When work is completed and tested, make a Pull Request to the development branch. This PR requires review from another developer before it is merged.
 
