@@ -4,6 +4,7 @@
 
 * Javascript - JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
   - [Node](node/README.md) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+  - [MEAN](/node/mean/README.md) - MEAN is a full-stack JavaScript solution that helps you build fast, robust, and maintainable production web applications using MongoDB, Express, AngularJS, and Node.js.
 
 * [Python](python/README.md) - Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace.
   - [Django](python/django/README.md) - Django is a Python-based free and open-source web framework, which follows the model-template-view architectural pattern.
