@@ -1,0 +1,75 @@
+version: 2.1
+jobs:
+  build-server:
+    working_directory: ~/ProjectName
+    docker:
+      - image: circleci/python:3.7.5-browsers
+        environment:
+          DATABASE_URL: postgresql://root@localhost/circle_test?sslmode=disable
+      - image: circleci/postgres:9.6.7
+        environment:
+          POSTGRES_USER: root
+          POSTGRES_DB: circle_test
+
+    steps:
+      - checkout
+      - run: sudo apt-get update
+      - run: sudo chown -R circleci:circleci /usr/local/bin
+      - run: sudo chown -R circleci:circleci /usr/local/lib/python3.7/site-packages
+      - run: sudo apt install postgresql-client
+      - restore_cache:
+          key: deps9-{{ .Branch }}-{{ checksum "server/requirements.txt" }}
+      - run:
+          name: Install Python dependencies
+          command: |
+            pip install -r ~/ProjectName/server/requirements.txt --user
+      - save_cache:
+          key: deps9-{{ .Branch }}-{{ checksum "server/requirements.txt" }}
+          paths:
+            - ".venv"
+            - "/usr/local/bin"
+            - "/usr/local/lib/python3.7/site-packages"
+      - run:
+          command: |
+            cd server
+            cp server/test_settings.py server/settings.py
+            python manage.py migrate
+            python manage.py test --verbosity 2
+      - store_test_results:
+          path: test-results
+      - store_artifacts:
+          path: test-results
+          destination: tr1
+
+  build-client:
+    working_directory: ~/ProjectName
+    docker:
+      - image: "circleci/node:10-browsers"
+    steps:
+      - checkout
+      - run: sudo apt-get update
+      - run:
+          name: Install, audit, and test frontend
+          command: |
+            cd client
+            export CI=true
+            yarn install
+            yarn build
+            yarn test
+            cd ..
+      - run:
+          name: Persist ProjectName/client build
+          command: |
+            cd client
+            yarn build
+            cd ..
+      - persist_to_workspace:
+          root: /home/circleci
+          paths:
+            - ProjectName/client
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build-server
+      - build-client
