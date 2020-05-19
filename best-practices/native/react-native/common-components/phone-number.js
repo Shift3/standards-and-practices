@@ -7,7 +7,7 @@ import { connectActionSheet } from '@expo/react-native-action-sheet';
 // ---------------------------------------------------
 // This component is passed a phone number string, along with a few styling properties.
 // It returns text that when pressed, opens an action sheet giving the user an option to either call or text that number
-// This requires use of the package "react-native-action-sheet", the flavor will depend on whether or not Expo is being used.
+// This requires use of the package "@expo/react-native-action-sheet".
 
 const styles = StyleSheet.create({
   phoneText: {
