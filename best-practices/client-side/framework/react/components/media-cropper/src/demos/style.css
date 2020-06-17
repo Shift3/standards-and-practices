@@ -1,0 +1,17 @@
+div {
+    width: 100%;
+    height: 100%;
+    }
+
+.round {
+    border-radius: 5px 90px 180px 30px;
+    width: 300px;
+    height: 270px;
+    overflow: hidden;
+    background-color: red;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
