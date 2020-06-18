@@ -33,7 +33,7 @@ export default class VideoRenderer extends ImageRenderer {
         // once video ends, return the recording
         return new Promise(resolve => {
             mediaRecorder.onstop = () => {
-                resolve({blob: new Blob(chunks, {type: 'video/webm'}), fileName: 'video.webm'});
+                resolve(new Blob(chunks, {type: 'video/webm'}));
             }
         });
     }

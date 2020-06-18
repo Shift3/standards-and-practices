@@ -5,11 +5,12 @@ import MediaCropper from '../../components';
 class App extends Component {
     downloadFile() {
         const media = this.refs.cropper.croppedMedia;
-        console.log(media);
-        media.then(({ blob, fileName }) => {
+        const isVideo = this.refs.cropper.isVideo;
+        console.log(isVideo);
+        media.then((blob) => {
             const a = this.refs.dlLink;
             a.href = URL.createObjectURL(blob);
-            a.download = fileName;
+            a.download = isVideo ? 'video.webm' : 'image.png';
             a.click();
         });
     }

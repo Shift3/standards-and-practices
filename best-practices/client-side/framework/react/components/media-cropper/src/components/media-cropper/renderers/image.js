@@ -6,7 +6,7 @@ export default class ImageRenderer extends Component {
     get croppedMedia() {
         return new Promise(resolve => {
             this.refs.canvas.toBlob((blob) => {
-                resolve({ blob, fileName: 'image.png'});
+                resolve(blob);
             }, 'image/png');
         });
     }

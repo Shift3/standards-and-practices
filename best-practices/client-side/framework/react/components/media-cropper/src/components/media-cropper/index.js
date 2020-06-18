@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import { ImageRenderer, VideoRenderer } from './renderers';
 
 export default class MediaCropper extends Component {
+    get isVideo() {
+        return this.state.isVideo;
+    }
+    
     get croppedMedia() {
         return this.refs.media.croppedMedia;
     }
