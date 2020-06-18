@@ -5,6 +5,24 @@ Crop media including images and video in React.
 
 TODO: include installation instructions
 
+## Usage
+
+```javascript
+import MediaCropper from 'media-cropper';
+
+...
+
+render() {
+  <MediaCropper ref="cropper" height={270} width={300} />
+}
+```
+
+to get the cropped image or video:
+
+```javascript
+this.refs.cropper.croppedMedia.then(blob => {...})
+```
+
 ## Running the Demos
 
 First install the `devDependencies` with
