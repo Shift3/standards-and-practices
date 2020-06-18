@@ -13,15 +13,12 @@ export default class MediaCropper extends Component {
 
     constructor(props) {
         super(props);
-        const media = new Image();
-        media.src = `/temp.jpg`;
-        media.setAttribute('crossorigin', 'anonymous');
 
         this.state = {
             zoom: 1,
             transX: 0,
             transY: 0,
-            media,
+            media: null,
             isVideo: false,
             dragging: false,
             mouseStart: {
@@ -29,7 +26,7 @@ export default class MediaCropper extends Component {
                 y: 0
             },
             moved: false,
-            renderer: ImageRenderer
+            renderer: null
         };
 
         this.click = this.click.bind(this);
@@ -148,7 +145,7 @@ export default class MediaCropper extends Component {
             };
 
             reader.readAsDataURL(file);
-        } else if (file.type.startsWith('image/')) {
+        } else if (file.type.startsWith('video/')) {
             const media = document.createElement('video');
             media.muted = true;
             media.src = URL.createObjectURL(file);
@@ -174,6 +171,7 @@ export default class MediaCropper extends Component {
                 }
             }
         } else {
+            console.log(file.type);
             alert("Must select an image or video file");
         }
     }
@@ -186,12 +184,12 @@ export default class MediaCropper extends Component {
                 onMouseDown={this.mouseDown}
                 onWheel={this.mouseWheel}
             >
-                <Renderer
+                {Renderer ? <Renderer
                     ref="media"
                     {...this.state}
                     width={this.props.width}
                     height={this.props.height}
-                />
+                /> : <div>Click to add.</div>}
                 <input
                     type="file"
                     id="file"
