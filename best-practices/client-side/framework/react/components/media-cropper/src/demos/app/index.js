@@ -6,7 +6,6 @@ class App extends Component {
     downloadFile() {
         const media = this.refs.cropper.croppedMedia;
         const isVideo = this.refs.cropper.isVideo;
-        console.log(isVideo);
         media.then((blob) => {
             const a = this.refs.dlLink;
             a.href = URL.createObjectURL(blob);

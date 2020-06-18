@@ -1,0 +1,32 @@
+.video-renderer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.rendering-progress {
+    height: 100%;
+    background-color: blue;
+    opacity: .5;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.rendering-percent {
+    position: absolute;
+
+    text-align: center;
+
+    top: 50%;
+    left: 0;
+    right: 0;
+
+    height: fit-content;
+
+    text-shadow: black 1px 1px 2px, black -1px -1px 2px, black -1px 1px 2px, black 1px -1px 2px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
