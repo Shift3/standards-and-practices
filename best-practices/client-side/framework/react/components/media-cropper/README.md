@@ -41,3 +41,4 @@ This will start the demo at [`localhost:3000`](http://localhost:3000)
   - Instead of cutting off everything, simple show a border
 - Show a loading indicator when loading new media
 - Add rendering progress indicator for animated media
+- Move rendering of animated media to background process
