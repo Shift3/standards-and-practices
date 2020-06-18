@@ -12,6 +12,7 @@ class App extends Component {
             a.href = URL.createObjectURL(blob);
             a.download = isVideo ? 'video.webm' : 'image.png';
             a.click();
+            URL.revokeObjectURL(a.href);
         });
     }
 

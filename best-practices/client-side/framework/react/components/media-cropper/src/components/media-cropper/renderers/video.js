@@ -8,15 +8,14 @@ export default class VideoRenderer extends ImageRenderer {
         media.pause();
         // set video time to start
         media.currentTime = 0;
-        media.playbackRate = 10;
+        // media.playbackRate = 10; // speed up rendering for testing
         // turn off looping
         media.loop = false;
         // create mediastream from canvas
         const mediaRecorder = new MediaRecorder(
             this.refs.canvas.captureStream(30),
             {
-                mimeType: 'video/webm',
-                videoBitsPerSecond: 2500000
+                mimeType: 'video/webm'
             }
         );
         // play the full video
@@ -33,6 +32,10 @@ export default class VideoRenderer extends ImageRenderer {
         // once video ends, return the recording
         return new Promise(resolve => {
             mediaRecorder.onstop = () => {
+                // reset video status
+                media.loop = true;
+                media.currentTime = 0;
+                media.play();
                 resolve(new Blob(chunks, {type: 'video/webm'}));
             }
         });
