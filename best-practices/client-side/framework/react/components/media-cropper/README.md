@@ -28,6 +28,7 @@ This will start the demo at [`localhost:3000`](http://localhost:3000)
   - This will be a little tricky as the `HTMLImageElement` does not understand the frames
   - We will likely need another package such as [omggif](https://www.npmjs.com/package/omggif)
 - Add controls for seeking in animated media to ensure that all frames look good
+- Add mobile controls, especially for zooming
 
 ## Potential Improvements
 
