@@ -6,7 +6,7 @@ export default class MediaCropper extends Component {
     get isVideo() {
         return this.state.isVideo;
     }
-    
+
     get croppedMedia() {
         return this.refs.media.croppedMedia;
     }
@@ -122,7 +122,9 @@ export default class MediaCropper extends Component {
         e.stopPropagation();
         const file = e.target.files[0];
         if (!file) return;
-        if (file.type.startsWith('image/')) {
+        if (file.type === 'image/gif') {
+            // TODO: Handle gif
+        } else if (file.type.startsWith('image/')) {
             const reader = new FileReader();
 
             reader.onload = () => {
@@ -146,7 +148,7 @@ export default class MediaCropper extends Component {
             };
 
             reader.readAsDataURL(file);
-        } else {
+        } else if (file.type.startsWith('image/')) {
             const media = document.createElement('video');
             media.muted = true;
             media.src = URL.createObjectURL(file);
@@ -171,6 +173,8 @@ export default class MediaCropper extends Component {
                     });
                 }
             }
+        } else {
+            alert("Must select an image or video file");
         }
     }
 
@@ -192,7 +196,7 @@ export default class MediaCropper extends Component {
                     type="file"
                     id="file"
                     ref="fileUploader"
-                    accept="image/*, video/*"
+                    accept="image/*,video/*"
                     style={{ display: "none" }}
                     onChange={this.loadFile}
                 />
