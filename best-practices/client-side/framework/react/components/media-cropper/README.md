@@ -24,12 +24,10 @@ This will start the demo at [`localhost:3000`](http://localhost:3000)
 ## TODOS
 
 - Write installation instructions
-- Define video output format (best to leave video manipulation to be handled elsewhere)
 - Properly handle animated GIFs
   - This will be a little tricky as the `HTMLImageElement` does not understand the frames
   - We will likely need another package such as [omggif](https://www.npmjs.com/package/omggif)
 - Add controls for seeking in animated media to ensure that all frames look good
-- Actually export the media (define exactly what that should look like)
 
 ## Potential Improvements
 
@@ -38,3 +36,4 @@ This will start the demo at [`localhost:3000`](http://localhost:3000)
 - Show full media while panning and zooming
   - Instead of cutting off everything, simple show a border
 - Show a loading indicator when loading new media
+- Add rendering progress indicator for animated media
