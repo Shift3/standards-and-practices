@@ -3,21 +3,19 @@ import React, { Component } from 'react';
 export default class ImageRenderer extends Component {
     ctx = null;
 
-    get croppedImage() {
-        return (async () => {
-            return await new Promise((resolve, reject) => {
-                this.refs.canvas.toBlob((blob) => {
-                    resolve(blob);
-                });
-            });
-        })();
+    get croppedMedia() {
+        return new Promise(resolve => {
+            this.refs.canvas.toBlob((blob) => {
+                resolve({ blob, fileName: 'image.png'});
+            }, 'image/png');
+        });
     }
 
     componentDidMount() {
         this.updateContext();
     }
 
-    componentDidUpdate(props, state) {
+    componentDidUpdate() {
         this.renderCanvas();
     }
 

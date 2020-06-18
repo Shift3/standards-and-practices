@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 
-import ImageRenderer from '../image-renderer';
+import { ImageRenderer, VideoRenderer } from './renderers';
 
 export default class MediaCropper extends Component {
+    get croppedMedia() {
+        return this.refs.media.croppedMedia;
+    }
+
     constructor(props) {
         super(props);
         const media = new Image();
-        media.src = `https://via.placeholder.com/${props.width}x${props.height}.png?text=click%20to%20add`;
+        media.src = `/temp.jpg`;
+        media.setAttribute('crossorigin', 'anonymous');
 
         this.state = {
             zoom: 1,
@@ -19,7 +24,8 @@ export default class MediaCropper extends Component {
                 x: 0,
                 y: 0
             },
-            moved: false
+            moved: false,
+            renderer: ImageRenderer
         };
 
         this.click = this.click.bind(this);
@@ -118,15 +124,18 @@ export default class MediaCropper extends Component {
             reader.onload = () => {
                 const media = new Image();
                 media.src = reader.result;
+                media.setAttribute('crossorigin', 'anonymous');
 
                 media.onload = () => {
                     const zoom = Math.max(this.props.width / media.width, this.props.height / media.height);
                     this.setState({
                         ...this.state,
+                        isVideo: false,
                         media,
                         transX: 0,
                         transY: 0,
-                        zoom
+                        zoom,
+                        renderer: ImageRenderer
                     });
                     this.forceUpdate();
                 };
@@ -135,22 +144,26 @@ export default class MediaCropper extends Component {
             reader.readAsDataURL(file);
         } else {
             const media = document.createElement('video');
-            media.width = this.props.width;
-            media.height = this.props.height;
             media.muted = true;
             media.src = URL.createObjectURL(file);
-            media.currentTime = 10;
+            media.loop = true;
+            media.setAttribute('crossorigin', 'anonymous');
             media.play();
-
-            this.refs.test.appendChild(media);
 
             media.onloadeddata = () => {
                 if (media.readyState >= 2) {
-                    media.pause();
+                    media.width = media.videoWidth;
+                    media.height = media.videoHeight;
+                    const zoom = Math.max(this.props.width / media.width, this.props.height / media.height);
                     media.onloadeddata = null;
                     this.setState({
                         ...this.state,
-                        media
+                        isVideo: true,
+                        renderer: VideoRenderer,
+                        media,
+                        transX: 0,
+                        transY: 0,
+                        zoom
                     });
                 }
             }
@@ -158,18 +171,19 @@ export default class MediaCropper extends Component {
     }
 
     render() {
+        const Renderer = this.state.renderer;
         return (
             <div
-                ref="test"
                 onClick={this.click}
                 onMouseDown={this.mouseDown}
                 onWheel={this.mouseWheel}
             >
-                <ImageRenderer
+                <Renderer
+                    ref="media"
                     {...this.state}
                     width={this.props.width}
                     height={this.props.height}
-                ></ImageRenderer>
+                />
                 <input
                     type="file"
                     id="file"
