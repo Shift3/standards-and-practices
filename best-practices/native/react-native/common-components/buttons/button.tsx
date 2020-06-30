@@ -9,7 +9,7 @@ interface ButtonProps {
   height: number;
   width: number;
   backgroundColor: string;
-}
+};
 
 type InternalOptions = {
   height?: string;
