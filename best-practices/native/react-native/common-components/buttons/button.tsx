@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Button = ({ onPress, text, icon }: ButtonProps) => {
+const Button: React.FC<ButtonProps> = ({ onPress, text, icon }) => {
   let defaults = {
     backgroundColor: "#334B80",
     width: "80%",
