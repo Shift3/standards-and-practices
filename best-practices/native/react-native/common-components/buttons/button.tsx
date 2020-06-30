@@ -11,7 +11,7 @@ interface ButtonProps {
   backgroundColor: string;
 };
 
-type InternalOptions = {
+type ButtonOptions = {
   height?: string;
   width?: string;
   backgroundColor?: string;
@@ -46,7 +46,7 @@ const Button = ({ onPress, text, icon }: ButtonProps) => {
     height: "8%",
     fontSize: 20,
   };
-  let options: InternalOptions = { ...defaults, onPress, text, icon };
+  let options: ButtonOptions = { ...defaults, onPress, text, icon };
   return (
     <TouchableOpacity
       style={[
