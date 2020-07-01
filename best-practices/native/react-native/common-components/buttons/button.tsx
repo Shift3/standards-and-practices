@@ -9,7 +9,8 @@ interface ButtonProps {
   height: number;
   width: number;
   backgroundColor: string;
-};
+  styles?: object;
+}
 
 type ButtonOptions = {
   height?: string;
@@ -20,26 +21,27 @@ type ButtonOptions = {
   icon: any;
 };
 
-const styles = StyleSheet.create({
-  button: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius: 4,
-    marginTop: 5,
-    marginBottom: 5,
-  },
-  text: {
-    color: "#FFF",
-    fontFamily: "oswald",
-  },
-  icon: {
-    position: "absolute",
-    right: "85%",
-  },
-});
+const Button: React.FC<ButtonProps> = ({ onPress, text, icon, styles }) => {
+  const defaultStyles = StyleSheet.create({
+    button: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      borderRadius: 4,
+      marginTop: 5,
+      marginBottom: 5,
+    },
+    text: {
+      color: "#FFF",
+      fontFamily: "oswald",
+    },
+    icon: {
+      position: "absolute",
+      right: "85%",
+    },
+    ...styles,
+  });
 
-const Button: React.FC<ButtonProps> = ({ onPress, text, icon }) => {
   let defaults = {
     backgroundColor: "#334B80",
     width: "80%",
@@ -50,7 +52,7 @@ const Button: React.FC<ButtonProps> = ({ onPress, text, icon }) => {
   return (
     <TouchableOpacity
       style={[
-        styles.button,
+        defaultStyles.button,
         {
           height: options.height,
           width: options.width,
@@ -59,8 +61,10 @@ const Button: React.FC<ButtonProps> = ({ onPress, text, icon }) => {
       ]}
       onPress={onPress}
     >
-      {icon ? <Image style={styles.icon} source={icon} /> : null}
-      <Text style={[styles.text, { fontSize: defaults.fontSize }]}>{text}</Text>
+      {icon ? <Image style={defaultStyles.icon} source={icon} /> : null}
+      <Text style={[defaultStyles.text, { fontSize: defaults.fontSize }]}>
+        {text}
+      </Text>
     </TouchableOpacity>
   );
 };
