@@ -1,7 +1,4 @@
 # Client Side
 
-[Browser](browser/README.md)-specific tips and tricks  
-[CSS](css/README.md) standards  
-[Frameworks](framework/README.md) we use  
-[JavaScript](javascript/README.md) standards we follow  
-[Security](security/README.md) on the client
+[WCAG-testing](/best-practices/development-tools/accessibility/WCAG-testing.md) - WCAG Testing Procedures
+[Frameworks](/best-practices/client-side/framework) - Client Frameworks we use in production
