@@ -92,11 +92,11 @@ Using Chocolatey has several advantages:
 
 ##### Frontend Masters:
 
-- Shift3's main online teaching tool is Frontend Masters. They have courses on all of the platforms we employ at Shift3, and you should take advantage of as many as possible.
+- Shift3's main online teaching tool is [Frontend Masters](https://frontendmasters.com/). They have courses on all of the platforms we employ at Shift3, and you should take advantage of as many as possible.
 
 ##### WebStorm:
 
-- If you prefer to use JetBrains' tooling, Shift3 provides us with WebStorm Suite for free. We also use Visual Studio and Visual Studio Code.
+- If you prefer to use JetBrains' tooling, Shift3 provides us with WebStorm Suite for free. We also use [Visual Studio](https://visualstudio.microsoft.com/) and [Visual Studio Code](https://code.visualstudio.com/).
 
 ##### Photoshop:
 
