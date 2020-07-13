@@ -50,7 +50,7 @@ class PhoneNumber extends Component {
 
 PhoneNumber.defaultProps = {
   fontSize: 12,
-  color: '#33333',
+  color: '#333333',
   lineHeight: 14,
   phoneNo: '',
   disallowFontScaling: false,
