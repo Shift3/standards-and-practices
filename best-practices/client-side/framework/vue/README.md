@@ -1,9 +1,9 @@
 # Vue
 
 ## An incrementally adoptable ecosystem that scales between a library and a full-featured framework.
+Vue.js is an open-source model–view–viewmodel JavaScript framework for building user interfaces and single-page applications. It was created by Evan You, and is maintained by him and the rest of the active core team members coming from various companies such as Netlify and Netguru.
 
-- [Reusable Components](components/README.md)
-- [Reusable CLasses](classes/README.md)
-- [app.js file for an app using Vue-Router & VueX](app.js)
-- [Basic Bootstrap file for pulling in Axios, Jquery(bootstrap), and lodash](bootstrap.js)
-- [Boilerplate for a routes file](routes.js)
+### Vue Components
+* Take a look at the official guide: https://vuejs.org/v2/guide/components.html
+
+TODO: how to spin up a boilerplate, deployment, testing.
