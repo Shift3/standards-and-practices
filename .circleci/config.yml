@@ -6,4 +6,4 @@ jobs:
     steps:
       - checkout
       - run: gem install awesome_bot
-      - run: awesome_bot --allow-redirect --allow-dupe -w awesome_bot --allow-redirect --allow-dupe -w https://github.com/Shift3/ifg,https://github.com/Shift3/sinclair-scanner-application,regexr,https://github.com/Shift3/rn-by-example,https://github.com/Shift3/fusd-front-desk-kiosk,https://github.com/Shift3/FUSDMonitoringAppXamarin `find . -name "*.md"`
+      - run: awesome_bot --allow-redirect --allow-dupe -w awesome_bot --allow-redirect --allow-dupe -w https://github.com/Shift3/ifg,https://github.com/Shift3/sinclair-scanner-application,regexr,https://github.com/Shift3/rn-by-example,https://github.com/Shift3/fusd-front-desk-kiosk,https://github.com/Shift3/FUSDMonitoringAppXamarin,127.0.0.1 `find . -name "*.md"`

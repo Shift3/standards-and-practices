@@ -6,7 +6,7 @@
 
 Official Docs: https://laravel.com/docs
 
-API Docs: https://laravel.com/api/5.7
+API Docs: https://laravel.com/docs/7.x/eloquent-resources#introduction
 
 Learning Videos: https://laracasts.com
 
