@@ -10,7 +10,7 @@ With SDK 32 and lower, Expo has given it End-Of-Life status. This is mostly beca
 
 ## Expo upgrade process
 
-On the [official walkthrough for upgrading the Expo SDK](https://docs.expo.io/versions/latest/workflow/upgrading-expo-sdk-walkthrough/) they **strongly recommend** that you upgrade your SDK incrementally, instead of going straight from 32 to 36.
+On the [official walkthrough for upgrading the Expo SDK](https://docs.expo.io/workflow/upgrading-expo-sdk-walkthrough/) they **strongly recommend** that you upgrade your SDK incrementally, instead of going straight from 32 to 36.
 
 They also list breaking changes for each step which you should definitely study. The big one is the import structure change from the first step.
 
