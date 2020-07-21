@@ -74,7 +74,7 @@ Glad you asked! Because of our reliance on Git and GitHub.com, we have some pret
   * Additional notes for users of the code that are pertinent for the code base.
   7. If you want to, you can include a diff link (provided automatically by GitHub) to view the differences between any two tags in your code base. As long as you have two or more tags, this can be accomplished by including a standard markdown link with the following format:  
     **https: //github .com /shift3/ < your-repository-name > /compare/< original-tag-name >...< new-tag-name >**  
-    _example: https://github.com/shift3/ifg/compare/0.4.1...0.4.2_
+    _example: https://github.com/Shift3/ifg/compare/v0.4.0...v0.5.0
 
 ### Resources
 [Git Tagging Docs](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
