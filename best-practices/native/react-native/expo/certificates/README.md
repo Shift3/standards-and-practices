@@ -8,7 +8,7 @@ Both the Google Play store and the Apple store have their own form of unique cre
 
 ### iOS Credentials
 
-Apple has three different credentials that need to be managed in an Expo project: The Distribution Certificate, the Provisioning Profile, and the Push notification certificate. Expo does a good write up on these [on their App Signing Site](https://docs.expo.io/versions/latest/distribution/app-signing/) for initial study on what these do. There are two different types of Distribution certificates, Development and Production. The development is used to sign the app for use on local devices, just as through Visual Studio or XCode, but the build cannot be submitted to the app store. A Production certificate can be sent to the App store for either full production release or testing via TestFlight. Expo only deals with Production certificates, so you don't need to worry about the difference between the two, but if you end up having to use a different platform to build such as Xamarin Studio, this is useful information to have.
+Apple has three different credentials that need to be managed in an Expo project: The Distribution Certificate, the Provisioning Profile, and the Push notification certificate. Expo does a good write up on these [on their App Signing Site](https://docs.expo.io/distribution/app-signing/) for initial study on what these do. There are two different types of Distribution certificates, Development and Production. The development is used to sign the app for use on local devices, just as through Visual Studio or XCode, but the build cannot be submitted to the app store. A Production certificate can be sent to the App store for either full production release or testing via TestFlight. Expo only deals with Production certificates, so you don't need to worry about the difference between the two, but if you end up having to use a different platform to build such as Xamarin Studio, this is useful information to have.
 
 ### Google Credentials
 
@@ -24,7 +24,7 @@ When you first go to do a build using `expo build:ios`, it will ask for the appr
 
 Much like iOS, Expo will ask if you'd like Expo to handle this for you, or if you want to supply your own files. For your first `expo build:android`, you'll want expo to handle this for you. This will create a keystore and register that keystore via Google as being required to submit builds. This makes that keystore file extremely important. **Be sure to run `expo fetch:android:keystore` immediately after the first build is created, and store the file that it creates inside the respective Zoho vault**. If someone else goes to build this project, they will need that keystore file, and will have to select 'Supply my own files' instead of letting Expo handle it for them.
 
-To reduce the volatility of relying on a keystore, Google did introduce its own version of app signing. Expo has a good writeup on this also on their [App Signing Site](https://docs.expo.io/versions/latest/distribution/app-signing/).
+To reduce the volatility of relying on a keystore, Google did introduce its own version of app signing. Expo has a good writeup on this also on their [App Signing Site](https://docs.expo.io/distribution/app-signing/).
 
 ## So what happens if anything expires?
 
