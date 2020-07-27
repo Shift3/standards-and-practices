@@ -87,7 +87,7 @@ Using Chocolatey has several advantages:
 
 ###### Meetings are now split into two types:
 
-- *Presentations*: Once a month the developers meet on Wednesday from 4:00pm - 5:00pm to discuss a new Standard or Practice for the company. A developer at Shift3 will propose a new tool or standard to be adopted, and there will be an open forum to discuss. You are _highly_ encouraged to participate actively by leading a meeting on a topic of your choice. Ask Ryeker Herndon to add you to the GCal event so that you get reminders and emails.
+- *[Presentations](presentations/README.md)*: Twice a month the developers meet on every other Wednesday from 4:00pm - 5:00pm to discuss a new Standard or Practice for the company. A developer at Shift3 will propose a new tool or standard to be adopted, and there will be an open forum to discuss. You are _highly_ encouraged to participate actively by leading a meeting on a topic of your choice. Ask Ryeker Herndon to add you to the GCal event so that you get reminders and emails.
 - *Workshops*: Once a month we will do a deep dive into a topic of interest for our workflow and/or processes. These will typically take longer than 1 hour, and will be a classroom/workshop setting. One developer will lead the workshop and the goal will be to produce developers who are proficient at a skill or process that will help us in our work.
 
 ##### Frontend Masters:
