@@ -8,7 +8,7 @@ The configuration on `angular.json` does not make effect when we buld the applic
 
 
 1 - This goes to `environment.<dev|stage|prod>.ts`
-```
+```typescript
 export const environment = {
     production: true,
     apiUrl: 'http://www.yoursite.com'
@@ -16,7 +16,7 @@ export const environment = {
 ```
 
 2 - On environment.tns.ts:
-```
+```typescript
 import { environment as devEnvironment } from './environment.dev';
 import { environment as prodEnvironment } from './environment.prod';
 // TODO: import additional environment (e.g. uat) if required.
@@ -43,7 +43,7 @@ export const environment = (() ={
 Also we need make some changes on "webpack.config.js".
 So, look for "new webpack.DefinePlugin" on "webpack.config.js". in that place modify to looks like this:
  
-```
+```typescript
 new webpack.DefinePlugin({
         'global.TNS_WEBPACK': 'true',
         // 'process': undefined,
@@ -61,12 +61,12 @@ Import your environment as before in any section of the code as needed like this
 To compile the project you can do this way:
 
 NS version 5:
-```
+```typescript
 $ tns run/debug/build android --bundle --env.environment="prod|dev"
 $ tns run/debug/build ios --bundle --env.environment="prod|dev"
 ```
 NS version 6 or up:
-```
+```typescript
 $ tns run/debug/build android --env.environment="prod|dev"
 $ tns run/debug/build ios --env.environment="prod|dev"
 ```
