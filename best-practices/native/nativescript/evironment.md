@@ -4,8 +4,10 @@ To achieve that, we need to make some changes on environment files as you can se
 https://medium.com/most-wanted-experts/angular-application-configurations-best-practices-2e28514b9b4e
 ```
 
-The configuration on `angular.json` does not make effect when we buld the application in NativeScript. Below we have a worka around to use environment.
-
+The configuration on `angular.json` does not make effect when we buld the application in NativeScript. Below we have a work around to use environment.
+```
+https://medium.com/@derekfong/nativescript-angular-setup-environment-ts-for-different-environments-631b4c5219b6
+```
 
 1 - This goes to `environment.<dev|stage|prod>.ts`
 ```typescript
