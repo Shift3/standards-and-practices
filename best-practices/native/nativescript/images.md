@@ -56,6 +56,8 @@ On html page: `<Image src="res://logoheader"></Image>`.
 On css file: `background-image: url('res://logoheader');`
 On .ts files: `this.page.backgroundImage='res://logoheader';`
 
+Just add one more reference: `https://stackoverflow.com/questions/36500842/nativescript-background-image-fullscreen`
+
 That is it. 
 
 All time consuming to generate all images we need for each particular screen size nightmare, is gone.
