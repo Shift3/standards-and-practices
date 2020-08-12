@@ -1,4 +1,4 @@
-The best practice recommends not use more than 2 properties, production and apiUrl properties.
+The best practice recommends not to use more than 2 properties, `production` and `apiUrl`.
 To achieve that, we need to make some changes on environment files as you can see below:
 ```
 https://medium.com/most-wanted-experts/angular-application-configurations-best-practices-2e28514b9b4e
