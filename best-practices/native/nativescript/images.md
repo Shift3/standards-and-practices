@@ -18,7 +18,7 @@ This plugin runs only in build moment. It is a build hook called to verify all i
 `npm install nativescript-images-generator-hook --save-dev`
 
 2 - Create a folder named `images` inside `App_Resources` folder.
-3 - Add all our images in `images` folder.
+3 - Add all of our images in the `images` folder.
     Remember that images should be in the highest resolution as the app will use.
 4 - Rename the image file, adding this suffix `@?x`.
     `?` will be a number from 1 to 5.
