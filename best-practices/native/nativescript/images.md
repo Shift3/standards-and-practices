@@ -10,7 +10,7 @@ That video shows how `nativescript-images-generator-hook` plugin can make that t
 
 [Images Generator Hook | NativeScript Marketplace ](https://market.nativescript.org/plugins/nativescript-images-generator-hook)
 
-This plugin runs only in build moment. It is a build hook called to verify all images added in `App_resources\images` folder. Then its create copy from each image in small scale and save in to the respective folder,its depends witch platform you are building the app (android/ios).
+This plugin runs only in build moment. It is a build hook called to verify all images added in `App_resources\images` folder. Then its create copy from each image in small scale and save in to the respective folder,its depends which platform you are building the app (android/ios).
 
 ### How to setup:
 
@@ -25,7 +25,7 @@ This plugin runs only in build moment. It is a build hook called to verify all i
 
 Example: `imagename@3x.png`
 
-P.S.: The image name `can not` have space or uppercase. That I find out when I compile.
+P.S.: The image name **can not** have space or uppercase. That I find out when I compile.
 
 Example.:
 
@@ -69,4 +69,4 @@ For any reason you decide to do all manually. Here a link to help with rescale a
 
 You upload a image, then the webpage returns a `zip` file with all multiple copy of the image you uploaded, inside its own folder (base on platform). Then you unzip that file and merge `App_Resources` folder, from zip file, into `App_Resources` in your project.
 
-Then you can use as `How to use the Image` session explain.
+Then you can use as `How to use the Image` section explain.
