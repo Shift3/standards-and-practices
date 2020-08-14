@@ -50,9 +50,7 @@ Example.:
 
 Setup is done.
 
-#How-to-use-the-image
-### How to use the image
-#How-to-use-the-image
+# How to use the image
 
 Similar as `http://` protocol. In the code you can make reference to the image using `res://` (`res` means resource), with image name without suffix and extension. Like: `res://imagename`
 
