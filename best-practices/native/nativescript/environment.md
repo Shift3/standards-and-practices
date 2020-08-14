@@ -65,14 +65,14 @@ import { environment as env } from '@env/environment';
 
 To compile the project you can do this way:
 
-**NS version 5:
+**NS version 5:**
 
 ```typescript
 $ tns run/debug/build android --bundle --env.environment="prod|dev"
 $ tns run/debug/build ios --bundle --env.environment="prod|dev"
 ```
 
-**NS version 6 or up:
+**NS version 6 or up:**
 
 ```typescript
 $ tns run/debug/build android --env.environment="prod|dev"
@@ -81,6 +81,7 @@ $ tns run/debug/build ios --env.environment="prod|dev"
 
 P.S.: if "--env.environment" is not declared the system default compiles in dev mode.
 
-**Angular: `$ ng serve --prod`
+**Angular:** 
+`$ ng serve --prod`
 
 That is all we need todo to simplify compilation tasks.
