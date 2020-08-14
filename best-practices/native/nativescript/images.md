@@ -50,7 +50,9 @@ Example.:
 
 Setup is done.
 
+#How-to-use-the-image
 ### How to use the image
+#How-to-use-the-image
 
 Similar as `http://` protocol. In the code you can make reference to the image using `res://` (`res` means resource), with image name without suffix and extension. Like: `res://imagename`
 
@@ -69,4 +71,4 @@ For any reason you decide to do all manually. Here a link to help with rescale a
 
 You upload a image, then the webpage returns a `zip` file with all multiple copy of the image you uploaded, inside its own folder (base on platform). Then you unzip that file and merge `App_Resources` folder, from zip file, into `App_Resources` in your project.
 
-Then you can use as `How to use the Image` section explain.
+Then you can use as [How to use the Image](#How-to-use-the-image) section explain.
