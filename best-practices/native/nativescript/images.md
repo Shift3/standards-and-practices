@@ -69,4 +69,4 @@ For any reason you decide to do all manually. Here a link to help with rescale a
 
 You upload an image, then the webpage returns a `zip` file with all multiple copy of the image you uploaded, inside its own folder (base on platform). Then you unzip that file and merge `App_Resources` folder, from zip file, `App_Resources` in your project.
 
-Then you can use as [How to use the Image](#How-to-use-the-image) section explain.
+Then you can use as [How to use the Image](#How to use the image) section explain.
