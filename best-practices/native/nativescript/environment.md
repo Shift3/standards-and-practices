@@ -1,4 +1,4 @@
-### **Environment Setup in NativeScript-Angular**
+# **Environment Setup in NativeScript-Angular**
 
 The best practice recommends not to use more than 2 properties, `production` and `apiUrl`.
 To achieve that, we need to make some changes on environment files as you can see below:
@@ -8,6 +8,8 @@ https://medium.com/most-wanted-experts/angular-application-configurations-best-p
 The configuration on `angular.json` does not make effect when we build the application in NativeScript. Below we have a work around to use environment.
 
 https://medium.com/@derekfong/nativescript-angular-setup-environment-ts-for-different-environments-631b4c5219b6
+
+## To setup the environment
 
 1 - On `environment.<dev|stage|prod>.ts`
 
@@ -54,7 +56,7 @@ new webpack.DefinePlugin({
 }),
 ```
 
-### To use the environment
+## To use the environment
 Import your environment as before in any section of the code as needed like this:
 
 ```typescript
