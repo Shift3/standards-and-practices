@@ -1,11 +1,14 @@
-To handle image in Nativescript sometimes looks hard and frustrating to do so.
+# Handle image in Nativescript-Angular
+
+To handle image in Nativescript-Angular sometimes looks hard and frustrating to do so.
 
 Doing some research I found this video from Alexander Ziskind:
 
-https://www.youtube.com/watch?v=KgK_d-1lG84&t=46s
+[Use a Hook to Process Resource Images | NativeScript Tutorial by Alexander Ziskind](https://www.youtube.com/watch?v=KgK_d-1lG84&t=46s)
 
 That video shows how `nativescript-images-generator-hook` plugin can make that task very easy.
-`https://market.nativescript.org/plugins/nativescript-images-generator-hook`
+
+[Images Generator Hook | NativeScript Marketplace ](https://market.nativescript.org/plugins/nativescript-images-generator-hook)
 
 This plugin runs only in build moment. It is a build hook called to verify all images added in `App_resources\images` folder. Then its create copy from each image in small scale and save in to the respective folder,its depends witch platform you are building the app (android/ios).
 
@@ -16,57 +19,54 @@ This plugin runs only in build moment. It is a build hook called to verify all i
 
 2 - Create a folder named `images` inside `App_Resources` folder.
 3 - Add all our images in `images` folder.
-Remember that images should be in the highest resolution as the app will use.
+    Remember that images should be in the highest resolution as the app will use.
 4 - Rename the image file, adding this suffix `@?x`.
-`?` will be a number from 1 to 5.
+    `?` will be a number from 1 to 5.
 
-Example: `logoheader@3x.png`
+Example: `imagename@3x.png`
 
 P.S.: The image name `can not` have space or uppercase. That I find out when I compile.
 
 Example.:
 
-Valid file name:
+**Valid file name:**
 
 ```
-  logoheader.png (this will be treated as 1x)
-  logoheader@?x.png (?=1-5)
-  logo_header<suffix>.png
-  logo-header<suffix>.png
+  imagename.png (this will be treated as 1x)
+  imagename@?x.png (?=1-5)
+  image_name<suffix>.png
+  image-name<suffix>.png
 ```
 
-Not Valid file name:
+**Not Valid file name:**
 
 ```
-  logo header.png
-  logoHeader.png
-  LogoHeader.png
-  logo-Header.png
-  Logo-Header.png
+  image name.png
+  Image Name.png
+  ImageName.png
+  Image_Name.png
+  Image-Name.png
 ```
 
 Setup is done.
 
 ### How to use the image
 
-Similar as `http://` protocol. In the code you can make reference to the image using `res://` (`res` means resource), with image name without suffix and extension. Like: `res://logoheader`
+Similar as `http://` protocol. In the code you can make reference to the image using `res://` (`res` means resource), with image name without suffix and extension. Like: `res://imagename`
 
 Example:
-On html page: `<Image src="res://logoheader"></Image>`.
-On css file: `background-image: url('res://logoheader');`
-On .ts files: `this.page.backgroundImage='res://logoheader';`
+On html page: `<Image src="res://imagename"></Image>`.
+On css file: `background-image: url('res://imagename');`
+On .ts files: `this.page.backgroundImage='res://imagename';`
 
-Just add one more reference: `https://stackoverflow.com/questions/36500842/nativescript-background-image-fullscreen`
-
-That is it. 
-
-All time consuming to generate all images we need for each particular screen size nightmare, is gone.
+That is it. All time consuming to generate all images we need for each particular screen size nightmare, is gone.
 
 ### Manual option
 
-For any reason you decide to do all manually. Here a link to help with rescale and rename all the images: `https://images.nativescript.rocks/`
+For any reason you decide to do all manually. Here a link to help with rescale and rename all the images: 
+
+[Nativescript.Rocks ](https://images.nativescript.rocks/)
 
 You upload a image, then the webpage returns a `zip` file with all multiple copy of the image you uploaded, inside its own folder (base on platform). Then you unzip that file and merge `App_Resources` folder, from zip file, into `App_Resources` in your project.
 
 Then you can use as `How to use the Image` session explain.
-
