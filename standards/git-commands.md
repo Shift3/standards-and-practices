@@ -31,4 +31,4 @@ Changes to be committed:
 Dropped refs/stash@{0} (1a5b247bdd51df733d9ab2e1d1aadc270eded2ce)
 ```
 
-A good visual representation can be seen in Gitkrakens documentation: https://support.gitkraken.com/working-with-commits/stashing/
+A good visual representation can be seen in Gitkrakens documentation: [Gitkraken Stashing](https://support.gitkraken.com/working-with-commits/stashing/)
