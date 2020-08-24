@@ -3,12 +3,12 @@ Git is a distributed version-control system for tracking changes in source code 
 
 At Shift3, we use git for a majority of our software projects.
 
-## Shift3 git specific resources
+## Shift3 Git specific resources
 1. [Commits](commits.md)
 2. [Branching](branching.md)
 3. [Code Versioning](code-versioning.md)
 
-### Lesser known git commands
+### Lesser known Git Commands
 
 #### Git Stash
 
