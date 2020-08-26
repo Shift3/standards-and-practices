@@ -32,3 +32,58 @@ Dropped refs/stash@{0} (1a5b247bdd51df733d9ab2e1d1aadc270eded2ce)
 ```
 
 A good visual representation can be seen in Gitkrakens documentation: [Gitkraken Stashing](https://support.gitkraken.com/working-with-commits/stashing/)
+
+
+
+### Git Hooks
+
+Git Official Documentation: https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
+
+TODO: Description
+
+#### Client-Side Hooks
+
+TODO: Description
+
+##### pre-commit
+
+TODO: Description
+TODO: Example with node(?)
+
+##### prepare-commit-msg
+
+TODO: Description
+TODO: Example with node(?)
+
+##### commit-msg
+
+TODO: Description
+TODO: Example with node(?)
+
+##### post-commit
+
+TODO: Description
+TODO: Example with node(?)
+
+##### pre-rebase/post-rewrite/post-checkout/post-merge/pre-auto-gc
+
+TODO: Evaluate and see if useful to our workflow (post-merge might be?)
+
+#### Server-Side Hooks
+
+TODO: Description
+
+##### pre-receive
+
+TODO: Description
+TODO: Example with node(?)
+
+##### update
+
+TODO: Description
+TODO: Example with node(?)
+
+##### post-receive
+
+TODO: Description
+TODO: Example with node(?)
