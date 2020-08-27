@@ -45,6 +45,11 @@ This section describes Shift3 standards to be applied to all projects. Code revi
 - The code review process
 - Resources for code review
 
+### [Git Commands](git-commands.md)
+
+- Basics on git
+- Lesser known git commands
+
 ### Testing and QA
 
 #### [Acceptance Testing](acceptance-testing.md)
