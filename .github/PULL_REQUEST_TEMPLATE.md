@@ -11,7 +11,7 @@ _How does this change address the problem?_
 
 ## Pre-Testing TODOs
 _What needs to be done before testing_
-- [] Change DB values in x collection to y.
+- [] Change database values in x collection to y.
 
 ## Testing Steps
 _How do the users test this change?_
