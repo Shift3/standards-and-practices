@@ -37,51 +37,8 @@ A good visual representation can be seen in Gitkrakens documentation: [Gitkraken
 
 Git Official Documentation: https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
 
-TODO: Description
+Git Hooks are stored in the hooks subdirectory of the `.git` directory. This folder is automatically created when you initialize a new repository in GitKraken and is located in `.git\hooks` in your project directory.
 
-#### Client-Side Hooks
+Hooks are unique to your local repository and will not be copied over if you create a new repository. Feel free to add, change, or remove scripts from this folder as necessary.
 
-TODO: Description
-
-##### pre-commit
-
-TODO: Description
-TODO: Example with node(?)
-
-##### prepare-commit-msg
-
-TODO: Description
-TODO: Example with node(?)
-
-##### commit-msg
-
-TODO: Description
-TODO: Example with node(?)
-
-##### post-commit
-
-TODO: Description
-TODO: Example with node(?)
-
-##### pre-rebase/post-rewrite/post-checkout/post-merge/pre-auto-gc
-
-TODO: Evaluate and see if useful to our workflow (post-merge might be?)
-
-#### Server-Side Hooks
-
-TODO: Description
-
-##### pre-receive
-
-TODO: Description
-TODO: Example with node(?)
-
-##### update
-
-TODO: Description
-TODO: Example with node(?)
-
-##### post-receive
-
-TODO: Description
-TODO: Example with node(?)
+How to use git hooks with example code from GitHub: https://githooks.com/
