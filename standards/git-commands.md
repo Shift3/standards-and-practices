@@ -42,3 +42,5 @@ Git Hooks are stored in the hooks subdirectory of the `.git` directory. This fol
 Hooks are unique to your local repository and will not be copied over if you create a new repository. Feel free to add, change, or remove scripts from this folder as necessary.
 
 How to use git hooks with example code from GitHub: https://githooks.com/
+
+Using Git Hooks and node: https://medium.com/@satya164/improving-nodejs-workflow-with-git-hooks-40996830619f
