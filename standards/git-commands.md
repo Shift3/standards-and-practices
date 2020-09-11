@@ -32,3 +32,15 @@ Dropped refs/stash@{0} (1a5b247bdd51df733d9ab2e1d1aadc270eded2ce)
 ```
 
 A good visual representation can be seen in Gitkrakens documentation: [Gitkraken Stashing](https://support.gitkraken.com/working-with-commits/stashing/)
+
+### Git Hooks
+
+Git Official Documentation: https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
+
+Git Hooks are stored in the hooks subdirectory of the `.git` directory. This folder is automatically created when you initialize a new repository in GitKraken and is located in `.git\hooks` in your project directory.
+
+Hooks are unique to your local repository and will not be copied over if you create a new repository. Feel free to add, change, or remove scripts from this folder as necessary.
+
+How to use git hooks with example code from GitHub: https://githooks.com/
+
+Using Git Hooks and node: https://medium.com/@satya164/improving-nodejs-workflow-with-git-hooks-40996830619f
