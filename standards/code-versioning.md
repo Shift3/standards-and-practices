@@ -13,7 +13,7 @@
 -   Increment your versions based on a **Major.Minor.Patch** format where:
 
     -   **Major** changes are breaking, non-backwards compatible changes to your code base.
-    -   **Minor** changes are new features or functionality that ius still backwards-compatable
+    -   **Minor** changes are new features or functionality that is still backwards-compatable
     -   **Patch** changes are bug fixes or hotfixes that only address issues and don't introduce anything new.
 
     ##### Example:
@@ -24,7 +24,7 @@
     -   We are on the `8`th major version, so there've been 7 changes that have broken backward compatibility in the past
     -   We are on the `2`nd minor version which means there have been two feature changes that have been made
     -   After we did our second feature push, we have had `6` bugs that we have fixed in the meantime.
-    -   If we build a new feature, this number will be changed to `8.3.0`.
+    -   If we build a new feature that does not break existing APIs, this number will be changed to `8.3.0`.
 
 *   Releases should be unalterable and locked -- forever.
 *   Initial development (so most of our lives) should be treated as 0.x.x so as to indicate that there is no release as yet.
