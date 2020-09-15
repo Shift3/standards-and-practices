@@ -13,7 +13,7 @@
 -   Increment your versions based on a **Major.Minor.Patch** format where:
 
     -   **Major** changes are breaking, non-backwards compatible changes to your code base.
-    -   **Minor** changes are new features or functionality that is still backwards-compatable
+    -   **Minor** changes are new features or functionality that is still backwards-compatible
     -   **Patch** changes are bug fixes or hotfixes that only address issues and don't introduce anything new.
 
     ##### Example:
@@ -28,10 +28,6 @@
 
 *   Releases should be unalterable and locked -- forever.
 *   Initial development (so most of our lives) should be treated as 0.x.x so as to indicate that there is no release as yet.
-    -   Generally, any software with a major version of 0 should be treated as unstable.
-
--   Releases should be unalterable and locked -- forever.
--   Initial development (so most of our lives) should be treated as 0.x.x so as to indicate that there is no release as yet.
     -   Generally, any software with a major version of 0 should be treated as unstable.
 
 ## Why should Shift3 care?
