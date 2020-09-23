@@ -1,6 +1,6 @@
 # App Store Credentials (Expo)
 
-*If you are not familiar with Expo, you can read about it in [this S&P article regarding React Native](https://github.com/Shift3/standards-and-practices/tree/master/best-practices/native/react-native)
+*If you are not familiar with Expo, you can read about it in [this S&P article regarding React Native](https://github.com/Shift3/standards-and-practices/tree/main/best-practices/native/react-native)
 
 Both the Google Play store and the Apple store have their own form of unique credentials when it comes to being able to create and submit builds. Expo does a good job of handling these for you, especially upon first build. Sometimes, these will expire, and then some knowledge is required to be able to fix your credentials so you can create a build and start updating again.
 
