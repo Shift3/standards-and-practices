@@ -1,14 +1,14 @@
 ### Branch Structure
 
 ```
-Master
+Main
 L- Staging
 L- Development
    L- *Feature Branch*
    L- *Bug fix branch*
 ```
 
-**Master** branch is for finalized, tested, and production-ready code.
+**Main** branch is for finalized, tested, and production-ready code.
 
 **Staging** branch is for finalized, tested, and demo-ready code.
 
@@ -27,7 +27,7 @@ For example, if I'm (Corey) working on an bug fix task, I'll create a branch suc
 
 When work is completed and tested, make a Pull Request to the development branch. This PR requires review from another developer before it is merged.
 
-When code is ready to be locked in for demo, a Pull Request from `development` to `master` will be created and reviewed.
+When code is ready to be locked in for demo, a Pull Request from `development` to `main` will be created and reviewed.
 
 ### Doing Development
 - Always have an issue created for any work you are doing. It should contain:
