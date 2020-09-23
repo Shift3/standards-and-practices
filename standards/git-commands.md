@@ -20,7 +20,7 @@ In the below example, we are pushing this readme into our `foo-999-big-feature` 
 ```shell
 $ git add standards/git-commands.md
 $ git stash push
-Saved working directory and index state WIP on mac-192-lesser-known-git: 60a39ed Merge remote-tracking branch 'origin/master' into mac-192-lesser-known-git
+Saved working directory and index state WIP on mac-192-lesser-known-git: 60a39ed Merge remote-tracking branch 'origin/main' into mac-192-lesser-known-git
 $ git checkout foo-999-big-feature
 $ git stash pop
 On branch mac-test-branch

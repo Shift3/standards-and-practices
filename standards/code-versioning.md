@@ -57,7 +57,7 @@ Let's go through our use cases:
 ### I need to increment my project's patch version
 
 1. Be sure your hotfix or bugfix changes have been reviewed and approved by your project's lead developer
-2. Once the fix is approved and your Pull Request is merged, checkout to your base branch (develop or master, whatever you use as your source of truth) and pull your changes
+2. Once the fix is approved and your Pull Request is merged, checkout to your base branch (develop or main, whatever you use as your source of truth) and pull your changes
 3. Create your tag using `git tag v0.1.1`, remembering to increment from the last patch version, but keeping the major and minor versions the same.
 4. Push your tag to GitHub.com using `git push origin <YOUR-TAG-NAME>`
    _Note: < YOUR-TAG-NAME > would be replaced by `v0.1.1` in our above example and *must* match_
@@ -65,7 +65,7 @@ Let's go through our use cases:
 ### I need to increment my project's minor version
 
 1. Be sure your feature branch changes have been reviewed and approved by your project's lead developer
-2. Checkout to your base branch (develop or master, whatever you use as your source of truth) and pull your changes
+2. Checkout to your base branch (develop or main, whatever you use as your source of truth) and pull your changes
 3. Create your tag using `git tag v0.2.0`, remembering to increment from the last minor version, keeping the major version the same and resetting the patch version to 0.
 4. Push your tag to GitHub.com using `git push origin <YOUR-TAG-NAME>`
    _Note: < YOUR-TAG-NAME > would be replaced by `v0.2.0` in our above example and *must* match_
@@ -74,7 +74,7 @@ Let's go through our use cases:
 
 1. Be sure your reverse-incompatable, breaking changes have been reviewed and approved by your project's lead developer.
 2. Make a plan for your rollout to users with your client and make sure your deployment follows that plan.
-3. Checkout to your base branch (develop or master, whatever you use as your source of truth) and pull your changes
+3. Checkout to your base branch (develop or main, whatever you use as your source of truth) and pull your changes
 4. Create your tag using `git tag v1.0.0`, remembering to increment from the last major version and resetting your minor and patch versions to 0.
 5. Push your tag to GitHub.com using `git push origin <YOUR-TAG-NAME>`
    _Note: < YOUR-TAG-NAME > would be replaced by `v1.0.0` in our above example and *must* match_
