@@ -23,7 +23,7 @@ print_usage() {
 DESCRIPTION
 ---------
 
-This script automates the CloudFront set up process as documented in https://github.com/Shift3/standards-and-practices/blob/master/aws/s3-cloudfront-deployment.md.
+This script automates the CloudFront set up process as documented in https://github.com/Shift3/standards-and-practices/blob/main/aws/s3-cloudfront-deployment.md.
 
 It does the following:
     - Creates the CloudFront SSL Certificate on us-east-1 for the given domain.
