@@ -24,7 +24,7 @@
 #### Git
 
 - [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
-  - Keep branches for master and development
+  - Keep branches for main and development
   - Branch off of development for features
   - Request reviews on your Pull Requests
   - Merge _reviewed_ code into development

@@ -58,11 +58,11 @@ Supports printing commands for the TSP100 Thermal Receipt Printer.
 - Update the release notes file
 - Check in and merge project to Github
   - Check in the project and create a PR into `Development`
-  - After PR is merged, create a PR into `Master`
+  - After PR is merged, create a PR into `Main`
 - Create a Release on Github
   - After PR is merged, go to `Releases` on Github and click on `Create New Release`
   - For the tag version, enter the full version Number. For example: `v1.3.6543.18931`
-  - The target for the release should be the `Master` branch (default option)
+  - The target for the release should be the `Main` branch (default option)
   - For the release title, enter: `Magtek Card Reader Middleware Release vX.X` where `x.x` is the first two digits of the release number
   - Copy the release notes into the release description textbox
   - Attach the installer zip file in the upload area
