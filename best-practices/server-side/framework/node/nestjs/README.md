@@ -1,8 +1,7 @@
 # NestJS
 
-## Frameworks for node
+## A progressive Node.js framework for building efficient, reliable and scalable server-side applications.
 
-- [Hapi](hapi/README.md)
-- [Express](express/README.md)
-- [Koa](koa/README.md)
-- [MEAN](mean/README.md)
+#### Resources
+
+Official Site: https://nestjs.com/

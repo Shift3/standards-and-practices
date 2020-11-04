@@ -1,7 +1,7 @@
 # Express
 
-## A progressive Node.js framework for building efficient, reliable and scalable server-side applications.
+## Fast, unopinionated, minimalist web framework for Node.js
 
 #### Resources
 
-Official Site: https://nestjs.com/
+Official Site: http://expressjs.com/
