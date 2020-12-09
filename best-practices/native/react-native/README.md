@@ -13,7 +13,8 @@ There are typically 2 options for React Native development:
     * You should read the [caveats](https://facebook.github.io/react-native/docs/getting-started#caveats) on using Expo, but for Shift3, the main drawbacks are:
         1. If your project will need background support (the app should keep running when not in focus) DO NOT use Expo 
 2. [Native Code](startup/native-code.md)
-    * This is a more difficult project to start up, but you have more flexibility once it's started that with Expo. 
+    * This is a more difficult project to start up, but you have more flexibility once it's started than with Expo.
+    * CircleCI contains [a community orb](https://circleci.com/developer/orbs/orb/react-native-community/react-native) with a setup already in place and several examples. 
 
 ## Then what?
 - After you have started up your project, take a look at our [common components](common-components/README.md) for some base starting points.  
