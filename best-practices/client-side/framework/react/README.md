@@ -20,6 +20,11 @@ To get more familiar with the structure of a React/React Native based project, b
 -   [Jest](https://jestjs.io/) is a JavaScript library for creating, running, and structuring tests.
 -   [Enzyme](https://enzymejs.github.io/enzyme/) created by Airbnb is a JavaScript Testing utility for React.
 
+## Helpful React Development Web Plugins
+
+-   [React Developer Tools](https://reactjs.org/blog/2019/08/15/new-react-devtools.html) is a Chrome DevTools extension for the open-source React JavaScript library. It allows you to inspect the React component hierarchies in the Chrome Developer Tools. Supports Hooks, including inspecting nested objects.
+-   [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension) for debugging application's state changes. The extension provides power-ups for your Redux development workflow.
+
 ## Spinning up a boilerplate
 
 TODO
