@@ -1,10 +1,10 @@
 # Local by Flywheel Workflow Processes
 
-### Pulling down latest changes and database from staging site.
+### Pulling down latest changes and database from staging or development site.
 
-This process will be relevant when development team needs to update their database on their local machine. 
+This process will be relevant when development team needs to update their database on their local machine.  
 
-EX. Make sure everybody has the same copy, images, plugins, pages etc. 
+(ie. To ensure everybody has the same copy, images, plugins, pages etc.) 
 
 ##### Notes 
 
