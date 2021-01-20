@@ -1,4 +1,4 @@
-# Standards and Practices
+# Standards & Practices
 
 ## Reason for Repo
 
