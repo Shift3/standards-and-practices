@@ -5,5 +5,6 @@ jobs:
       - image: circleci/ruby:latest
     steps:
       - checkout
-      - run: gem install awesome_bot
-      - run: awesome_bot --allow-redirect --allow-dupe -w awesome_bot --allow-redirect --allow-dupe -w https://github.com/Shift3,regexr,127.0.0.1 `find . -name "*.md"`
+      - run: bundle install
+      - run: bundle exec danger --verbose
+      - run: bundle exec awesome_bot --allow-redirect --allow-dupe -w awesome_bot --allow-redirect --allow-dupe -w https://github.com/Shift3,regexr,127.0.0.1 `find . -name "*.md"`
