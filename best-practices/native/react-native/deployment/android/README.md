@@ -36,7 +36,7 @@ It's important to note that not all functionality will work with the android emu
 
 ### Setting up Google Play
 
-###### In the [Google Play Console](https://play.google.com/apps/publish/ "Google Play Console")
+###### In the [Google Play Console](https://play.google.com/console "Google Play Console")
 - Select 'Create Application'
 - Name Your Application
 
@@ -78,7 +78,7 @@ A signed APK is an APK that has an attached keystore file. The keystore file con
 
 ### Deploying to Google Play Store
 
-###### In the [Google Play Console](https://play.google.com/apps/publish/ "Google Play Console"):
+###### In the [Google Play Console](https://play.google.com/console "Google Play Console"):
 - Release Management -> App Releases
 - Select 'Manange' on the track you'd like to release to. (Closed tracks only allow testers you specifically add, open tracks allow anyone with the download link to install the app)
 - Select 'Create Release'
