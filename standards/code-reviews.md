@@ -26,7 +26,7 @@
     - [ ] Make sure your code changes are under 500 lines of code (break it up into more than 1 PR if it exceeds this)
     - [ ] Your PR should be based from the development branch, and not from other open PRs. If you MUST have stair-stepped PRs for a valid reason, please include justification in the PR and reference to the PRs which this new PR depends on.
 
-2. Submit your pull request and tag potential reviewers. Keep in mind that each reviewer should: 
+2. Submit your pull request and tag potential reviewers. Always include the PR Team as potential reviewers! Keep in mind that each reviewer should: 
     * Be either on your project or a quick study on the stack your project is in
     * Not always be the same person/people (mix it up!)
     * Understand the purpose of the PR
