@@ -26,10 +26,25 @@
     - [ ] Make sure your code changes are under 500 lines of code (break it up into more than 1 PR if it exceeds this)
     - [ ] Your PR should be based from the development branch, and not from other open PRs. If you MUST have stair-stepped PRs for a valid reason, please include justification in the PR and reference to the PRs which this new PR depends on.
 
-2. Submit your pull request and tag potential reviewers. Keep in mind that each reviewer should: 
-    * Be either on your project or a quick study on the stack your project is in
-    * Not always be the same person/people (mix it up!)
-    * Understand the purpose of the PR
+2. Submit your pull request and tag potential reviewers. Always include the pr-team as potential reviewers. 
+
+    - "PR Team" is a list comprised of the developer team and when the PR is submitted the pr-team will then be replaced by 3 auto selected developers from that list. 
+
+        * There are also stack specific teams (ie. devs-wordpress, devs-react, etc.) and when these groups are selected to review the PR 2 developers from these lists will be selected.
+
+    - The purpose of the pr-team:
+
+        * To train developers to review code that they may not be completely comfortable with, yet can increase their breadth of understanding and encourages knowledge sharing amongst colleagues.
+
+        * The PR Reviews are just as valuable as a learning opportunity for the reviewer as they are for the reviewee.
+
+        * Automatic assignments balance the workload evenly across the whole team so everyone gets a chance to be a reviewer and a reviewee.
+
+        * Pending PR reviews show up on the #shift3-code-review Slack channel as a notification and reminder. This has helped us develop a quick turn-around on reviews.
+
+    - Our standard code review process only requires a visual inspection of code. It is not necessary to pull down and run/test the code. That said, project teams can add their own functional review process within the team in addition to the standard cross-team visual review.
+
+    - If you're assigned to a PR in which you are uncomfortable or unable to approve or request changes, that is not a problem. It is completely acceptable to provide a comment-only review. Provide any feedback you can and then **make sure to let the author know** you are unable to approve so that they can request additional reviewers.
 
 3. Add comments when you create the PR that explain its scope, purpose, and any quirky things that you had to do to the code to make it work. Explain as much as possible in these comments to let the reviewer know about the PR. If you don't want it merged by a project maintainer, add a `DO NOT MERGE` label to the PR before it is reviewed.  
 
