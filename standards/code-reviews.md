@@ -44,6 +44,8 @@
 
     - Our standard code review process only requires a visual inspection of code. It is not necessary to pull down and run/test the code. That said, project teams can add their own functional review process within the team in addition to the standard cross-team visual review.
 
+    - If you're assigned to a PR in which you are uncomfortable or unable to approve or request changes, that is not a problem. It is completely acceptable to provide a comment-only review. Provide any feedback you can and then **make sure to let the author know** you are unable to approve so that they can request additional reviewers.
+
 3. Add comments when you create the PR that explain its scope, purpose, and any quirky things that you had to do to the code to make it work. Explain as much as possible in these comments to let the reviewer know about the PR. If you don't want it merged by a project maintainer, add a `DO NOT MERGE` label to the PR before it is reviewed.  
 
 4. If you receive a blocked review, fix up the issues and push the changes to your branch. Let the reviewer know when you have submitted the fix. Remember, we all make mistakes, and we all have room to grow. This is an opportunity to learn.
