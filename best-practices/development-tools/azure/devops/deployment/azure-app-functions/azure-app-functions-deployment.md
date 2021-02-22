@@ -8,9 +8,9 @@ There are two extensions should be installed before in AzureDevOps [ReplaceToken
 ### Option 1
 1. Go to the Pipelines page in Azure DevOps and choose New Pipeline.
 2. Choose `Use the classic editor`.
-3. Select GitHub as a source. (You might need to authorize Azure Pipelines with GitHub via OAuth. If so, choose "Authorize using OAuth ". This will open a new window to either log in with GitHub or grant permission to authorize Azure Pipelines with the logged in GitHub account. Granting access to the team organization where the repository is located might require an additional step: approval by an owner from that organization.) Select the target Repository and the default branch then continue.
+3. Select GitHub as a source. (You might need to authorize Azure Pipelines with GitHub via OAuth. If so, choose "Authorize using OAuth ". This will open a new window to either log in with GitHub or grant permission to authorize Azure Pipelines with the logged in GitHub account. Granting access to the team organization where the repository is located might require an additional step: approval by an owner from that organization.) Select the target Repository and the default github branch then continue.
 4. On the Choose a Template page, select `ASP.NET Core` template and choose `Apply`.
-5. Choose `Triggers` tab from top and make sure to check `Enable continuous integration` under Continuous integration. (To trigger deployment process after each commit to Development branch).
+5. Choose `Triggers` tab from top and make sure to check `Enable continuous integration` under Continuous integration. (To trigger deployment process after each commit to the default github branch).
 6. Click on `Save`.
 
 ### Option 2

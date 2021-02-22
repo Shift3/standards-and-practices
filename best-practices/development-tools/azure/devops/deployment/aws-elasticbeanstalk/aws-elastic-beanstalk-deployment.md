@@ -11,7 +11,7 @@ Navigate to the project in AzureDevOps then choose Project Settings. In the Proj
 ### Option 1
 1. Go to the pipeline page in Azure DevOps and choose New Pipeline.
 2. Choose `Use the classic editor`.
-3. Select GitHub as a source. (You might need to authorize Azure Pipelines with GitHub via OAuth . If so, choose "Authorize using OAuth ". This will open a new window to either log in with GitHub or grant permission to authorize Azure Pipelines with the logged in GitHub account. Granting access to the team organization where the repository is located might require an additional step: approval by an owner from that organization.) Select the target Repository and the default branch then continue.
+3. Select GitHub as a source. (You might need to authorize Azure Pipelines with GitHub via OAuth . If so, choose "Authorize using OAuth ". This will open a new window to either log in with GitHub or grant permission to authorize Azure Pipelines with the logged in GitHub account. Granting access to the team organization where the repository is located might require an additional step: approval by an owner from that organization.) Select the target Repository and the default github branch then continue.
 4. On the Choose a Template page, select Docker Container and choose Apply.
 5. Remove the `Push an image` task.
 6. Add an `Amazon ECR Push` task to the end of the tasks list by choosing the + symbol next to Agent job 1. You can search for “AWS” in the Add tasks page to filter for all AWS tasks.
@@ -31,7 +31,7 @@ Note: The Azure DevOps instance manages environment variables for each environme
    -  Source Image Name: Should be the same `Image Name` that has been entered in previous task.
    -  Target Repository Name: Get the repository name from AWS ECR.
 
-11.  Choose `Triggers` tab from top and make sure to check `Enable continuous integration` under Continuous integration. (To trigger deployment process after each commit to the default branch).
+11.  Choose `Triggers` tab from top and make sure to check `Enable continuous integration` under Continuous integration. (To trigger deployment process after each commit to the default github branch).
 12.  Choose `Variables` tab from top then choose `Variable groups` then click `Link variable group`. (To link it with environments that have been created in pipeline Library above).
 13.  Choose Save and queue to try it.
 14.  Upload `Dockerrun.aws.json` (That has a link to docker image)file to Elastic Beanstalk. [Upload File to Elastic Beanstalk](#upload_file_to_elastic_beanstalk).
@@ -43,7 +43,7 @@ Create a new Pipeline then choose `Github yaml` then choose the repository then 
 ### Option 1
 1. Go to the pipeline page within Azure DevOps and choose New Pipeline.
 2. Choose Use the classic editor.
-3. Select GitHub as a source. (You might need to authorize Azure Pipelines with GitHub via OAuth . If so, choose "Authorize using OAuth ". This will open a new window to either log in with GitHub or grant permission to authorize Azure Pipelines with the logged in GitHub account. Granting access to the team organization where the repository is located might require an additional step: approval by an owner from that organization.) Select the target Repository and the default branch then continue.
+3. Select GitHub as a source. (You might need to authorize Azure Pipelines with GitHub via OAuth . If so, choose "Authorize using OAuth ". This will open a new window to either log in with GitHub or grant permission to authorize Azure Pipelines with the logged in GitHub account. Granting access to the team organization where the repository is located might require an additional step: approval by an owner from that organization.) Select the target Repository and the default github branch then continue.
 4. On the Choose a Template page, select ASP.NET Core and choose Apply.
 5. Add an `Deploy to Elastic Beanstalk` task to the end of the tasks list by choosing the + symbol next to Agent job 1. You can search for “AWS” in the Add tasks page to filter for all AWS tasks.
 6. Add a `Replace Tokens` task to the top of the tasks list by choosing the + symbol next to Agent job 1. You can search for “Replace” in the Add tasks page to filter.
@@ -69,7 +69,7 @@ Note: The Azure DevOps instance manages environment variables for each environme
   - Deploy Bundle Type: `ASP.NET CORE (Source: dotnet publish)`.
   - Published Applicaion Path: `$(build.artifactstagingdirectory)`.
 
-10. Choose `Triggers` tab from top and make sure to check `Enable continuous integration` under Continuous integration. (To trigger deployment process after each commit to Dev branch).
+10. Choose `Triggers` tab from top and make sure to check `Enable continuous integration` under Continuous integration. (To trigger deployment process after each commit to the default github branch).
 11. Choose `Variables` tab from top then choose `Variable groups` then click `Link variable group`. (To link it with environments that have been created in pipeline Library above).
 12. Choose Save and queue to try it.
 

@@ -1,5 +1,11 @@
 # Continuous Integration using Azure DevOps
 
 ## .NET Core Unit Test
-1. Create a new Pipeline then choose `Github yaml` . Choose the target repository from GitHub. Choose `ASP.NET Core` template, then attach it to `azure-pipelines-azure-app-functions-ci.yml`.
-2. Select above created pipeline then Click on `Edit` then Click on `Variables` to define a list of all variables have been used with running test command.
+1. Go to the Pipelines page in Azure DevOps and choose New Pipeline.
+2. Choose `Github Yaml`.
+3. Select GitHub as a source. (You might need to authorize Azure Pipelines with GitHub via OAuth. If so, choose "Authorize using OAuth ". This will open a new window to either log in with GitHub or grant permission to authorize Azure Pipelines with the logged in GitHub account. Granting access to the team organization where the repository is located might require an additional step: approval by an owner from that organization.) Select the target Repository and the default github branch then continue.
+4. On the Choose a Template page, select `ASP.NET Core` template and choose `Apply`.
+5. Get the pipeline from `azure-pipelines-azure-app-functions-ci.yml`.
+6. Click on `Variables` to define a list of all variables have been used with running test command.
+7. Click on `Save and run`.
+8. Choose above created pipeline. click on `Edit` then `Triggers` from right-hand side. make sure to check `Enable continuous integration` under `Pull request validation`. (To trigger above pipeline process after each commit into the pull request).
