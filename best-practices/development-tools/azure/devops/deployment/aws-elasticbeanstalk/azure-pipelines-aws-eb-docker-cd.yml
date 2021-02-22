@@ -1,0 +1,44 @@
+
+trigger:
+  - main
+
+variables:
+  vmImageName: windows-latest
+
+stages:
+  - stage: Production
+    displayName: Deploy to AWS ECR using Docker
+    variables:
+      - group: env_variables
+
+    jobs:
+      - job: Docker_Deployment
+        displayName: 'Build Docker Image then deploy to AWS ECR Container'
+        pool:
+          vmImage: $(vmImageName)
+        steps:
+          - task: citrus-andriessen.cag-replace-tokens.custom-build-release-task.ReplaceTokens@1
+            displayName: 'Replace Tokens'
+            inputs:
+              sourcePath: .
+              targetFilePattern: appsettings.json
+              tokenRegex: '#{(\w+)}#'
+              replaceTokenList: |
+                                Actual_Variable_Name:$(Variable_Name_Library_To_Replace)
+                                ...
+              throwExceptionifNotMapped: true
+
+          - task: Docker@0
+            displayName: 'Build .NET Core app and Docker Image'
+            inputs:
+              containerregistrytype: 'Container Registry'
+              imageName: 'containerapp$(Build.BuildId)'
+
+          - task: AmazonWebServices.aws-vsts-tools.ECRPushImage.ECRPushImage@1
+            displayName: 'Push Image: .NET Core to Amazon ECR'
+            inputs:
+              awsCredentials: <aws-credential-name>
+              regionName: <aws-region>
+              sourceImageName: 'containerapp$(Build.BuildId)'
+              repositoryName: 'aws-ecr-repository-name'
+

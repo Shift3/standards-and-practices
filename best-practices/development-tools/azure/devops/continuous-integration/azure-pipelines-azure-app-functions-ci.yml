@@ -1,0 +1,89 @@
+# .NET Core Function App to Windows on Azure
+# Build a .NET Core function app and deploy it to Azure as a Windows function App.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+- main
+
+variables:
+  # Agent VM image name
+  vmImageName: 'vs2017-win2016'
+
+  # Working Directory
+  workingDirectory: '**'
+
+  TestFilesPath: '$(System.DefaultWorkingDirectory)\<testing-folder>\bin\$(buildConfiguration)\netcoreapp3.1'
+
+stages:
+- stage: Build
+  displayName: Build stage
+
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: $(vmImageName)
+
+    steps:
+    - task: DotNetCoreCLI@2
+      displayName: Build
+      inputs:
+        command: 'build'
+        projects: |
+          $(workingDirectory)/*.csproj
+        arguments: --output $(System.DefaultWorkingDirectory)/publish_output --configuration Release
+
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)/publish_output'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        replaceExistingArchive: true
+    
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Artifact: drop'
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
+
+- stage: Test
+  displayName: Testing app stage
+  dependsOn: build
+  condition: succeeded()
+
+  jobs:
+  - job: Test
+    displayName: Testing app job
+    pool:
+      vmImage: $(vmImageName)
+
+    steps:
+    - task: PowerShell@2
+      displayName: Create test files
+      inputs:
+        targetType: 'inline'
+        script: '<Any-Needed-Scripts>' #Like creating environment variables or files.
+    - task: PowerShell@2
+      displayName: Initial environments variables
+      inputs:
+        targetType: 'inline'
+        script: |
+            [Environment]::SetEnvironmentVariable("Actual_Variable_Name", "$(Variable_Name_Library_To_Replace)", "Machine")
+    - task: DotNetCoreCLI@2
+      displayName: Testing script
+      inputs:
+        command: 'test'
+        arguments: '--configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=$(Build.SourcesDirectory)/TestResults/Coverage/'
+        publishTestResults: true
+        projects: '**/<testing-folder>/*.csproj' # update with your test project directory
+
+    - task: PublishCodeCoverageResults@1
+      displayName: 'Publish code coverage report'
+      inputs:
+        codeCoverageTool: 'Cobertura'
+        summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
+
