@@ -1,7 +1,7 @@
 # Databases
 A database is an organized collection of data, generally stored and accessed electronically from a computer system. Where databases are more complex they are often developed using formal design and modeling techniques. 
 
-At Bitwise Industries, we generally use T-SQL and NoSQL databases in our projects. More information can be found [here](https://www.altexsoft.com/blog/business/comparing-database-management-systems-mysql-postgresql-mssql-server-mongodb-elasticsearch-and-others/).
+At Bitwise Industries, we generally use SQL and NoSQL databases in our projects. More information can be found [here](https://www.altexsoft.com/blog/business/comparing-database-management-systems-mysql-postgresql-mssql-server-mongodb-elasticsearch-and-others/).
 
 If you and your team are starting a new project or deciding on a database to use, contact architect@bitwiseindustries.com.
 
