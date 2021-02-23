@@ -30,7 +30,7 @@
   ![qa sprint issue](./assets/qa-process/2.png)
 
 ## Scheduling QA
-1. PM (or lead dev) sends an email to qa@shift3tech.com. If the lead dev sends the email, cc your PM on the email.
+1. PM (or lead dev) sends an email to qa@bitwiseindustries.com. If the lead dev sends the email, cc your PM on the email.
   - Provide the following details:
 ```
     - Project and client name
