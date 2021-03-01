@@ -14,7 +14,7 @@
     * Create a note for each of your epics/project boards  
     * Make a markdown link in each note to the corresponding project board  
   3. Open as many issues as you need to complete each epic.  
-    Remember: follow Shift3's [branching guide](branching.md) when you start working on these issues.
+    Remember: follow Bitwise's [branching guide](branching.md) when you start working on these issues.
 
 ### Example from Shift3:
   [Sinclair Project Boards](https://github.com/Shift3/sinclair-scanner-application/projects)

@@ -1,6 +1,6 @@
 # Git Commit Messages
 
-## Shift3's convention for how to structure, write, and use your commits  
+## Bitwise's convention for how to structure, write, and use your commits  
  _([reference](http://karma-runner.github.io/1.0/dev/git-commit-msg.html))_  
 
 

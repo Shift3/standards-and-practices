@@ -5,7 +5,7 @@
 -   [Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) is a simple, easy way to keep track of your code at a certain point in time. Some instances where this becomes useful are:
     -   Client-facing deliverables such as milestones, UAT, or production launch/release
     -   Internal-facing code at a point that you or your team wants to demarcate as important
-    -   Versioning of your code (as a default, Shift3 follows SemVer)
+    -   Versioning of your code (as a default, Bitwise follows SemVer)
 
 ## [SemVer](https://semver.org/) Basics:
 
@@ -30,7 +30,7 @@
 *   Initial development (so most of our lives) should be treated as 0.x.x so as to indicate that there is no release as yet.
     -   Generally, any software with a major version of 0 should be treated as unstable.
 
-## Why should Shift3 care?
+## Why should Bitwise care?
 
 This should be self-evident: more maintainable code makes our jobs easier! Tagging does the following things
 
@@ -104,4 +104,4 @@ _Releases are useful for marking a client-facing milestones in your code's histo
 [SemVer Main Docs](https://semver.org/)  
 [SemVer Breakdown](https://www.jvandemo.com/a-simple-guide-to-semantic-versioning/)  
 [Convincing Argument for SemVer](https://www.sitepoint.com/semantic-versioning-why-you-should-using/)  
-[Slides for Tagging at Shift3](https://docs.google.com/presentation/d/1mZ35fZ7GhIBcCAPzeAXXAprcQZUv4WL-BELp9tEsFE8/edit?usp=sharing)
+[Slides for Tagging at Bitwise](https://docs.google.com/presentation/d/1mZ35fZ7GhIBcCAPzeAXXAprcQZUv4WL-BELp9tEsFE8/edit?usp=sharing)

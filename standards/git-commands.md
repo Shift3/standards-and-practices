@@ -1,9 +1,9 @@
 # Git Commands
 Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows.
 
-At Shift3, we use git for a majority of our software projects.
+At Bitwise, we use git for a majority of our software projects.
 
-## Shift3 Git specific resources
+## Bitwise Git specific resources
 1. [Commits](commits.md)
 2. [Branching](branching.md)
 3. [Code Versioning](code-versioning.md)

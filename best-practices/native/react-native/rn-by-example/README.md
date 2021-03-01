@@ -6,7 +6,7 @@ RN >= 0.57
 
 Starting a new React Native project? We've put together a great starting point for your app so you can get started as fast as possible, without the fuss.
 
-[Shift3 React Native Boilerplate App](https://github.com/Shift3/rn-by-example)
+[Bitwise React Native Boilerplate App](https://github.com/Shift3/rn-by-example)
 
 ## Lessons
 
