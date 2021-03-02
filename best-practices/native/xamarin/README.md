@@ -2,7 +2,7 @@
 So, you think you can "Xam?"  I don't know if you think that you can!  At any rate, I'm here to help you and when that doesn't work... to tell you what to do.
 
 ## Follow C# Best Practices and Then Some
-Xamarin projects employ C#.  As such, you should follow Shift3's best practices for C#.  Consider K&R style and expression body syntax when possible to keep code LOC as readable and *concise* as possible.  Don't make us read three lines for one expression.
+Xamarin projects employ C#.  As such, you should follow Bitwise's best practices for C#.  Consider K&R style and expression body syntax when possible to keep code LOC as readable and *concise* as possible.  Don't make us read three lines for one expression.
 
 [Stack Overflow - Visual Studio and K&R](https://stackoverflow.com/questions/3048800/how-can-i-set-visual-studio-to-use-kr-style-bracketing/)
 
@@ -27,7 +27,7 @@ Xamarin Shell has a glut of benefits.  URL-ish, abstracted navigation is one of 
 Note that this technology is new to Xamarin Forms but do indeed attempt to use it unless you need a completely custom UI and custom flyout menu.  There are still some small growing pains.  For example, as of 09/11/2019 they still don't have a bindable, XAML-based back-button override that works without crashing.  Freunlaven!
 
 ## Consider Using Prism
-Prism is a library that also provides a navigation service, simplified MVVM, dependency injection and simplified EventToCommand behavior.  It may be a good fit for your Xamarin application and is used in at least one (as of writing this) Shift3 project, [FrontDeskKiosk](https://github.com/Shift3/fusd-front-desk-kiosk).  Xamarin Shell steals a bit of thunder from Prism, however, so it may be less useful if Shell is employed.
+Prism is a library that also provides a navigation service, simplified MVVM, dependency injection and simplified EventToCommand behavior.  It may be a good fit for your Xamarin application and is used in at least one (as of writing this) Bitwise project, [FrontDeskKiosk](https://github.com/Shift3/fusd-front-desk-kiosk).  Xamarin Shell steals a bit of thunder from Prism, however, so it may be less useful if Shell is employed.
 
 [Prism for WPF and Xamarin](http://prismlibrary.github.io/docs/)
 

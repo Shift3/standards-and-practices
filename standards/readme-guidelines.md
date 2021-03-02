@@ -1,6 +1,6 @@
 # Readme Guidelines
 
-All Shift3 projects should include a readme file with the following sections:
+All Bitwise projects should include a readme file with the following sections:
 - Project Name and Description
 - Project Requirements
 - Project Setup / Build Instructions

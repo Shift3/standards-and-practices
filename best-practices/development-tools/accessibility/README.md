@@ -14,7 +14,7 @@ While this may mean that there is no standard for non-government sites, that doe
 
 ## WCAG 2.1 Summary
 
-Shift3 would recommend giving the full standard a read.The criteria falls into four critera: **Perceivable**, **Operable**, **Understandable** and **Robust**. There are three standards, A, AA, and AAA. Most compliance requirements ask for level AA compliance.
+Bitwise would recommend giving the full standard a read.The criteria falls into four critera: **Perceivable**, **Operable**, **Understandable** and **Robust**. There are three standards, A, AA, and AAA. Most compliance requirements ask for level AA compliance.
 
 ### Perceivable
 

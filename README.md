@@ -2,8 +2,8 @@
 
 ## Reason for Repo
 
-- Set and maintain standards for Shift3/Bitwise projects.
-- Have a central repository where other Shift3/Bitwise members can share knowledge of best practices.
+- Set and maintain standards for Bitwise projects.
+- Have a central repository where other Bitwise members can share knowledge of best practices.
 - Have a reference point to start a new project or answer questions on different topics.
 
 [Click Here](/standards/contributing.md) to contribute!
@@ -11,11 +11,11 @@
 ## Code of Conduct
 
 1. No cussing, we're beyond that
-2. Keep the requests and issues professional and relevant to the work we're doing at Shift3/Bitwise
+2. Keep the requests and issues professional and relevant to the work we're doing at Bitwise
 3. Treat others with the same respect you would if you were talking to them in person. Don't be a jerk.
 4. Have fun and share your knowledge!
 
-## New to Shift3?
+## New to Bitwise?
 
 ### Here's what we expect you to know _before_ you write any code:
 
@@ -28,11 +28,11 @@
   - Branch off of development for features
   - Request reviews on your Pull Requests
   - Merge _reviewed_ code into development
-- [Branching](/standards/branching.md) at Shift3
-- [Commit Messages](/standards/commits.md) at Shift3
+- [Branching](/standards/branching.md) at Bitwise
+- [Commit Messages](/standards/commits.md) at Bitwise
 
 #### Code Versioning
-- [Shift3 SemVer](/standards/code-versioning.md)
+- [Bitwise SemVer](/standards/code-versioning.md)
 
 #### Project Setup
 - [Using Github Projects](/standards/project-setup.md) to communicate progress
@@ -40,7 +40,7 @@
 
 #### Code Review
 
-- [Code Review](/standards/code-reviews.md#process) process at Shift3
+- [Code Review](/standards/code-reviews.md#process) process at Bitwise
   - [Code Review Slides](https://docs.google.com/presentation/d/16S4qMbwdBT2u9c3-djHhSRXoUUytf12HGxloWh4y4cE/edit#slide=id.g35f391192_00)
 - [Acceptance Testing](/standards/acceptance-testing.md)
 - [Bug Reporting](/standards/bug-reporting.md)
@@ -83,7 +83,7 @@ Using Chocolatey has several advantages:
 
 - AWS is our primary platform for deployment (staging and production) so you should familiarize yourself with their [JavaScript SDK](https://aws.amazon.com/sdk-for-node-js/) and [whitepapers](https://aws.amazon.com/whitepapers/).
 
-##### Shift3 Standards & Practices Meetings:
+##### Bitwise Standards & Practices Meetings:
 
 ###### Meetings are now split into two types:
 
@@ -92,17 +92,17 @@ Using Chocolatey has several advantages:
 
 ##### Frontend Masters:
 
-- Shift3's main online teaching tool is [Frontend Masters](https://frontendmasters.com/). They have courses on all of the platforms we employ at Shift3, and you should take advantage of as many as possible.
+- Bitwise main online teaching tool is [Frontend Masters](https://frontendmasters.com/). They have courses on all of the platforms we employ at Bitwise, and you should take advantage of as many as possible.
 
 ##### WebStorm:
 
-- If you prefer to use JetBrains' tooling, Shift3 provides us with WebStorm Suite for free. We also use [Visual Studio](https://visualstudio.microsoft.com/) and [Visual Studio Code](https://code.visualstudio.com/).
+- If you prefer to use JetBrains' tooling, Bitwise provides us with WebStorm Suite for free. We also use [Visual Studio](https://visualstudio.microsoft.com/) and [Visual Studio Code](https://code.visualstudio.com/).
 
 ##### Photoshop:
 
-- If your job entails design work, you will need to get access to the Shift3 Adobe Photoshop license.
+- If your job entails design work, you will need to get access to the Bitwise Adobe Photoshop license.
 
-## Contributing to Shift3
+## Contributing to Bitwise
 
 ### You are expected to contribute _something_ to our processes. You can do this in many different ways, such as leading a S&P meeting, writing up a markdown sheet for this repository on a topic you are passionate about, leading a workshop, or posting discussion topics in Bitwise's #shift-3-technical-discussions channel.
 

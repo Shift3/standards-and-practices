@@ -2,7 +2,7 @@
 ## Project-Under-Test is Prepared
 - For mobile apps: Application is made available on Testflight or loaded onto test devices. Application should be deployed to the Client’s Apple and Google accounts.
 - For web apps: Site is deployed to a staging server. Staging server should live on clients hosting provider.
-- Developer or PM prepares an Acceptance Test per the Shift3 guidelines.
+- Developer or PM prepares an Acceptance Test per the Bitwise guidelines.
 - PM or Lead Dev will create a milestone for the QA Sprint with:
   - Milestone deadline
   - Short project or feature description

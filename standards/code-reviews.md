@@ -1,6 +1,6 @@
 # Code Reviews
 
-### The purposes of code review at Shift3 (and in the industry generally) are:
+### The purposes of code review at Bitwise (and in the industry generally) are:
 1. Teachability:
     * They help you remain teachable
     * They allow us to learn from each other's experience. What developer _doesn't_ want to keep learning?
@@ -15,7 +15,7 @@
 ## Process
 
 ### Author
-* At Shift3 we have a simple code review process
+* At Bitwise we have a simple code review process
 
 1. Before you create your Pull Request or tag anyone in anything, double check that you're ready
 

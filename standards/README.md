@@ -1,8 +1,8 @@
 # Standards
 
-This section describes Shift3 standards to be applied to all projects. Code reviews should be used to identify when these standards are not applied.
+This section describes Bitwise standards to be applied to all projects. Code reviews should be used to identify when these standards are not applied.
 
-## How we build software at Shift3
+## How we build software at Bitwise
 
 ### Setting up a Repository
 
@@ -30,11 +30,11 @@ This section describes Shift3 standards to be applied to all projects. Code revi
 
 #### [Managing Branches](branching.md)
 
-- Explanation of Shift3 branch structure
-- Git flow at Shift3
+- Explanation of Bitwise branch structure
+- Git flow at Bitwise
 - List of Git commands
 
-#### [Commit Messages the Shift3/Karma way](commits.md)
+#### [Commit Messages the Bitwise/Karma way](commits.md)
 
 - Commit message guidelines
 - How to format commit messages
@@ -82,4 +82,4 @@ This section describes Shift3 standards to be applied to all projects. Code revi
 
 #### [Contributing](contributing.md)
 
-- How to contribute to the Shift3 Standards & Practices Repository
+- How to contribute to the Bitwise Standards & Practices Repository
