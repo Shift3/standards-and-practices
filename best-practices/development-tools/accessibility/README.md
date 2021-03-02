@@ -21,7 +21,7 @@ Shift3 would recommend giving the full standard a read.The criteria falls into f
 - Does all your text content have a text alternative (like an alt attribute on an image)?
 - If you have audio and/or video content, is it captioned?
 - Do you have any instructions that rely solely on color/sound/shape?
-- Is your content restriced to one orientation (unless essential)?
+- Is your content restricted to one orientation (unless essential)?
 - Are your inputs clear with appropriate attributes for screen readers?
 - Are there any visual elements that convey information that only rely on color?
 - Is there any audio on your site that automatically plays?
@@ -67,7 +67,7 @@ Shift3 would recommend giving the full standard a read.The criteria falls into f
 
 ## Automated Testing Tools
 
-There are some nice tools that can be used to analyze a page. These two are Chrome browser extensions that are super simple to use. This won't cover everything; there are a lot of aspects that require manual review, but this is a good start. You simply activate the plugin on any page in your browser and a sidebar pops up assesing the page. The SI plug-in will even point out the code if you have the inspector open.
+There are some nice tools that can be used to analyze a page. These two are Chrome browser extensions that are super simple to use. This won't cover everything; there are a lot of aspects that require manual review, but this is a good start. You simply activate the plugin on any page in your browser and a sidebar pops up assessing the page. The SI plug-in will even point out the code if you have the inspector open.
 
 - [WAVE Browser Extension for Chrome and Firefox](https://wave.webaim.org/extension/)
 
