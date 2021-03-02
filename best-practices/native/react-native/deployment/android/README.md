@@ -57,12 +57,12 @@ Before you can upload a build to Google Play, You'll need to set up the minimum 
 6. Provide a privacy policy URL
 
 7. Provide a content rating
-	- Google Play offeres a series of questions that will automatically provide a content rating for you
+	- Google Play offers a series of questions that will automatically provide a content rating for you
 
 ### Creating an APK
 
 #### What is an APK?
-The APK is the file that represents your application. It is uploaded to the Google Play Store and is eventually downloaded on the user's phone, letting them run your application. Emulators and dev-mode phones can run unsigned APKs, but you'll need to create a signed APK to distrube your app to users.
+The APK is the file that represents your application. It is uploaded to the Google Play Store and is eventually downloaded on the user's phone, letting them run your application. Emulators and dev-mode phones can run unsigned APKs, but you'll need to create a signed APK to distribute your app to users.
 
 #### What is a signed APK?
 A signed APK is an APK that has an attached keystore file. The keystore file contains some additional information about the app and the app uploader. If you're putting the app on the Play Store for the first time, you'll need to create a keystore file. If you're updating an existing app, you'll need the existing keystore before you can update the app on the Google Play Store. **IMPORTANT NOTE:**  Make sure you backup your Keystore after creating it. Once an app is published to the Play Store, it will be impossible to update it if you lose the keystore file or password.
@@ -80,6 +80,6 @@ A signed APK is an APK that has an attached keystore file. The keystore file con
 
 ###### In the [Google Play Console](https://play.google.com/console "Google Play Console"):
 - Release Management -> App Releases
-- Select 'Manange' on the track you'd like to release to. (Closed tracks only allow testers you specifically add, open tracks allow anyone with the download link to install the app)
+- Select 'Manage' on the track you'd like to release to. (Closed tracks only allow testers you specifically add, open tracks allow anyone with the download link to install the app)
 - Select 'Create Release'
 - Select 'Browse Files' and upload your signed APK

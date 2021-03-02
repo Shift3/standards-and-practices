@@ -4,7 +4,7 @@ Upgrading any sort of library/framework can be daunting, fraught with errors. Ex
 
 ## Why upgrade?
 
-When Expo releases an SDK, they support it for around six months, according to their documentation. In practice, it's a little longer than that, but it's still fast enough that you will find your app with a deprecated SDK. If your SDK is depracated, you may not be able to even open up a development environment.
+When Expo releases an SDK, they support it for around six months, according to their documentation. In practice, it's a little longer than that, but it's still fast enough that you will find your app with a deprecated SDK. If your SDK is deprecated, you may not be able to even open up a development environment.
 
 With SDK 32 and lower, Expo has given it End-Of-Life status. This is mostly because in August of 2019, Google required all their .apk builds to be 64-bit, and SDK 32 and lower build in 32-bit. This means unless you are at at least SDK 33, not only can you not create a development environment, but you also cannot build and subsequently deploy.
 
@@ -63,7 +63,7 @@ While the following may not hold true if you decide to upgrade to 5.x, but if yo
 
 ## 34 to 35
 
-The cli command in the documentation, `expo upgrade 35.0.0` worked fine for me, although I couldn't verify with a 100% certainty thanks to the react-navigation issue above. You will get the same prompts about updating simulators, go ahead and answer no. If you were geting the RNCSafeView error before, you will still be getting that again here.
+The cli command in the documentation, `expo upgrade 35.0.0` worked fine for me, although I couldn't verify with a 100% certainty thanks to the react-navigation issue above. You will get the same prompts about updating simulators, go ahead and answer no. If you were getting the RNCSafeView error before, you will still be getting that again here.
 
 ## 35 to 36
 

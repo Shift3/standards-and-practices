@@ -51,7 +51,7 @@ Before you can upload a build to Google Play, You'll need to set up the minimum 
 6. Provide a privacy policy URL
 
 7. Provide a content rating
-	- Google Play offeres a series of questions that will automatically provide a content rating for you
+	- Google Play offers a series of questions that will automatically provide a content rating for you
 
 ### Creating an APK
 
