@@ -87,7 +87,7 @@ Using Chocolatey has several advantages:
 
 ###### Meetings are now split into two types:
 
-- *[Presentations](presentations/README.md)*: Twice a month the developers meet on every other Wednesday from 4:00pm - 5:00pm PST to discuss a new Standard or Practice for the company, shared experiences with tools the developer(s) used, or just a topic they find interesting related to development. You are highly encouraged to participate actively by leading a meeting on a topic of your choice. Ask Ryeker Herndon to add you to the GCal event so that you get reminders and emails.
+- *[Presentations](presentations/README.md)*: Twice a month the developers meet on every other Wednesday from 4:00pm - 5:00pm PST to discuss a new Standard or Practice for the company, shared experiences with tools the developer(s) used, or just a topic they find interesting related to development. You are highly encouraged to participate actively by leading a meeting on a topic of your choice. Ask [Elizabeth Eidelson](eeidelson@bitwiseindustries.com), [Sonia Rohani](nrohani@bitwiseindustries.com), or [Joel (Gyuhun Lee)](glee@bitwiseindustries.com) to add you to the GCal event so that you get reminders and emails.
 - *[Workshops](workshops/README.md)*: Once a month we will do a deep dive into a topic of interest for our workflow and/or processes. These will typically take longer than 1 hour, and will be a classroom/workshop setting. One developer will lead the workshop and the goal will be to produce developers who are proficient at a skill or process that will help us in our work.
 
 ##### Frontend Masters:
