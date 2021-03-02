@@ -28,7 +28,7 @@ Clicking on the "Contrast" tab will display details on any contrast errors in yo
 
 ![WAVE Details](screens/wave-details.png)
 
-This will display any Error and Alerts on the page. Errors should always be fixed. Alerts can sometimes be ignored. For example, any link to a PDF file will prompt an alert because PDFs can't be tested automatically. Clicking the blue **i** next to the alert will give you a more detailed descripion as to why this is a problem and how it can be remedied.
+This will display any Error and Alerts on the page. Errors should always be fixed. Alerts can sometimes be ignored. For example, any link to a PDF file will prompt an alert because PDFs can't be tested automatically. Clicking the blue **i** next to the alert will give you a more detailed description as to why this is a problem and how it can be remedied.
 
 You don't need to worry about the other categories; the next automated test will present your ARIA landmarks in a way that's easier to evaluate, but this can be helpful to get an overview of the features and landmarks of your page.
 
