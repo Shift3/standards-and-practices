@@ -1,0 +1,75 @@
+
+trigger:
+  - main
+
+variables:
+  vmImageName: windows-latest
+
+stages:
+  - stage: Production
+    displayName: Deploy to the production after building
+    variables:
+      - group: env_variables
+
+    jobs:
+      - job: Build_Deployment
+        displayName: 'Build then deploy to the production environment'
+        pool:
+          vmImage: $(vmImageName)
+
+        steps:
+          - task: citrus-andriessen.cag-replace-tokens.custom-build-release-task.ReplaceTokens@1
+            displayName: 'Replace Tokens'
+            inputs:
+              sourcePath: .
+              targetFilePattern: appsettings.json
+              tokenRegex: '#{(\w+)}#'
+              replaceTokenList: |
+                                Actual_Variable_Name:$(Variable_Name_Library_To_Replace)
+                                ...
+              throwExceptionifNotMapped: true
+
+          - task: DotNetCoreCLI@2
+            displayName: Restore
+            inputs:
+              command: restore
+              projects: '$(Parameters.RestoreBuildProjects)'
+
+          - task: DotNetCoreCLI@2
+            displayName: Build
+            inputs:
+              projects: '$(Parameters.RestoreBuildProjects)'
+              arguments: '--configuration $(BuildConfiguration)'
+
+          - task: DotNetCoreCLI@2
+            displayName: Test
+            inputs:
+              command: test
+              projects: '$(Parameters.TestProjects)'
+              arguments: '--configuration $(BuildConfiguration)'
+
+          - task: DotNetCoreCLI@2
+            displayName: Publish
+            inputs:
+              command: publish
+              publishWebProjects: True
+              arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
+              zipAfterPublish: false
+              modifyOutputPath: false
+
+          - task: PublishBuildArtifacts@1
+            displayName: 'Publish Artifact'
+            inputs:
+              PathtoPublish: '$(build.artifactstagingdirectory)'
+            condition: succeededOrFailed()
+
+          - task: AmazonWebServices.aws-vsts-tools.BeanstalkDeployApplication.BeanstalkDeployApplication@1
+            displayName: 'Deploy to Elastic Beanstalk'
+            inputs:
+              awsCredentials: 'Azure-AWS'
+              regionName: <aws-region>
+              applicationName: <applocation-name>
+              environmentName: <environment-name>
+              applicationType: aspnetCoreWindows
+              dotnetPublishPath: '$(build.artifactstagingdirectory)'
+

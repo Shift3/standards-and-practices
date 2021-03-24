@@ -1,0 +1,42 @@
+trigger:
+- main
+
+variables:
+  # Agent VM image name
+  vmImageName: 'windows-2019'
+
+pool:
+  name: Azure Pipelines
+  
+stages:
+- stage: Build
+  displayName: Build Production Version
+
+  jobs:
+  - job: Build
+    displayName: Build Production Version
+    pool:
+      vmImage: $(vmImageName)
+
+    steps:
+    - task: DotNetCoreCLI@2
+      displayName: 'Build project'
+      inputs:
+        projects: '**/tulare-court-azure/*.csproj'
+        arguments: '--output $(System.DefaultWorkingDirectory)/publish_output --configuration Release'
+
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: 'publish_output/'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+    
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Build Artifact: drop'
+      inputs:
+        PathtoPublish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        publishLocation: Container
+        artifactName: 'drop'
+
