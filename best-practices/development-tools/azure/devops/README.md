@@ -11,4 +11,4 @@ Azure function apps run your code in a serverless environment without having to 
 
 # Testing a .NET CORE APP using Azure DevOps
 
-- [Azure APP Functions continues integration](continuous-integration/azure-app-functions-continuous-integration.md)
+- [Azure APP Functions continuous integration](continuous-integration/azure-app-functions-continuous-integration.md)

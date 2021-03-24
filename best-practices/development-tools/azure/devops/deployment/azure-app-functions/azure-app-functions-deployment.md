@@ -1,4 +1,4 @@
-# Deployment using Azure DevOps
+# Azure Functions Deployment using Azure DevOps
 
 ## Pre-Deployment
 ### Install AzureDevOps Extensions
