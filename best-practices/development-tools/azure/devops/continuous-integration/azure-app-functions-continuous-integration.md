@@ -8,4 +8,4 @@
 5. Get the pipeline from `azure-pipelines-azure-app-functions-ci.yml`.
 6. Click on `Variables` to define a list of all variables have been used with running test command.
 7. Click on `Save and run`.
-8. Choose above created pipeline. click on `Edit` then `Triggers` from right-hand side. make sure to check `Enable continuous integration` under `Pull request validation`. (To trigger above pipeline process after each commit into the pull request).
+8. Choose above created pipeline. Click on `Edit` then `Triggers` from right-hand side. Make sure to check `Enable continuous integration` under `Pull request validation` (To trigger above pipeline process after each commit into the pull request).

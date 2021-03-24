@@ -2,7 +2,9 @@
 
 ## Pre-Deployment
 ### Install AzureDevOps Extensions
-There are two extensions should be installed before in AzureDevOps [AWS Toolkit for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-vsts-tools&targetId=af056fb1-e0c2-4678-9ac3-dee687452af2&utm_source=vstsproduct&utm_medium=ExtHubManageList) and [ReplaceTokens](https://marketplace.visualstudio.com/items?itemName=citrus-andriessen.cag-replace-tokens&targetId=af056fb1-e0c2-4678-9ac3-dee687452af2&utm_source=vstsproduct&utm_medium=ExtHubManageList).
+Please install the following two extensions:
+- [AWS Toolkit for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-vsts-tools&targetId=af056fb1-e0c2-4678-9ac3-dee687452af2&utm_source=vstsproduct&utm_medium=ExtHubManageList).
+- [ReplaceTokens](https://marketplace.visualstudio.com/items?itemName=citrus-andriessen.cag-replace-tokens&targetId=af056fb1-e0c2-4678-9ac3-dee687452af2&utm_source=vstsproduct&utm_medium=ExtHubManageList).
 
 ### Configure AzureDevOps Service Connection
 Navigate to the project in AzureDevOps then choose Project Settings. In the Project Settings page navigate to the Service Connections page. Choose Create service connection, select AWS, and choose Next. Input an Access Key ID and Secret Access Key. (You’ll need an IAM user with permissions for Amazon ECR and Amazon ECS in order to deploy via the Azure DevOps pipeline.) Choose Save. (Get the Access Key ID and Secret Access Key credentials from Vault)
