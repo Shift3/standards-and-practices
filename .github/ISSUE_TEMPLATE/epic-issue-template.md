@@ -8,16 +8,19 @@ assignees: ''
 ---
 
 ## Desired Feature
-A clear and concise description of what the feature is and what it does.
+_A clear and concise description of what the feature is and what it does._
 
 ## Actual/Current Behavior
-A clear and concise description of what is currently happening.
+_A clear and concise description of what is currently happening._
 
 ## Steps to Implement
-Add a list of the steps required to implement this feature
+_Add a list of the steps required to implement this feature_
 
 ## Epic Checklist
-Add a list of issues related to this epic
+_Add a list of issues related to this epic_
+- [ ] Issue #997
+- [ ] Issue #998
+- [ ] Issue #999
 
 ## Additional context
-Add any other context or screenshots about the feature request here.
+_Add any other context or screenshots about the feature request here._
