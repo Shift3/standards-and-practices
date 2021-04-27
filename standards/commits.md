@@ -17,7 +17,7 @@
  * **Your commit messages should be formatted as follows:** 
     >**type(scope):body**  
 
-    1. Commit **Type**: Select one of the following 7 commit types. These are your _only_ options for commit type:
+    1. Commit **Type**: Select one of the following 8 commit types. These are your _only_ options for commit type:
         * *feat* : A new feature for the application user. Rolling out a new module, new piece of functionality, etc. 
         * *fix* : Bug fix to your production code. Dealing with GH Issues, fixing a bug, etc.
         * *docs* : Changes to your documentation. Adding a comment, editing a comment, changing README.md files, etc.
