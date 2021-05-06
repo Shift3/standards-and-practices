@@ -63,7 +63,7 @@ This section describes Bitwise standards to be applied to all projects. Code rev
 - GitHub labels for Issue management
 - Bug reporting template
 
-#### [QA Process](../processes/qa-process.md)
+#### [QA Process](../standards/qa-process.md)
 
 - How to setup your repository for a QA sprint
 - How to schedule QA time
