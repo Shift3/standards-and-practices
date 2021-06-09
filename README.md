@@ -102,6 +102,13 @@ Using Chocolatey has several advantages:
 
 - If your job entails design work, you will need to get access to the Bitwise Adobe Photoshop license.
 
+## Need Help?
+Getting stuck is a natual part of development and happends to the best of us. It's better to reach out than to stay silent and we encourage you to do so. If you find yourself stuck on a task for more than 45 minutes, here are a couple of places to get help:
+
+##### Slack channels:
+1. *bwtc-technical-discussions* - Great place for technical questions that involve some code. 
+2. *Your team channel* - When you start a project, you will be added to a private team channel. Feel free to ask your questions there! Your team lead may be able to help you through your blocker.
+
 ## Contributing to Bitwise
 
 ### You are expected to contribute _something_ to our processes. You can do this in many different ways, such as leading a BW Developer Connect meeting, writing up a markdown sheet for this repository on a topic you are passionate about, leading a workshop, or posting discussion topics in Bitwise's #shift-3-technical-discussions channel.
