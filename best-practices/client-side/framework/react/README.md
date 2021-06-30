@@ -23,6 +23,7 @@ To get more familiar with the structure of a React/React Native based project, b
 ## Helpful React Development Web Plugins
 
 -   [React Developer Tools](https://reactjs.org/blog/2019/08/15/new-react-devtools.html) is a Chrome DevTools extension for the open-source React JavaScript library. It allows you to inspect the React component hierarchies in the Chrome Developer Tools. Supports Hooks, including inspecting nested objects.
+    -   [Guide to Using React Developer Tools](https://www.digitalocean.com/community/tutorials/how-to-debug-react-components-using-react-developer-tools) - This guide gives an overview of how to use RDT to inspect component state, props, and hierarchy.
 -   [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension) for debugging application's state changes. The extension provides power-ups for your Redux development workflow.
 
 ## Spinning up a boilerplate
