@@ -18,18 +18,18 @@ There are [many conventions](https://github.com/conventional-changelog/commitlin
 
 ### Your commit messages should be formatted as follows:
 
-Short message example:
+Short message example (`git commit -m "..."`):
 
 `type(scope):subject`
 
-Long message example:
+Long message example (`git commit`):
 ```
 type(scope):subject
 (blank line)
 body
 ```
 
-**Type**: Select one of the following 8 commit types. These are your _only_ options for commit type:
+`type`: Select one of the following 8 commit types. These are your _only_ options for commit type:
 
 - **_feat_**: A new feature for the application user. Rolling out a new module, new piece of functionality, etc.
 - **_fix_**: Bug fix to your production code. Dealing with GH Issues, fixing a bug, etc.
@@ -40,11 +40,11 @@ body
 - **_chore_**: Updating gulp, webpack, package.json files. This is developer-facing _only_.
 - **_workaround_**: Temporary fix until a more robust solution is found or until other factors are resolved.
 
-**Scope**: Narrow the scope of the commit to a one or two word description in parentheses
+`scope`: Narrow the scope of the commit to a one or two word description in parentheses
 
-**Subject**: Favor imperative mood, present tense, active voice, and start with verbs. Don't use a period at the end. Think of it as a newspaper headline.
+`subject`: Favor imperative mood, present tense, active voice, and start with verbs. Don't use a period at the end. Think of it as a newspaper headline.
 
-**Body** (optional): If necessary, provide additional context that can help other developers in the future. This is normally unnecessary but some use cases are:
+`body` (optional): If necessary, provide additional context that can help other developers in the future. This is normally unnecessary but some use cases are:
 
 - If the commit contains a new package you've added to the project
 - If the commit contains a change to your build that you need to notate
