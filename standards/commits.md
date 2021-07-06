@@ -18,7 +18,16 @@ There are [many conventions](https://github.com/conventional-changelog/commitlin
 
 ### Your commit messages should be formatted as follows:
 
+Short message example:
+
 `type(scope):subject`
+
+Long message example:
+```
+type(scope):subject
+(blank line)
+body
+```
 
 **Type**: Select one of the following 8 commit types. These are your _only_ options for commit type:
 
@@ -33,9 +42,9 @@ There are [many conventions](https://github.com/conventional-changelog/commitlin
 
 **Scope**: Narrow the scope of the commit to a one or two word description in parentheses
 
-**Message Subject**: Favor imperative mood, present tense, active voice, and start with verbs. Don't use a period at the end. Think of it as a newspaper headline.
+**Subject**: Favor imperative mood, present tense, active voice, and start with verbs. Don't use a period at the end. Think of it as a newspaper headline.
 
-**Message Body** (optional): If necessary, provide additional context that can help other developers in the future. This is normally unnecessary but some use cases are:
+**Body** (optional): If necessary, provide additional context that can help other developers in the future. This is normally unnecessary but some use cases are:
 
 - If the commit contains a new package you've added to the project
 - If the commit contains a change to your build that you need to notate
