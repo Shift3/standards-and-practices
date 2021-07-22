@@ -40,8 +40,8 @@ Docker Compose File Documentation:
   - [Django](./django)
 
 ## Examples from Internal Projects:
-  - [node-boilerplate](https://github.com/Shift3/boilerplate-client-angular/blob/main/docker-compose.yml)
-  - [angular-boilerplate](https://github.com/Shift3/boilerplate-server-node/blob/develop/docker-compose.yml)
+  - [angular-boilerplate](https://github.com/Shift3/boilerplate-client-angular/blob/main/docker-compose.yml)
+  - [node-boilerplate](https://github.com/Shift3/boilerplate-server-node/blob/develop/docker-compose.yml)
 
 Generally a project should have three files for Docker support:
 
