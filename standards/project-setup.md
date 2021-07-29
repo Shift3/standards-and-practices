@@ -16,7 +16,4 @@
   3. Open as many issues as you need to complete each epic.  
     Remember: follow Bitwise's [branching guide](branching.md) when you start working on these issues.
 
-### Example from Shift3:
-  [Sinclair Project Boards](https://github.com/Shift3/sinclair-scanner-application/projects)
-
 * This is your Project Manager's primary way of identifying your progress, so make sure check the automated progress and tweak anything that needs to be changed as the project progresses.
