@@ -72,7 +72,7 @@
 
 Using Chocolatey has several advantages:
 1. You can install most of the software you need just by running a single script.
-2. You can update all of this software later; by running `choco upgrade all`; as Administrator.
+2. You can update all of this software later by running `choco upgrade all` as Administrator.
 3. Chocolatey will automatically skip installing browser toolbars and junk like that.
 
 #### Account Setup
@@ -88,7 +88,7 @@ Using Chocolatey has several advantages:
 ###### Meetings are now split into two types:
 
 - *[Presentations](presentations/README.md)*: Twice a month the software development teams in the Bitwise ecosystem meet on every other Wednesday from 4:00 pm - 5:00 pm PST to share their accomplishments, horror stories, workflow, and lessons learned with the rest of the BW community. While these meetings will generally be developer-focused, we invite anyone in the BW family to drop in and participate. You are highly encouraged to participate actively by leading a meeting on a topic of your choice. Ask [Elizabeth Eidelson](mailto:eeidelson@bitwiseindustries.com), [Sonia Rohani](mailto:nrohani@bitwiseindustries.com), or [Joel (Gyuhun Lee)](mailto:glee@bitwiseindustries.com) to add you to the GCal event so that you get reminders and emails.
-- *[Workshops](workshops/README.md)*: Once a month we will do a deep dive into a topic of interest for our workflow and/or processes. These will typically take longer than 1 hour and will be a classroom/workshop setting. One developer will lead the workshop and the goal will be to produce, developers who are proficient at a skill or process that will help us in our work.
+- *[Workshops](workshops/README.md)*: Once a month we will do a deep dive into a topic of interest for our workflow and/or processes. These will typically take longer than 1 hour and will be a classroom/workshop setting. One developer will lead the workshop and the goal will be to produce developers who are proficient at a skill or process that will help us in our work.
 
 ##### Frontend Masters:
 
@@ -106,7 +106,7 @@ Using Chocolatey has several advantages:
 Getting stuck is a natural part of the development and happens to the best of us. It's better to reach out than to stay silent, and we encourage you to do so. If you find yourself stuck on a task for more than 45 minutes, here are a couple of places to get help:
 
 ##### Slack channels:
-1. **bwtc-technical-discussions** - Great place for technical questions that involve some code. 
+1. **bwtc-technical-discussions** - Great place for technical questions that involve some code.
 2. **Your team channel** - When you start a project, you will be added to a private team channel. Feel free to ask your questions there! Your team lead may be able to help you through your blocker.
 
 ## Contributing to Bitwise
