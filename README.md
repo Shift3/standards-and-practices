@@ -103,7 +103,7 @@ Using Chocolatey has several advantages:
 - If your job entails design work, you will need to get access to the Bitwise Adobe Photoshop license.
 
 ## Need Help?
-Getting stuck is a natural part of the development and happens to the best of us. It's better to reach out than to stay silent, and we encourage you to do so. If you find yourself stuck on a task for more than 45 minutes, here are a couple of places to get help:
+Getting stuck is a natural part of development and happens to the best of us. It's better to reach out than to stay silent, and we encourage you to do so. If you find yourself stuck on a task for more than 45 minutes, here are a couple of places to get help:
 
 ##### Slack channels:
 1. **bwtc-technical-discussions** - Great place for technical questions that involve some code.
