@@ -12,12 +12,14 @@ At Bitwise, we use git for a majority of our software projects.
 
 ### Lesser known Git Commands
 
-#### Git Switch
-
-Git Official Documentation: https://git-scm.com/docs/git-switch
+### Switch & Restore
 
 Git Switch (and Restore) were added to address overloading of the `checkout` command, and to provide alternative (and clearer) ways to do some basic work.
 These commands do not provide new functionality, but may be easier to remember how to use them and what they do.
+
+#### Git Switch
+
+Git Official Documentation: https://git-scm.com/docs/git-switch
 
 Switch is useful to switch to another branch, creating a new branch in the process if desired.
 
@@ -48,9 +50,6 @@ provides identical functionality.
 #### Git Restore
 
 Git Official Documentation: https://git-scm.com/docs/git-restore
-
-Git Switch (and Restore) were added to address overloading of the `checkout` command, and to provide alternative (and clearer) ways to do some basic work.
-These commands do not provide new functionality, but may be easier to remember how to use them and what they do.
 
 Git Restore is useful to undo either changes made or changes staged.
 
