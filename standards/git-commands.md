@@ -65,7 +65,7 @@ If we wanted to restore the file to what it looked like say, two commits ago, we
 $ git restore --source HEAD~1 <file-name>
 ```
 
-Commit hashes can also be used instead of the `HEAD~#` pointer for "time-travel" operations.
+Commit hashes can also be used instead of the `HEAD~#` pointer for "rewind" operations. In this context, restore is "rewinding" one or more files to a previous point in those file(s) history. In this way, files can be worked on as if they hadn't undergone any changes since the given point in time (e.g.: point in time refers to a commit hash or HEAD pointer).
 
 Undoing staged files is another use for Restore. For instance, if we forgot to include a file in `.gitignore`, and we've staged the files for a commit, these can be unstaged prior to a commit in a relatively simple manner.
 
