@@ -1,7 +1,6 @@
 # iOS Deployment
 
 Example React Native Projects which have been deployed:
-  * Row Forge: https://github.com/Shift3/row-forge-ns/wiki
   * Sundial Assembly: https://github.com/Shift3/sundial-mobile-app#apple
 
 ### Setting up Emulator
