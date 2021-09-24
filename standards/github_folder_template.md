@@ -2,7 +2,7 @@
 
 ### What is the .github folder?
 
-The `.github` folder allows users to store GitHub related files/folders. Some of these files and folders perform specials functions for organizing your repo, issues, and PRs.
+The `.github` folder allows users to store GitHub related files/folders. Some of these files and folders perform special functions for organizing your repo, issues, and PRs.
 
 Here are some of those functions:
 - Creating issue templates ([ISSUE_TEMPLATE folder](../.github/ISSUE_TEMPLATE))
