@@ -19,6 +19,7 @@ To get more familiar with the structure of a React/React Native based project, b
 
 -   [Jest](https://jestjs.io/) is a JavaScript library for creating, running, and structuring tests.
 -   [Enzyme](https://enzymejs.github.io/enzyme/) created by Airbnb is a JavaScript Testing utility for React.
+-   [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) created by [Kent C. Dodd](https://kentcdodds.com/). Its philosophy is for its test to resemble a real user as much as possible, meaning it typically will not test what happens inside a component (the implementation details) since that's something users wouldn't do.
 
 ## Helpful React Development Web Plugins
 
