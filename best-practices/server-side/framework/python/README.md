@@ -29,19 +29,14 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea – let's do more of those!
 ```
 
-
 ## Learning Python for the first time? 
 * Take a look at the [Beginners Guide](https://wiki.python.org/moin/BeginnersGuide)
 * Official [Python Tutorials](https://docs.python.org/3/tutorial/index.html#tutorial-index)
-
-
 
 ## Recommendations
 * Use black for automatic code formatting: https://github.com/psf/black, preferably in conjunction with Continous Integration tools. 
 * Write tests with pytest: https://docs.pytest.org/en/latest/
 * All projects should have a requirements.txt , preferably with pinned requirements. You can use `pip freeze > requirements.txt` on an existing project to get the requirement file started.
-
-
 
 ## Links and Services
 * In the Fresno area? Why not try the [Fresno Python User Group](https://fresnopython.com)? 
