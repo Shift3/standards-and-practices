@@ -111,7 +111,7 @@ Getting stuck is a natural part of development and happens to the best of us. It
 
 ## Contributing to Bitwise
 
-#### You are expected to contribute _something_ to our processes. You can do this in many different ways, such as leading a BW Developer Connect meeting, writing up a markdown sheet for this repository on a topic you are passionate about, leading a workshop, or posting discussion topics in Bitwise's #shift-3-technical-discussions channel.
+#### You are expected to contribute _something_ to our processes. You can do this in many different ways, such as leading a BW Developer Connect meeting, writing up a markdown sheet for this repository on a topic you are passionate about, leading a workshop, or posting discussion topics in Bitwise's #bwtc-technical-discussions channel.
 
 #### [Click Here](/standards/contributing.md) to start contributing.
 
