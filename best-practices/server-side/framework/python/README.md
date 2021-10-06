@@ -34,7 +34,7 @@ Namespaces are one honking great idea – let's do more of those!
 * Official [Python Tutorials](https://docs.python.org/3/tutorial/index.html#tutorial-index)
 
 ## Recommendations
-* Use black for automatic code formatting: https://github.com/psf/black, preferably in conjunction with Continuous Integration tools. 
+* Use black for automatic code formatting: https://github.com/psf/black, preferably in conjunction with Continuous Integration and git hooks.
 * Write tests with pytest: https://docs.pytest.org/en/latest/
 * All projects should have a `requirements.txt`, preferably with pinned requirements.
 
@@ -45,3 +45,4 @@ Namespaces are one honking great idea – let's do more of those!
 ## Frameworks for python
 
 - [Django](django/README.md)
+- [Flask](https://flask.palletsprojects.com)
