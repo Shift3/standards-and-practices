@@ -40,7 +40,7 @@
 
         * Automatic assignments balance the workload evenly across the whole team so everyone gets a chance to be a reviewer and a reviewee.
 
-        * Pending PR reviews show up on the #shift3-code-review Slack channel as a notification and reminder. This has helped us develop a quick turn-around on reviews.
+        * Pending PR reviews show up on the #bwtc-code-review Slack channel as a notification and reminder. This has helped us develop a quick turn-around on reviews.
 
     - Our standard code review process only requires a visual inspection of code. It is not necessary to pull down and run/test the code. That said, project teams can add their own functional review process within the team in addition to the standard cross-team visual review.
 
