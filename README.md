@@ -52,7 +52,7 @@
 - [Homebrew](https://brew.sh/)
 - [nvm](https://www.wdiaz.org/how-to-install-nvm-with-homebrew/)
 - [Slack](https://slack.com/downloads/osx)
-  - Sign into shift3tech.slack.com team with your work email
+  - Sign into bitwiseindustries.slack.com team with your work email
 - Either [WebStorm](https://www.jetbrains.com/webstorm/download/#section=mac)(See below _before_ you install) or [Visual Studio Code](https://code.visualstudio.com/download)
 
 ##### Windows:
