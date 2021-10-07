@@ -23,11 +23,15 @@
 
 #### Git
 
-- [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
-  - Keep branches for main and development
-  - Branch off of development for features
-  - Request reviews on your Pull Requests
-  - Merge _reviewed_ code into development
+- [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workflow
+  - Maintain branches for `main` and `development`
+  - **Branch off** `development` for new features
+  - Request reviews on your Pull Requests to `development`
+  - Merge _reviewed_ code into `development`
+  - When milestone is complete branch off `development` into a new `release` branch
+  - QA the `release` branch, once stable merge `release` branch into `main` (and **tag** it) and also merge back into `development`
+  - For any hot fixes, branch off `main` into a new `hotfix` branch, fix issue, then merge fixes back into `main` (and **tag** it) and also merge into `development`
+  - ![Gitflow diagram](https://nvie.com/img/git-model@2x.png) Credit: <https://nvie.com/posts/a-successful-git-branching-model/>
 - [Branching](/standards/branching.md) at Bitwise
 - [Commit Messages](/standards/commits.md) at Bitwise
 
