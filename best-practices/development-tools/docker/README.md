@@ -43,13 +43,13 @@ Docker Compose File Documentation:
 
 ## Examples from Internal Projects
 
-  - [angular-boilerplate](https://github.com/Shift3/boilerplate-client-angular/blob/main/docker-compose.yml)
-  - [node-boilerplate](https://github.com/Shift3/boilerplate-server-node/blob/develop/docker-compose.yml)
+  - [angular-boilerplate](https://github.com/Shift3/boilerplate-client-angular/blob/main/docker compose.yml)
+  - [node-boilerplate](https://github.com/Shift3/boilerplate-server-node/blob/develop/docker compose.yml)
 
 Generally a project should have three files for Docker support:
 
   - Dockerfile
-  - docker-compose.yml
+  - docker compose.yml
   - .dockerignore (copy of .gitignore)
 
 ## General Use and Tips
@@ -60,15 +60,15 @@ Starting Docker is very simple but there are definitely some commands to remembe
 
 1. Dockerfile
 2. Dockerfile.dev or Dockerfile.prod (project specific)
-3. docker-compose.yml or docker-compose.yaml
+3. docker compose.yml or docker compose.yaml
 
 In most projects instead of just a Dockerfile, we usually split out the files into .dev and .prod. This allows us to make adjustments based on our environment and how the project is setup for development vs production.
 
-The `docker-compose.yml` file is the one normally used to start Docker. Be sure to run Docker compose commands from the same directory as your compose file. To start up the project, simply run:
+The `docker compose.yml` file is the one normally used to start Docker. Be sure to run Docker compose commands from the same directory as your compose file. To start up the project, simply run:
 
-`docker-compose up`
+`docker compose up`
 
-This command will start all of the services specified in the `docker-compose.yml` file, and run your application locally. When we only specify `up` we will lock our terminal to display the output of all the running containers in the Docker compose file. In some cases this is what we want, however we may not always want to see the output of every container, or lock our terminal to the containers. To avoid this, you can instead run `docker-compose up -d` to run the containers in “detached” mode. This simply means that the containers will still start up, but the process now runs in the background detached from your terminal. This provides two benefits:
+This command will start all of the services specified in the `docker compose.yml` file, and run your application locally. When we only specify `up` we will lock our terminal to display the output of all the running containers in the Docker compose file. In some cases this is what we want, however we may not always want to see the output of every container, or lock our terminal to the containers. To avoid this, you can instead run `docker compose up -d` to run the containers in “detached” mode. This simply means that the containers will still start up, but the process now runs in the background detached from your terminal. This provides two benefits:
 
 1. The containers are no longer locked to your terminal, and will continue to run if you close your terminal or exit the session
 2. The container logs can now be viewed individually instead of all at once
@@ -78,16 +78,16 @@ In general the preference is to run in detached mode, that way you are free to u
 
 ### How to tear down Docker
 
-Tearing down Docker is a little more difficult and has a few more ways to do so. If you are not running the containers in detached mode, you can simply `ctrl c` in your terminal and compose will exit gracefully after a few seconds. If you are running the containers in detached mode, you will need to run `docker-compose down` in order to stop all of the containers. In most cases, simply running down is the way to stop the containers, but if you ever need to destroy the images and volumes, you will need to run `docker-compose down -v`. This command will not only stop the containers, but it will remove any images, volumes, and networks associated with the containers. You should only need to use the `-v` flag in rare occasions:
+Tearing down Docker is a little more difficult and has a few more ways to do so. If you are not running the containers in detached mode, you can simply `ctrl c` in your terminal and compose will exit gracefully after a few seconds. If you are running the containers in detached mode, you will need to run `docker compose down` in order to stop all of the containers. In most cases, simply running down is the way to stop the containers, but if you ever need to destroy the images and volumes, you will need to run `docker compose down -v`. This command will not only stop the containers, but it will remove any images, volumes, and networks associated with the containers. You should only need to use the `-v` flag in rare occasions:
 
-1. If you need or want to start fresh in a project, `docker-compose down -v` will delete any data related and acts as a “reset” for the project. This is a destructive command and should be used with caution
+1. If you need or want to start fresh in a project, `docker compose down -v` will delete any data related and acts as a “reset” for the project. This is a destructive command and should be used with caution
     1. WARNING - this is completely destructive and you will not get your data back unless you have a backup
 2. You need to reset your database and or change the database credentials
     1. This can be done through your database, but if you do change the user or password used with compose you may need to destroy the DB volume and restart
 3. You want to test the project setup from scratch
     1. This may be helpful if a new teammate is having issues spinning up their project or you have made lots of changes to the project since it was started.
 
-In general you should be shutting down the containers for your project daily using `docker-compose down`. There may be more cases than listed above why we would also pass in the `-v` flag, but please do so with caution.
+In general you should be shutting down the containers for your project daily using `docker compose down`. There may be more cases than listed above why we would also pass in the `-v` flag, but please do so with caution.
 
 
 ### How to exec into a Docker container
@@ -150,19 +150,19 @@ That said there are a few that we use frequently which are listed below:
 6. [docker restart](https://docs.docker.com/engine/reference/commandline/restart/) - Used to restart one of more containers
 7. [docker stats](https://docs.docker.com/engine/reference/commandline/stats/) - Used to display the resources your containers are using
 8. [docker stop](https://docs.docker.com/engine/reference/commandline/stop/) - Used to stop a running container
-9. [docker-compose down](https://docs.docker.com/compose/reference/down/) - Used to stop all docker-compose services
-10. [docker-compose up](https://docs.docker.com/compose/reference/up/) - Used to start all containers in a docker-compose.yml file
+9. [docker compose down](https://docs.docker.com/engine/reference/commandline/compose_down/) - Used to stop all docker compose services
+10. [docker compose up](https://docs.docker.com/engine/reference/commandline/compose_up/) - Used to start all containers in a docker compose.yml file
 
 
 ### General FAQ and Troubleshooting
 
 #### I installed a new package, but when running my project the container cannot find the package. Why can’t my container find the package?
 
-Depending on how the Dockerfile is set up, Docker may be aware of the new package. In most cases, you can solve this by running `docker-compose down` and then `docker-compose up —build`. The`—build` is the real key here, which forces the container to rebuild itself and then will install any new dependencies!
+Depending on how the Dockerfile is set up, Docker may be aware of the new package. In most cases, you can solve this by running `docker compose down` and then `docker compose up —build`. The`—build` is the real key here, which forces the container to rebuild itself and then will install any new dependencies!
 
 #### I changed my database username (or password) and its not reflecting when I try to connect to the database. How can I change my database user or password?
 
-If you used Docker to set up your database, the user and password are created when the container is created and this will not change unless the container is recreated. Before making any changes, backup your database, then run `docker-compose down -v` and then `docker-compose up` (with the new credentials in compose or through environment variables). NOTE: This will destroy your database, so if you need the data please back it up first.
+If you used Docker to set up your database, the user and password are created when the container is created and this will not change unless the container is recreated. Before making any changes, backup your database, then run `docker compose down -v` and then `docker compose up` (with the new credentials in compose or through environment variables). NOTE: This will destroy your database, so if you need the data please back it up first.
 
 Another option is to connect to the database using the old credentials, and create the user using the database language itself.
 
