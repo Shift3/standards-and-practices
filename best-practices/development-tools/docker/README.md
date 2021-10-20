@@ -103,7 +103,7 @@ From here either copy the container ID or the name of the container. Then run:
 This command will exec into the container and give you a bash shell to run commands with. From here you can treat it just like a unix command line, and run any commands you need. In order to get back out of the container, simply type `exit`
 
 
-How to get logs from your Docker container
+### How to get logs from your Docker container
 
 Getting logs from your container is really important and can be done using the `docker logs` command. As with exec, we need the container id or name before running this command. Then run:
 
@@ -158,7 +158,7 @@ That said there are a few that we use frequently which are listed below:
 
 #### I installed a new package, but when running my project the container cannot find the package. Why can’t my container find the package?
 
-Depending on how the Dockerfile is set up, Docker may be aware of the new package. In most cases, you can solve this by running `docker compose down` and then `docker compose up —build`. The`—build` is the real key here, which forces the container to rebuild itself and then will install any new dependencies!
+Depending on how the Dockerfile is set up, Docker may not be aware of the new package. In most cases, you can solve this by running `docker compose down` and then `docker compose up —build`. The`—build` is the real key here, which forces the container to rebuild itself and then will install any new dependencies!
 
 #### I changed my database username (or password) and its not reflecting when I try to connect to the database. How can I change my database user or password?
 
