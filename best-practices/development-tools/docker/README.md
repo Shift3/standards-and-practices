@@ -43,13 +43,13 @@ Docker Compose File Documentation:
 
 ## Examples from Internal Projects
 
-  - [angular-boilerplate](https://github.com/Shift3/boilerplate-client-angular/blob/main/docker compose.yml)
-  - [node-boilerplate](https://github.com/Shift3/boilerplate-server-node/blob/develop/docker compose.yml)
+  - [angular-boilerplate](https://github.com/Shift3/boilerplate-client-angular/blob/main/docker-compose.yml)
+  - [node-boilerplate](https://github.com/Shift3/boilerplate-server-node/blob/develop/docker-compose.yml)
 
 Generally a project should have three files for Docker support:
 
   - Dockerfile
-  - docker compose.yml
+  - docker-compose.yml
   - .dockerignore (copy of .gitignore)
 
 ## General Use and Tips
@@ -60,15 +60,15 @@ Starting Docker is very simple but there are definitely some commands to remembe
 
 1. Dockerfile
 2. Dockerfile.dev or Dockerfile.prod (project specific)
-3. docker compose.yml or docker compose.yaml
+3. docker-compose.yml or docker-compose.yaml
 
 In most projects instead of just a Dockerfile, we usually split out the files into .dev and .prod. This allows us to make adjustments based on our environment and how the project is setup for development vs production.
 
-The `docker compose.yml` file is the one normally used to start Docker. Be sure to run Docker compose commands from the same directory as your compose file. To start up the project, simply run:
+The `docker-compose.yml` file is the one normally used to start Docker. Be sure to run Docker compose commands from the same directory as your compose file. To start up the project, simply run:
 
 `docker compose up`
 
-This command will start all of the services specified in the `docker compose.yml` file, and run your application locally. When we only specify `up` we will lock our terminal to display the output of all the running containers in the Docker compose file. In some cases this is what we want, however we may not always want to see the output of every container, or lock our terminal to the containers. To avoid this, you can instead run `docker compose up -d` to run the containers in “detached” mode. This simply means that the containers will still start up, but the process now runs in the background detached from your terminal. This provides two benefits:
+This command will start all of the services specified in the `docker-compose.yml` file, and run your application locally. When we only specify `up` we will lock our terminal to display the output of all the running containers in the Docker compose file. In some cases this is what we want, however we may not always want to see the output of every container, or lock our terminal to the containers. To avoid this, you can instead run `docker compose up -d` to run the containers in “detached” mode. This simply means that the containers will still start up, but the process now runs in the background detached from your terminal. This provides two benefits:
 
 1. The containers are no longer locked to your terminal, and will continue to run if you close your terminal or exit the session
 2. The container logs can now be viewed individually instead of all at once
@@ -151,14 +151,14 @@ That said there are a few that we use frequently which are listed below:
 7. [docker stats](https://docs.docker.com/engine/reference/commandline/stats/) - Used to display the resources your containers are using
 8. [docker stop](https://docs.docker.com/engine/reference/commandline/stop/) - Used to stop a running container
 9. [docker compose down](https://docs.docker.com/engine/reference/commandline/compose_down/) - Used to stop all docker compose services
-10. [docker compose up](https://docs.docker.com/engine/reference/commandline/compose_up/) - Used to start all containers in a docker compose.yml file
+10. [docker compose up](https://docs.docker.com/engine/reference/commandline/compose_up/) - Used to start all containers in a docker-compose.yml file
 
 
 ### General FAQ and Troubleshooting
 
 #### I installed a new package, but when running my project the container cannot find the package. Why can’t my container find the package?
 
-Depending on how the Dockerfile is set up, Docker may not be aware of the new package. In most cases, you can solve this by running `docker compose down` and then `docker compose up —build`. The`—build` is the real key here, which forces the container to rebuild itself and then will install any new dependencies!
+Depending on how the Dockerfile is set up, Docker may not be aware of the new package. In most cases, you can solve this by running `docker compose down` and then `docker compose up --build`. The `--build` is the real key here, which forces the container to rebuild itself and then will install any new dependencies!
 
 #### I changed my database username (or password) and its not reflecting when I try to connect to the database. How can I change my database user or password?
 
