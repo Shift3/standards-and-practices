@@ -1,7 +1,7 @@
 ---
-name: Epic Issue Template
+name: ⚡️ Epic Issue Template
 about: Issue template used for Epics
-title: ''
+title: '[epic]: '
 labels: Epic
 assignees: ''
 
