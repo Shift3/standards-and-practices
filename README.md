@@ -41,6 +41,7 @@
 #### Project Setup
 - [Using Github Projects](/standards/project-setup.md) to communicate progress
 - [Readme Guidelines](/standards/readme-guidelines.md) to document projects
+- [EditorConfig](/best-practices/development-tools/editorconfig.md) to help with consistent code style
 
 #### Code Review
 
