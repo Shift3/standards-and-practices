@@ -1,7 +1,7 @@
 ---
-name: Bug report
+name: 🐛 Bug report
 about: Create a report to help us improve
-title: ''
+title: '[bug]: '
 labels: bug
 assignees: ''
 
@@ -17,9 +17,9 @@ _Describe what is currently happening._
 
 ## Steps to Reproduce the Problem
 
-  1. 
-  2. 
-  3. 
+  1.
+  2.
+  3.
 
 ## Pre-Testing TODOs
 
