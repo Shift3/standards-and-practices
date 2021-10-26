@@ -4,6 +4,8 @@ This section describes Bitwise standards to be applied to all projects. Code rev
 
 ## How we build software at Bitwise
 
+### [Developer Accountability](developer-accountability.md)
+
 ### Setting up a Repository
 
 #### [Setting up Projects in GitHub](project-setup.md)
