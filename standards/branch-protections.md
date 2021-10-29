@@ -8,25 +8,26 @@ By protecting branches team leads can ensure developers cannot merge changes int
 
 In order for branch protections to work, the PR-Team (which is used for Pull Request Feedback must be set to “Write”.
 
-TODO: Image here
+![image](https://user-images.githubusercontent.com/398491/139479481-0423c726-2a14-45b1-af3a-35c9b1a2c3dc.png)
+
 
 1. First click on Settings
 2. Then click Manage Access
 3. Then click Add Teams
 
-TODO: Image here
+![image](https://user-images.githubusercontent.com/398491/139479511-f47319b0-3e52-4914-b3dd-22acbb76d706.png)
 
 Search for PR-Team, then select Write. Finally click “Add Shift3/pr-team to this repository”.
 
 ## Set up branch protections
 
-TODO: Image here
+![image](https://user-images.githubusercontent.com/398491/139479542-8c23cd2f-d0dd-458e-b154-3d05c5bdc638.png)
 
 1. Navigate to the github repository you want to apply branch protections to. Click on Settings tab
 2. Click on Branches
 3. Click on Add rule
 
-TODO: Image here
+![image](https://user-images.githubusercontent.com/398491/139479558-88765909-b4b4-4a14-acf3-03fa0eb5e6f6.png)
 
 For the main and development branch, the following is considered best practices:
 1. Click on “Require a pull request before merging”. This will make sure all developers (other than admin role users) have to make a pull request before making code changes to this branch.
