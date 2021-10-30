@@ -28,6 +28,11 @@ This section describes Bitwise standards to be applied to all projects. Code rev
 
 - How to set up Issue templates
 
+#### [Branch Protections](branch-protections.md)
+
+ - Explanation of Github Branch Protections
+ - Best practices associated with branch protections
+
 ### Managing Code, Commits, and Reviews
 
 #### [Managing Branches](branching.md)
