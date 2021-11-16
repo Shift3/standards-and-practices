@@ -52,11 +52,11 @@ Input validation using blacklisting is generally more challenging to implement s
 
 - Can contain any characters of any length except whitespace.
 
-### The Top Level domain(TLD) (e.g com, org, net, in, us, info): 
+### The Top Level domain(TLD) (e.g com, org, net, in, us, info):
 - Can contain and end with any characters of any length except whitespace.
 - Must be at least two characters long.
 
-### Alternative Code Example: 
+### Alternative Code Example:
 ```javascript
   /.+@.+\..+/
 ```
@@ -66,6 +66,16 @@ Input validation using blacklisting is generally more challenging to implement s
 ### The above example more permissive than the previous example, esstentially it allows for <anythingo>
 
 #### Fun fact: The longest TLD in English is .cancerresearch which is 14 characters. The longest currently in existence is 24 characters.
+
+#### Warning: If using SES, use real email addresses
+
+In some our projects, we use [Amazon SES (Simple Email Service)](https://aws.amazon.com/ses/) to send emails in production.
+
+Please don't send real emails unless you really need to test emails that are being sent out! Real email sending should only be used in production.
+
+If you do so happen to NEED to test out emails, there are a number of known good email addresses Amazon provides: `success@simulator.amazonses.com` or you can use an email address that works such as a personal email. We are trying to prevent bounces.
+
+More information can be found here: https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-email-simulator.html#send-email-simulator-how-to-use
 
 ## Javascript methods to use with RegEx
 
