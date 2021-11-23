@@ -17,6 +17,8 @@ There are typically 2 options for React Native development:
     * CircleCI contains [a community orb](https://circleci.com/developer/orbs/orb/react-native-community/react-native) with a setup already in place and several examples. 
 
 ## Then what?
+- Learn about some of the [differences between React and React Native](training/README.md).
+
 - After you have started up your project, take a look at our [common components](common-components/README.md) for some base starting points.  
 
 - Take a look at how we handle React Native [deployment](deployment/README.md) at Bitwise.
