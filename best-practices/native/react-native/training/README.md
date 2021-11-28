@@ -1,4 +1,14 @@
-# Main differences between utilizing React Native vs React
+# Table of contents
+1. [Differences between React and React Native](#main-differences-between-utilizing-react-native-vs-react)
+2. [React](#react)
+3. [React Native](#react-native)
+4. [React Components](#react-components)
+5. [React Props](#props-to-react-for-creating-props)
+6. [React State](#lets-talk-a-little-bit-about-state)
+7. [ES6](#es6)
+8. [Component Lifecycle](#speaking-of-lifecycle)
+
+## Main differences between utilizing React Native vs React
 
 React is generally described as a JavaScript library for building user interfaces by utilizing declarative components in a component-based architecture. React Native is a framework for building native applications using React. While both of these libraries use a similar approach to building user interfaces, React Native is designed to be used for native iOS and Android Development. Below, we will be discussing the main differences between React Native vs React.
 
@@ -16,6 +26,8 @@ React is generally described as a JavaScript library for building user interface
 - Utilizes the device API to render components.
 - Slightly more complex learning curve if you understand ES6, little-to-no learning curve coming from React.
 
+## React Components
+Are the building blocks of a React application. They help us to create reusable components that can be used in multiple places in our application. React components all have a lifecycle, access to props, and state. We will discuss what these things are below. One important thing to note about a React component is that it will almost always return a single JSX element. React components cannot return multiple JSX elements, if you have JSX elements that you need to include in the return statement you will need to wrap them all in a single JSX element in order for the application to run. In a functional component we just use a return statement to return our JSX element, in a class-based component we need to use a return statement in the `render()` method of our class.
 ## Props to React for creating Props
 Props are the data that is passed into a component. We use props like you would use HTML attributes. Here is an example of an HTML element that has attributes:
 ```html
