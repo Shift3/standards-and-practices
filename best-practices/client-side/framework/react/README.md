@@ -30,4 +30,4 @@ To get more familiar with the structure of a React/React Native based project, b
 
 ## Spinning up a boilerplate
 
-TODO
+Please take a look at our [React Boilerplate](https://github.com/Shift3/boilerplate-client-react) for more information. 
