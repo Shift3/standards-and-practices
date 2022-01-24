@@ -1,4 +1,4 @@
-# QA Sprint Process
+ #  QA Sprint Process
 ## Project-Under-Test is Prepared
 - For mobile apps: Application is made available on Testflight or loaded onto test devices. Application should be deployed to the Client’s Apple and Google accounts.
 - For web apps: Site is deployed to a staging server. Staging server should live on clients hosting provider.
@@ -19,13 +19,13 @@
 - PM or Lead Dev will create the “QA Sprint” issue with:
   - Short project or feature description
   - Delivery/testing timeframe
-  - Associated milestone
+  - Associated milestone containing Definition of Done
   - Associated project board
   - Sandbox URL/ Testflight App Name
   - App Version number(s) to be tested
   - Devices / Browsers to be tested
   - Definition of Done
-  - Acceptance Test in Markdown Format.
+  - Acceptance test in Markdown Format. An acceptance test will be necessary for all new projects. If you would like a tutorial on creating an acceptance test please contact qa@bitwiseindustries.com and we can set up a meeting to get you started.
 
   ![qa sprint issue](./assets/qa-process/2.png)
 
@@ -38,6 +38,8 @@
     - Task description
     - Due date (or estimate of testing time required)
     - Names of PM and lead dev
+    - Scope of work
+    - List of known issues
 ```
 2. QA leads receives the project and assigns it to the QA team / PM on monday.com. Deadline is set up, a timeline is scheduled, and calendar invites are sent.
 
@@ -62,8 +64,8 @@
 # Testing Process
 ## For QA:
 
-1. QA will set up a project board for this sprint by copying from the [example board](https://github.com/Shift3/qa-team/projects/9) on github.
-2. The milestone and labels relevant for this sprint will be added to ensure that items are displayed and sorted correctly on the project board. Milestone will contain projects Definition of Done.
+1. If a project board has not been set up by the developer, QA will set up a project board for this sprint by copying from the [example board](https://github.com/Shift3/qa-team/projects/9) on github.
+2. If not already added by developer, QA will add the milestone and labels relevant for this sprint will to ensure that items are displayed and sorted correctly on the project board. Milestone will contain projects Definition of Done.
 3. QA Testers will create a “Working” issue to work from, copy the Acceptance Test from the “QA Sprint” issue into the first comment, and use that to check off each tested feature. Items that have already been tested should not be unchecked unless they no longer work.
 4. Discussions should occur constantly within the “Working” issue, tagging people as necessary.
 
@@ -107,7 +109,7 @@ a. Labels:
 6. When the issue is ready for Retest and deployed to a new test version, the issue will be dragged to “Ready for Retest”. The issue label should be updated from “In Progress” to “Ready for Retest”. QA members will be assigned.
 7. If the issue is marked as “Testing Failed”, drag the item to “In Progress”
 8. If the issue is marked as “Testing Passed”, drag the item to “Done” and close the issue if applicable
-9. Upon completion of the QA Sprint, the POC will close the “Working” issues and “QA Sprint” issue.
+9. Upon completion of the QA Sprint, the **POC will close the “Working” issues and “QA Sprint” issue**.
 
 ## For Developer:
 1. Discussions should occur constantly within the “Working” issue, tagging people as necessary.
