@@ -115,7 +115,7 @@ Getting stuck is a natural part of development and happens to the best of us. It
 
 1. **Your team channel** - When you start a project, you will be added to a private team channel. Feel free to ask your questions there! Your team lead may be able to help you through your blocker.
 2. **[bwtc-stackoverflow](https://stackoverflow.com/c/bwtc/questions)** - Did you know we have our own Stack Overflow? Take a look, it has some great quesions and answers. 
-3. **bwtc-technical-discussions** - Great place for technical questions that involve some code.
+3. **[bwtc-technical-discussions](https://bitwiseindustries.slack.com/archives/CN462BE5D)** - Great place for technical questions that involve some code.
 ## Contributing to Bitwise
 
 #### You are expected to contribute _something_ to our processes. You can do this in many different ways, such as leading a BW Developer Connect meeting, writing up a markdown sheet for this repository on a topic you are passionate about, leading a workshop, or posting discussion topics in Bitwise's #bwtc-technical-discussions channel.
