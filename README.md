@@ -110,7 +110,7 @@ Using Chocolatey has several advantages:
 ## Need Help?
 Getting stuck is a natural part of development and happens to the best of us. It's better to reach out than to stay silent, and we encourage you to do so. If you find yourself stuck on a task for more than 45 minutes, here are a couple of places to get help:
 
-##### Slack channels:
+##### Communication Channels:
 
 
 1. **Your team channel** - When you start a project, you will be added to a private team channel. Feel free to ask your questions there! Your team lead may be able to help you through your blocker.
