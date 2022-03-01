@@ -20,6 +20,7 @@
 ### Here's what we expect you to know _before_ you write any code:
 
 - Please read _all_ the links included:
+- Take a look at [our **Handbook**](https://bwtc-handbook.notion.site/BWTC-Handbook-71256770d53f46439aecd989b07d1533) for all your (mostly) non-code related needs!
 
 #### Git
 
