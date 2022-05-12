@@ -39,7 +39,7 @@ If you have any questions, comments or concerns, do not hesitate to reach out to
 
 - [ ] **Branch name includes developer initials, the issue number and a short description**
 
-    Format: `&lt;initials>-&lt;issue#>-&lt;short-description>` 
+    Format: `<initials>-<issue#>-<short-description>` 
 
 
     Example: `mac-999-fixes-deploys`
@@ -70,7 +70,7 @@ If you have any questions, comments or concerns, do not hesitate to reach out to
 
 - [ ]  Create **[Release tag and branch](https://github.com/Shift3/standards-and-practices/blob/main/standards/code-versioning.md) on each application release**
 
-A pull request reviewer is our first line of defence for improving software quality and avoiding defects. Reviewers are encouraged to refer and cite these standards when they believe standards are not being adhered to during their review. However, reviewers should not block any pull request simply because of non-adherence. A reviewer should take into consideration what is and is not considered a blocking event. Here are some guidelines on the topic of blocking and non-blocking events:
+A pull request reviewer is our first line of defense for improving software quality and avoiding defects. Reviewers are encouraged to refer and cite these standards when they believe standards are not being adhered to during their review. However, reviewers should not block any pull request simply because of non-adherence. A reviewer should take into consideration what is and is not considered a blocking event. Here are some guidelines on the topic of blocking and non-blocking events:
 
 **_Blocking_**
 
