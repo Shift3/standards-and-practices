@@ -5,24 +5,25 @@ The purpose of this template is to make it easier for a QA person or developer t
 
 ## Create Labels
 For each project the following Labels `minor`, `major` and `catastrophic` must be created to really help filter issues on Github.
-#### to create new labels
-* On the Github repository of your project, click on `Issues`.
-* Click on the `Labels` buttons.
-* Click on the `New Label` button.
-* Insert label name (`minor`, `major`, or `catastrophic`), choose color (optional).
-* Click on `Create Label`.
+
+### To Create New Labels
+- On the Github repository of your project, click on `Issues`.
+- Click on the `Labels` buttons.
+- Click on the `New Label` button.
+- Insert label name (`minor`, `major`, or `catastrophic`), choose color (optional).
+- Click on `Create Label`.
 
 
 ## QA Template
 #### copy and paste the template below in a github issue and complete the information.
 <pre><code>
 <b><u>Date Seen</u></b>
-date the bug was found goes here,
-include the time, if you are submitting more than one bug
+Date the bug was found goes here, include the time, if you are submitting more than one bug.
+(mm/dd/yyyy)
 
 <b><u>Versions</u></b>
 Operating System and version
-browser and version
+Browser and Version
 Software name and environment ex. (mappoint staging sandbox).
 
 <b><u>Bug Description</u></b>
@@ -31,9 +32,9 @@ A concise description of what the problem is. Pure description, no narrative or 
 
 <b><u>Steps to Reproduce</u></b>
 1. Step by step instructions on how to reproduce this bug.
-2. Do not assume anything, 
-3. the more detailed your list of instructions, 
-4. the easier it is for the developer to track down the problem!
+2. Do not assume anything. 
+3. The more detailed your list of instructions. 
+4. The easier it is for the developer to track down the problem!
 
 <b><u>Actual Behavior</u></b>
 Type what happens when you follow the instructions. This is the manifestation of the bug.
