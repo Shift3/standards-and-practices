@@ -116,11 +116,11 @@ Learning React and React Native requires a good understanding of ES6, which is t
 
 ## ES6 Features
 
-- [Destructuring](https://www.better.dev/react-prerequisites#:~:text=and%20React%20Hooks.-,4.%20Destructuring,-Destructuring%20is%20used)
-- [let and const vs. var](https://www.better.dev/react-prerequisites#:~:text=1.-,let%20and%20const%20in%20addition%20to%20var,-Up%20until%20now)
-- [Arrow Functions](https://www.better.dev/react-prerequisites#2-arrow-functions-)
-- [Classes](https://www.better.dev/react-prerequisites#:~:text=across%20your%20code.-,3.%20Classes,-ES6%20brought%20in)
-- [Spread and Rest](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+- Destructuring
+- let and const vs. var
+- Arrow Functions
+- Classes
+- Spread and Rest
 
 These features will become increasingly important to learn as you progress through your usage of React and its' lifecycle.
 

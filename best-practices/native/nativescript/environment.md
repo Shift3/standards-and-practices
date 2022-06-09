@@ -16,7 +16,7 @@ https://medium.com/@derekfong/nativescript-angular-setup-environment-ts-for-diff
 ```typescript
 export const environment = {
     production: true,
-    apiUrl: 'http://www.yoursite.com',
+    apiUrl: 'http://www.bitwiseindustries.com',
 };
 ```
 

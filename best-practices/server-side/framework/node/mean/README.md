@@ -5,4 +5,3 @@
 #### Resources
 
 Official Site: https://meanjs.org/
-Official Site: http://mean.io/
