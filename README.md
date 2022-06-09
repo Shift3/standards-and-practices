@@ -111,11 +111,16 @@ Using Chocolatey has several advantages:
 ## Need Help?
 Getting stuck is a natural part of development and happens to the best of us. It's better to reach out than to stay silent, and we encourage you to do so. If you find yourself stuck on a task for more than 45 minutes, here are a couple of places to get help:
 
+
+##### Problem Solving: 
+Try to use these suggested ways to better your problem solving skills when stuck on tasks.
+[How to think like a programmer — lessons in problem solving](standards/problem-solving.md)
+
 ##### Communication Channels:
 
 
 1. **Your team channel** - When you start a project, you will be added to a private team channel. Feel free to ask your questions there! Your team lead may be able to help you through your blocker.
-2. **[bwtc-stackoverflow](https://stackoverflow.com/c/bwtc/questions)** - Did you know we have our own Stack Overflow? Take a look, it has some great quesions and answers. 
+2. **[bwtc-stackoverflow](https://stackoverflow.com/c/bwtc/questions)** - Did you know we have our own Stack Overflow? Take a look, it has some great questions and answers. 
 3. **[bwtc-technical-discussions](https://bitwiseindustries.slack.com/archives/CN462BE5D)** - Great place for technical questions that involve some code.
 
 #### Problem Solving
