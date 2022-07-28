@@ -1,0 +1,13 @@
+---
+---
+
+// @import "{{ site.theme }}";
+@import "jekyll-theme-leap-day";
+
+#banner {
+    .button.fork {
+        top: 440px;
+        left: 225px;
+        margin-left: 0px;
+    }
+}
