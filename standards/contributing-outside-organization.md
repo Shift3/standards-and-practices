@@ -31,7 +31,7 @@ deployment to the production environment. Each sprint gets a
 distinct git branch where changes are committed. Below is an example of the
 Summer Sprint branch with some fictitious commits.
 
-![Summer Sprint branch example](contributing-outside/sprint-branch.png)
+![Summer Sprint branch example](assets/contributing-outside/sprint-branch.png)
 
 <a name="issue-branches"></a><h3>Feature/Issue Branches</h3>
 
@@ -43,12 +43,12 @@ dasherized name briefly describing the feature or fix, always beginning with
 the assignee's initials and the issue number corresponding to that feature
 or bug report. In this case, it is `mw-455-sort-fix`.
 
-![Feature branch](contributing-outside/feature-branch.png)
+![Feature branch](assets/contributing-outside/feature-branch.png)
 
 Once a feature is completed, the corresponding feature branch is merged into
 the active release branch—in this case: `summer-sprint`.
 
-![Merge feature branch](contributing-outside/feature-merge.png)
+![Merge feature branch](assets/contributing-outside/feature-merge.png)
 
 ### Release Branches
 
@@ -59,11 +59,11 @@ __may__ exist at the head of the current sprint branch, or ahead:
 
 __Even__:
 
-![Release branch even with sprint branch](contributing-outside/release-branch-even.png)
+![Release branch even with sprint branch](assets/contributing-outside/release-branch-even.png)
 
 __Ahead__:
 
-![Release branch ahead of sprint branch](contributing-outside/release-branch-ahead.png)
+![Release branch ahead of sprint branch](assets/contributing-outside/release-branch-ahead.png)
 
 ### Production Releases
 
@@ -75,11 +75,11 @@ The sprint branch is then merged into the mainline branch (develop).
 
 __Only if ahead__:
 
-![Release branch merge into sprint branch](contributing-outside/release-branch-merge.png)
+![Release branch merge into sprint branch](assets/contributing-outside/release-branch-merge.png)
 
 __After tagging & mainline merge__:
 
-![Mainline merge after deployment and tag](contributing-outside/mainline-merge.png)
+![Mainline merge after deployment and tag](assets/contributing-outside/mainline-merge.png)
 
 
 ## Client Collaboration
@@ -92,25 +92,25 @@ pull requests, and issue submission.
 
 Issue branches for tasks/features being actively developed by the Client will
 use the same branch naming convention described [above](#issue-branches),
-using the client assignee initials. Pull requests for changes on Stria issue
+using the client assignee initials. Pull requests for changes on Client issue
 branches will target the branch created for the Shift3 assignee to the
 corresponding issue, e.g. Foo Bars's changes on `fb-900-new-report` will
 be sent in a pull request to `fd-900-new-report` if Foo Dar is the
 assignee for issue #900.
 
-### Stria pull requests
+### Client pull requests
 
 Pull requests will be initiated by the Client developer using the pull
 request template located in the repository under
 `.github/PULL_REQUEST_TEMPLATE.md`. Pull requests will be initiated from the
  repository and will specify the current sprint branch e.g.
-`summer-sprint` as the base branch. The feature/issue branch in the Stria/ifg
+`summer-sprint` as the base branch. The feature/issue branch in the Client
 repository will be selected as the head branch to be merged. For example, the
 pull request being created below shows the branch `fb-collab-sop` as the
-head branch in the Stria/ifg repository to be merged into the `summer-sprint`
+head branch in the Client repository to be merged into the `summer-sprint`
 branch in the repository.
 
-![Pull request creation](contributing-outside/pull-request.png)
+![Pull request creation](assets/contributing-outside/pull-request.png)
 
 ### Client commits
 
