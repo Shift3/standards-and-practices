@@ -31,7 +31,7 @@ deployment to the production environment. Each sprint gets a
 distinct git branch where changes are committed. Below is an example of the
 Summer Sprint branch with some fictitious commits.
 
-![Summer Sprint branch example](docs/images/sprint-branch.png)
+![Summer Sprint branch example](contributing-outside/sprint-branch.png)
 
 <a name="issue-branches"></a><h3>Feature/Issue Branches</h3>
 
@@ -43,12 +43,12 @@ dasherized name briefly describing the feature or fix, always beginning with
 the assignee's initials and the issue number corresponding to that feature
 or bug report. In this case, it is `mw-455-sort-fix`.
 
-![Feature branch](docs/images/feature-branch.png)
+![Feature branch](contributing-outside/feature-branch.png)
 
 Once a feature is completed, the corresponding feature branch is merged into
 the active release branch—in this case: `summer-sprint`.
 
-![Merge feature branch](docs/images/feature-merge.png)
+![Merge feature branch](contributing-outside/feature-merge.png)
 
 ### Release Branches
 
@@ -59,11 +59,11 @@ __may__ exist at the head of the current sprint branch, or ahead:
 
 __Even__:
 
-![Release branch even with sprint branch](docs/images/release-branch-even.png)
+![Release branch even with sprint branch](contributing-outside/release-branch-even.png)
 
 __Ahead__:
 
-![Release branch ahead of sprint branch](docs/images/release-branch-ahead.png)
+![Release branch ahead of sprint branch](contributing-outside/release-branch-ahead.png)
 
 ### Production Releases
 
@@ -75,11 +75,11 @@ The sprint branch is then merged into the mainline branch (develop).
 
 __Only if ahead__:
 
-![Release branch merge into sprint branch](docs/images/release-branch-merge.png)
+![Release branch merge into sprint branch](contributing-outside/release-branch-merge.png)
 
 __After tagging & mainline merge__:
 
-![Mainline merge after deployment and tag](docs/images/mainline-merge.png)
+![Mainline merge after deployment and tag](contributing-outside/mainline-merge.png)
 
 
 ## Client Collaboration
@@ -110,7 +110,7 @@ pull request being created below shows the branch `fb-collab-sop` as the
 head branch in the Stria/ifg repository to be merged into the `summer-sprint`
 branch in the repository.
 
-![Pull request creation](docs/images/pull-request.png)
+![Pull request creation](contributing-outside/pull-request.png)
 
 ### Client commits
 
