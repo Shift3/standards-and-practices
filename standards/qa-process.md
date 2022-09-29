@@ -150,7 +150,6 @@ a. If new features have been added, the acceptance test will need to be updated 
 b. If the application has no major updates the QA team will copy the last acceptance test and use that for the current sprint.
 
 
-
 # Appendix A - Definitions
 ## Acceptance Testing
 An acceptance test is a checklist that explains the applications functions step by step while also getting the user(s) familiar with the application.
@@ -160,3 +159,4 @@ b. Created by the QA team as they maneuver the application
 
 2. QA team works through the acceptance test to ensure that the application is working as intended.
 
+![github comments](./assets/qa-process/sat-team-process-flow.png)
