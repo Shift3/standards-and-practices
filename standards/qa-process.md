@@ -30,7 +30,7 @@
   ![qa sprint issue](./assets/qa-process/2.png)
 
 ## Scheduling QA
-1. PM (or lead dev) submits a [QA Request Form](https://forms.monday.com/forms/654f5d5bcae887b741c606fe3fe50a52?r=use1) with the following information:
+1. PM (or lead dev) submits a [QA Request Form](https://docs.google.com/document/d/1pCR3AheSusmqy89Z7q7eO0nr5ZDe23rp7eQyxXLG-r8/edit?usp=sharing) with the following information:
 
 ```
     - Project name
