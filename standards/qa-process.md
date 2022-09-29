@@ -30,21 +30,31 @@
   ![qa sprint issue](./assets/qa-process/2.png)
 
 ## Scheduling QA
-1. PM (or lead dev) sends an email to qa@bitwiseindustries.com. If the lead dev sends the email, cc your PM on the email.
-  - Provide the following details:
+1. PM (or lead dev) submits a [QA Request Form](https://docs.google.com/document/d/1pCR3AheSusmqy89Z7q7eO0nr5ZDe23rp7eQyxXLG-r8/edit?usp=sharing) with the following information:
+
 ```
-    - Project and client name
+    - Project name
     - Billable to client?
     - Task description
-    - Due date (or estimate of testing time required)
-    - Names of PM and lead dev
-    - Scope of work
-    - List of known issues
+    - PM / PM Email
+    - Lead Dev
+    - SOW Link
+    - Staging Environment Link
+    - Github Repo Link
+    - Known Issues
+    - User Roles
+    - Acceptance Test? (Y/N)
+    - Compliance Level
+    - Project Board
+    - Timeline (We would like 2 weeks if possible)
+    - Additional Information
+
 ```
-2. QA leads receives the project and assigns it to the QA team / PM on monday.com. Deadline is set up, a timeline is scheduled, and calendar invites are sent.
+
+2. QA leads receives the project and assigns it to the QA team. A calendar invite for the Kickoff Meeting is sent to the project team.
 
 ## Testing Kickoff
-1. Testing kickoff meeting occurs. PM or Dev will introduce the QA team to the Project-Under-Test.
+1. Testing [kickoff meeting](https://docs.google.com/document/d/1Q34ZfPzq4spHGPku6xIgbW-aYItdzndS3Yd5jI0Nn3I/edit?usp=sharing) occurs. PM or Dev will introduce the QA team to the Project-Under-Test.
 2. QA team meets to review the application and its purpose in order to better understand the most important functions of the website before diving in.
 3. PM / Dev defines the priorities for testing and defines the “Definition of Done”. 
     - Are there any specific devices we should be looking at?
@@ -65,7 +75,7 @@
 ## For QA:
 
 1. If a project board has not been set up by the developer, QA will set up a project board for this sprint by copying from the [example board](https://github.com/Shift3/qa-team/projects/9) on github.
-2. If not already added by developer, QA will add the milestone and labels relevant for this sprint will to ensure that items are displayed and sorted correctly on the project board. Milestone will contain projects Definition of Done.
+2. If not already added by developer, QA will add the milestone and labels relevant for this sprint to ensure that items are displayed and sorted correctly on the project board. Milestone will contain projects Definition of Done.
 3. QA Testers will create a “Working” issue to work from, copy the Acceptance Test from the “QA Sprint” issue into the first comment, and use that to check off each tested feature. Items that have already been tested should not be unchecked unless they no longer work.
 4. Discussions should occur constantly within the “Working” issue, tagging people as necessary.
 
@@ -79,9 +89,9 @@ Issue will be assigned to Point of Contact
   ![labels](./assets/qa-process/1.png)
 
 6. When the issue is ready for Retest and deployed to a new test version, the issue will be moved to “Ready for Retest”. QA members will be assigned and notified.
-7. If the test is successful, QA Tester adds the “Testing Passed” label to the issue. Issue assigned to POC.
+7. If the test is successful, QA Tester adds the “Testing Passed” label to the issue. Issue assigned to Point of contact.
 8. If the testing failed, QA will add feedback on the issue and add the “Testing Failed” label.
-9. Upon completion of the QA Sprint, the POC will close the “Working” issues and “QA Sprint” issue.
+9. Upon completion of the QA Sprint, the Point of contact will close the “Working” issues and “QA Sprint” issue.
 
 ## For PM/Lead Developer:
 1. Discussions should occur constantly within the “Working” issue, tagging people as necessary.
@@ -95,7 +105,7 @@ c. Issue will be assigned to Point of Contact
 
   ![project board columns](./assets/qa-process/5.png)
 
-3. POC will review the new issues. “Pending” label will be removed. Comments added as necessary. New labels will be applied based on required actions:
+3. Point of contact will review the new issues. “Pending” label will be removed. Comments added as necessary. New labels will be applied based on required actions:
 a. Labels:
  **i.** Enhancement
  **ii.** Bug
@@ -109,7 +119,7 @@ a. Labels:
 6. When the issue is ready for Retest and deployed to a new test version, the issue will be dragged to “Ready for Retest”. The issue label should be updated from “In Progress” to “Ready for Retest”. QA members will be assigned.
 7. If the issue is marked as “Testing Failed”, drag the item to “In Progress”
 8. If the issue is marked as “Testing Passed”, drag the item to “Done” and close the issue if applicable
-9. Upon completion of the QA Sprint, the **POC will close the “Working” issues and “QA Sprint” issue**.
+9. Upon completion of the QA Sprint, the **Point of contact will close the “Working” issues and “QA Sprint” issue**.
 
 ## For Developer:
 1. Discussions should occur constantly within the “Working” issue, tagging people as necessary.
@@ -121,12 +131,13 @@ a. Labels:
   ![project board columns](./assets/qa-process/5.png)
 
 3. When the issue is ready for Retest and deployed to a new test version, the issue will be dragged to “Ready for Retest”. The issue label should be updated from “In Progress” to “Ready for Retest”. QA members will be assigned. Assigned developer will notify the QA team of EVERY PUSH! This is important because a push can work perfectly fine on one end, but break on QA’s end if they haven’t emptied the cache and hard reloaded.
-4. If the test is successful, QA Tester adds the “Testing Passed” label to the issue. Issue assigned to POC.
+4. If the test is successful, QA Tester adds the “Testing Passed” label to the issue. Issue assigned to Point of contact.
 5. If the testing failed, QA will add feedback on the issue and add the “Testing Failed” label.
 6. If the issue is marked as “Testing Passed”, drag the item to “Done” and close the issue if applicable
-7. Upon completion of the QA Sprint, the POC will close the “Working” issues and “QA Sprint” issue.
+7. Upon completion of the QA Sprint, the Point of contact will close the “Working” issues and “QA Sprint” issue.
 
 ## Post Sprint Meeting
+[Post Sprint Meeting Agenda](https://docs.google.com/document/d/1aLYm6HuZ4vxtITN9sLsjxNLThSqqoW_HOYFFmAgRsf8/edit?usp=sharing)
 This is an optional meeting for the PM and will be scheduled on the proposed end date with the lead dev if testing is not completed to the satisfaction of definition of done.
 1. QA and dev will review the acceptance test to see what items may have not been marked off.
 2. QA and dev will go over any issues that are still open and issues that need a more thorough explanation if necessary.
@@ -139,7 +150,6 @@ a. If new features have been added, the acceptance test will need to be updated 
 b. If the application has no major updates the QA team will copy the last acceptance test and use that for the current sprint.
 
 
-
 # Appendix A - Definitions
 ## Acceptance Testing
 An acceptance test is a checklist that explains the applications functions step by step while also getting the user(s) familiar with the application.
@@ -148,3 +158,5 @@ a. Provided for the QA team or
 b. Created by the QA team as they maneuver the application
 
 2. QA team works through the acceptance test to ensure that the application is working as intended.
+
+![github comments](./assets/qa-process/sat-team-process-flow.png)
