@@ -2,19 +2,19 @@
 
 ## What is it?
 
-Accessibility is basically making sure web sites are fully inclusive and can be properly accessed by not just people with disabilities but **everyone**.
+Accessibility is basically making sure web sites are fully inclusive and can be properly accessed by not just people with disabilities, but **everyone**.
 
 The main standard for web accessibility is the Web Content Accessibility Guidelines (WCAG). The main standard is [WCAG 2.0](https://www.w3.org/TR/WCAG20/), but [WCAG 2.1](https://www.w3.org/TR/WCAG21/) came out in June 2018 and will be the main standard going forward.
 
 ## Why?
 
-Various governments have accessibility requirements going forwards. Some countries, like Australia have a compliance requirement for all content. Europe has updated its directive requiring compliance on all public sector (non-government) sites These directives impose fines and/or legal penalties for non-compliance. Our government has imposed accessibility requirements for Information and Communications Technology (ICT) that were updated in January of 2017 in [this article about section 508 of the Rehibilitiation Act](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/overview-of-the-final-rule). This only applies to federal, state, and local government sites. Public sector sites in the US are covered by Title III of the Americans with Disabilities Act. This title has not been updated to include websites.... *yet*.
+Various governments have accessibility requirements going forward. Some countries, like Australia, have a compliance requirement for all content. Europe has updated its directive requiring compliance on all public sector (non-government) sites. These directives impose fines and/or legal penalties for non-compliance. Our government has imposed accessibility requirements for Information and Communications Technology (ICT) that were updated in January of 2017 in [this article about section 508 of the Rehibilitiation Act](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/overview-of-the-final-rule). This only applies to federal, state, and local government sites. Public sector sites in the US are covered by Title III of the Americans with Disabilities Act. This title has not been updated to include websites.... *yet*.
 
 While this may mean that there is no standard for non-government sites, that does not prevent someone from filing a lawsuit because your site is not able to be used properly by someone with a disability.
 
 ## WCAG 2.1 Summary
 
-Bitwise would recommend giving the full standard a read.The criteria falls into four critera: **Perceivable**, **Operable**, **Understandable** and **Robust**. There are three standards, A, AA, and AAA. Most compliance requirements ask for level AA compliance.
+Bitwise would recommend giving the full standard a read. The criteria falls into four criteria: **Perceivable**, **Operable**, **Understandable** and **Robust**. There are three standards, A, AA, and AAA. Most compliance requirements ask for level AA compliance.
 
 ### Perceivable
 
