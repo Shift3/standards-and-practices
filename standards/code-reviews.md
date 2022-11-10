@@ -88,3 +88,7 @@ Remember, this is a standard, so it isn't optional. _Never_ close your own Pull 
 [How to become a better code reviewer](https://blog.asana.com/2016/12/7-ways-to-uplevel-your-code-review-skills/)
 
 [Digital Ocean's Effective Code Review Tips](https://blog.digitalocean.com/how-to-conduct-effective-code-reviews/)
+
+[Corey Shuman's Dev Connect on Code Review](https://playback.lifesize.com/#/publicvideo/9a9229d2-22b1-40db-9e8e-26308225128d?vcpubtoken=910e3bbe-cc9e-489d-b844-afe87baaccaa/)
+
+[Google 'Speed of Code Reviews' Article](https://google.github.io/eng-practices/review/reviewer/speed.html/)
