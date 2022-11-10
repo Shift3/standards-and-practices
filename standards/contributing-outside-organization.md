@@ -115,4 +115,4 @@ branch in the repository.
 ### Client commits
 
 We strongly recommend the client use the same commit message convention as Bitwise. This is detailed
-in the Shift3 Standards & Practice repository, available [here](https://github.com/Shift3/standards-and-practices/blob/master/standards/commits.md#shift3s-convention-for-how-to-structure-write-and-use-your-commits)
+in the Shift3 Standards & Practice repository, available [here](./commits.md#shift3s-convention-for-how-to-structure-write-and-use-your-commits)
