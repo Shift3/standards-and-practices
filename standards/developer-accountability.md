@@ -8,8 +8,8 @@ If you have any questions, comments or concerns, do not hesitate to reach out to
 
 
 ## Accountability Checklist
-- [ ] **Github project boards need to be setup according to [S&P guidelines](https://github.com/Shift3/standards-and-practices/blob/main/standards/project-setup.md)**
-- [ ] **Assign [@Shift3/pr-team](https://github.com/orgs/Shift3/teams/pr-team) to your pull requests, per our [code review](https://github.com/Shift3/standards-and-practices/blob/main/standards/code-reviews.md#process) process**
+- [ ] **Github project boards need to be setup according to [S&P guidelines](./project-setup.md)**
+- [ ] **Assign [@Shift3/pr-team](https://github.com/orgs/Shift3/teams/pr-team) to your pull requests, per our [code review](./code-reviews.md#process) process**
 - [ ] **Assign pull requests to [@Shift3/pr-team](https://github.com/orgs/Shift3/teams/pr-team) in addition to the developers on your project**
 
     Assigning a pull request to @shift3/pr-team will automatically assign three developers from the pull request team and assign them to perform a review.
@@ -33,7 +33,7 @@ If you have any questions, comments or concerns, do not hesitate to reach out to
 
     On rare occasions, when a pull request creator could not find a reviewer within the 24 hour window, the pull request creator should ping @here in #bwtc-code-review slack channel for assistance.
 
-- [ ] **Format of GIT commit messages and title follow [Karma Commit standards](https://github.com/Shift3/standards-and-practices/blob/main/standards/commits.md#git-commit-messages).**
+- [ ] **Format of GIT commit messages and title follow [Karma Commit standards](./commits.md#git-commit-messages).**
 
     Example: `fix(login-screen): logo should display correctly`
 
@@ -45,7 +45,7 @@ If you have any questions, comments or concerns, do not hesitate to reach out to
     Example: `mac-999-fixes-deploys`
 
 
-    For additional information, refer to the docs [here](https://github.com/Shift3/standards-and-practices/blob/main/standards/branching.md). 
+    For additional information, refer to the docs [here](./branching.md). 
 
 - [ ] **Pull request always reference an issue number in the description section**
 
@@ -55,7 +55,7 @@ If you have any questions, comments or concerns, do not hesitate to reach out to
     Example: `Closes #999`
 
 
-    For additional information, refer to our [Pull Request template](https://github.com/Shift3/standards-and-practices/blob/main/standards/pull-request-template.md). 
+    For additional information, refer to our [Pull Request template](./pull-request-template.md). 
 
 - [ ] **Project source code include our Issue and Pull Request Templates**
 
@@ -64,11 +64,11 @@ If you have any questions, comments or concerns, do not hesitate to reach out to
 
     For additional information, refer to the docs [here](https://github.com/Shift3/standards-and-practices/tree/main/.github ).
 
-- [ ] **[Review comments](https://github.com/Shift3/standards-and-practices/blob/main/standards/code-reviews.md#reviewer) be clear and constructive**
+- [ ] **[Review comments](./code-reviews.md#reviewer) be clear and constructive**
 
     Try to always provide meaningful feedback in your review, which could also include complimenting the work or pointing out something you learned or were impressed with. We would like to avoid “rubber stamping” or “looks good to me” types of reviews which don’t provide an opportunity for growth and improvement.
 
-- [ ]  Create **[Release tag and branch](https://github.com/Shift3/standards-and-practices/blob/main/standards/code-versioning.md) on each application release**
+- [ ]  Create **[Release tag and branch](./code-versioning.md) on each application release**
 
 A pull request reviewer is our first line of defense for improving software quality and avoiding defects. Reviewers are encouraged to refer and cite these standards when they believe standards are not being adhered to during their review. However, reviewers should not block any pull request simply because of non-adherence. A reviewer should take into consideration what is and is not considered a blocking event. Here are some guidelines on the topic of blocking and non-blocking events:
 
