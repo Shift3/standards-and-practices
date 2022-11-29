@@ -61,13 +61,3 @@ On css file: `background-image: url('res://imagename');`
 On .ts files: `this.page.backgroundImage='res://imagename';`
 
 That is it. All time consuming to generate all images we need for each particular screen size nightmare, is gone.
- 
-### Manual option
-
-For any reason you decide to do all manually. Here a link to help with rescale and rename all the images: 
-
-[Nativescript.Rocks ](https://images.nativescript.rocks/)
-
-You upload an image, then the webpage returns a `zip` file with all multiple copy of the image you uploaded, inside its own folder (base on platform). Then you unzip that file and merge `App_Resources` folder, from zip file, `App_Resources` in your project.
-
-Then you can use as [How to use the Image](#how-to-use-the-image) section explain.
