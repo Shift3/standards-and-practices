@@ -26,8 +26,7 @@
 
 - Please create a Github account using your **work** email
 - Once an account has been created, open your terminal to configure your Git username/email.
-
-<a href="https://support.atlassian.com/bitbucket-cloud/docs/configure-your-dvcs-username-for-commits/"><img src="./git-config.png" align="left" height="500" width="5000" ></a>
+  <a href="https://support.atlassian.com/bitbucket-cloud/docs/configure-your-dvcs-username-for-commits/">![Gitflow diagram](./git-config.png)</a>
 
 #### Git
 
