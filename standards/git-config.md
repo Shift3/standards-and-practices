@@ -4,5 +4,5 @@
 - Only create a GitHub account with your work email if your Pod Lead request that of you.
 - Here is
 - Once an account has been created, it's time to configure your Git username/email.
-  [Git-config](https://support.atlassian.com/bitbucket-cloud/docs/configure-your-dvcs-username-for-commits/)
-  ![Git diagram](../git-config.png)
+
+  [![Git-Cofig](../git-config.png)</a>](https://support.atlassian.com/bitbucket-cloud/docs/configure-your-dvcs-username-for-commits/)
