@@ -22,11 +22,9 @@
 - Please read _all_ the links included:
 - Take a look at [our **Guidebook**](https://bwtc-handbook.notion.site/BWTC-Handbook-71256770d53f46439aecd989b07d1533) for all your (mostly) non-code related needs!
 
-### GitHub
+#### GitHub
 
-- Please create a Github account using your **work** email
-- Once an account has been created, open your terminal to configure your Git username/email.
-  <a href="https://support.atlassian.com/bitbucket-cloud/docs/configure-your-dvcs-username-for-commits/">![Gitflow diagram](./git-config.png)</a>
+Get set up with [Github](/standards/git-config.md)
 
 #### Git
 
