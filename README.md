@@ -22,8 +22,6 @@
 - Please read _all_ the links included:
 - Take a look at [our **Guidebook**](https://bwtc-handbook.notion.site/BWTC-Handbook-71256770d53f46439aecd989b07d1533) for all your (mostly) non-code related needs!
 
-#### GitHub
-
 Get set up with [Github](/standards/git-config.md)
 
 #### Git
