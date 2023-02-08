@@ -22,6 +22,8 @@
 - Please read _all_ the links included:
 - Take a look at [our **Guidebook**](https://bwtc-handbook.notion.site/BWTC-Handbook-71256770d53f46439aecd989b07d1533) for all your (mostly) non-code related needs!
 
+Get set up with [Github](/standards/git-config.md)
+
 #### Git
 
 - [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workflow
@@ -37,9 +39,11 @@
 - [Commit Messages](/standards/commits.md) at Bitwise
 
 #### Code Versioning
+
 - [Bitwise SemVer](/standards/code-versioning.md)
 
 #### Project Setup
+
 - [Using Github Projects](/standards/project-setup.md) to communicate progress
 - [Readme Guidelines](/standards/readme-guidelines.md) to document projects
 - [EditorConfig](/best-practices/development-tools/editorconfig.md) to help with consistent code style
@@ -77,6 +81,7 @@
 - Ask your Project Manager if you need to install anything else.
 
 Using Chocolatey has several advantages:
+
 1. You can install most of the software you need just by running a single script.
 2. You can update all of this software later by running `choco upgrade all` as Administrator.
 3. Chocolatey will automatically skip installing browser toolbars and junk like that.
@@ -93,8 +98,8 @@ Using Chocolatey has several advantages:
 
 ###### Meetings are now split into two types:
 
-- *[Presentations](presentations/README.md)*: Twice a month the software development teams in the Bitwise ecosystem meet on every other Wednesday from 4:00 pm - 5:00 pm PST to share their accomplishments, horror stories, workflow, and lessons learned with the rest of the BW community. While these meetings will generally be developer-focused, we invite anyone in the BW family to drop in and participate. You are highly encouraged to participate actively by leading a meeting on a topic of your choice. Ask [Sonia Rohani](mailto:nrohani@bitwiseindustries.com), or [Joel (Gyuhun Lee)](mailto:glee@bitwiseindustries.com) to add you to the GCal event so that you get reminders and emails.
-- *[Workshops](workshops/README.md)*: Once a month we will do a deep dive into a topic of interest for our workflow and/or processes. These will typically take longer than 1 hour and will be a classroom/workshop setting. One developer will lead the workshop and the goal will be to produce developers who are proficient at a skill or process that will help us in our work.
+- _[Presentations](presentations/README.md)_: Twice a month the software development teams in the Bitwise ecosystem meet on every other Wednesday from 4:00 pm - 5:00 pm PST to share their accomplishments, horror stories, workflow, and lessons learned with the rest of the BW community. While these meetings will generally be developer-focused, we invite anyone in the BW family to drop in and participate. You are highly encouraged to participate actively by leading a meeting on a topic of your choice. Ask [Sonia Rohani](mailto:nrohani@bitwiseindustries.com), or [Joel (Gyuhun Lee)](mailto:glee@bitwiseindustries.com) to add you to the GCal event so that you get reminders and emails.
+- _[Workshops](workshops/README.md)_: Once a month we will do a deep dive into a topic of interest for our workflow and/or processes. These will typically take longer than 1 hour and will be a classroom/workshop setting. One developer will lead the workshop and the goal will be to produce developers who are proficient at a skill or process that will help us in our work.
 
 ##### Frontend Masters:
 
@@ -109,21 +114,22 @@ Using Chocolatey has several advantages:
 - If your job entails design work, you will need to get access to the Bitwise Adobe Photoshop license.
 
 ## Need Help?
+
 Getting stuck is a natural part of development and happens to the best of us. It's better to reach out than to stay silent, and we encourage you to do so. If you find yourself stuck on a task for more than 45 minutes, here are a couple of places to get help:
 
+##### Problem Solving:
 
-##### Problem Solving: 
 Try to use these suggested ways to better your problem solving skills when stuck on tasks.
 [How to think like a programmer — lessons in problem solving](standards/problem-solving.md)
 
 ##### Communication Channels:
 
-
 1. **Your team channel** - When you start a project, you will be added to a private team channel. Feel free to ask your questions there! Your team lead may be able to help you through your blocker.
-2. **[bwtc-stackoverflow](https://stackoverflow.com/c/bwtc/questions)** - Did you know we have our own Stack Overflow? Take a look, it has some great questions and answers. 
+2. **[bwtc-stackoverflow](https://stackoverflow.com/c/bwtc/questions)** - Did you know we have our own Stack Overflow? Take a look, it has some great questions and answers.
 3. **[bwtc-technical-discussions](https://bitwiseindustries.slack.com/archives/CN462BE5D)** - Great place for technical questions that involve some code.
 
 #### Problem Solving
+
 While reaching out for help is very important when getting stuck, developers are expected to try and problem solve before seeking help else where. A good read on how to problem solve is listed below
 
 [Problem Solving](https://www.freecodecamp.org/news/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2/)
@@ -133,4 +139,3 @@ While reaching out for help is very important when getting stuck, developers are
 #### You are expected to contribute _something_ to our processes. You can do this in many different ways, such as leading a BW Developer Connect meeting, writing up a markdown sheet for this repository on a topic you are passionate about, leading a workshop, or posting discussion topics in Bitwise's #bwtc-technical-discussions channel.
 
 #### [Click Here](/standards/contributing.md) to start contributing.
-
