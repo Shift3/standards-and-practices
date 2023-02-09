@@ -9,11 +9,11 @@ It provides the least barrier to entry to get it up and running, since it’s on
 ## How do I access it?
 
 - Go to [CircleCI](http://circleci.com).
-- Sign up using your Github credentials (this will allow Circle CI to see all of your projects).
-- Select the project that you want to add Circle CI to (You can change Github Organizations on the top left). If you don't own the project, it will ask you to contact the person who does.
+- Sign up using your GitHub credentials (this will allow Circle CI to see all of your projects).
+- Select the project that you want to add Circle CI to (You can change GitHub Organizations on the top left). If you don't own the project, it will ask you to contact the person who does.
 - Select the settings based on your project and an example CircleCI configuration will be generated for you.
 - Save that under `repo/.circleci/config.yml`.
-- Make a git push to your Github repo and CircleCI will trigger and process your configuration file.
+- Make a git push to your GitHub repo and CircleCI will trigger and process your configuration file.
 
 ### Configuration
 

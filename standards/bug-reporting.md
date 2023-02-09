@@ -4,18 +4,21 @@ This is a simple template that we are going to begin to use for internal QA test
 The purpose of this template is to make it easier for a QA person or developer to report bugs and issues during development and also help developers identify and resolve bugs and issues faster.
 
 ## Create Labels
-For each project the following Labels `minor`, `major` and `catastrophic` must be created to really help filter issues on Github.
+
+For each project the following Labels `minor`, `major` and `catastrophic` must be created to really help filter issues on GitHub.
 
 ### To Create New Labels
-- On the Github repository of your project, click on `Issues`.
+
+- On the GitHub repository of your project, click on `Issues`.
 - Click on the `Labels` buttons.
 - Click on the `New Label` button.
 - Insert label name (`minor`, `major`, or `catastrophic`), choose color (optional).
 - Click on `Create Label`.
 
-
 ## QA Template
-#### copy and paste the template below in a github issue and complete the information.
+
+#### copy and paste the template below in a GitHub issue and complete the information.
+
 <pre><code>
 <b><u>Date Seen</u></b>
 Date the bug was found goes here, include the time, if you are submitting more than one bug.

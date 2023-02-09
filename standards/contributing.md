@@ -14,7 +14,7 @@
 4. Push your code and create a PR, assigning at least two admins to review.
 5. Respond to any feedback as quickly as you can. We want to fill this repo, so remember to take any reviews as constructive.
 
-- When submitting contributions, use this [Github-flavored Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- When submitting contributions, use this [GitHub-flavored Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ### IF SOMETHING IS MISSING OR INCOMPLETE, SUBMIT AN ISSUE PLEASE!
 
