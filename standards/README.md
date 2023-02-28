@@ -30,8 +30,8 @@ This section describes Bitwise standards to be applied to all projects. Code rev
 
 #### [Branch Protections](branch-protections.md)
 
- - Explanation of Github Branch Protections
- - Best practices associated with branch protections
+- Explanation of GitHub Branch Protections
+- Best practices associated with branch protections
 
 ### Managing Code, Commits, and Reviews
 

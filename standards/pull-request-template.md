@@ -1,6 +1,7 @@
 ## Pull Request Templates
 
-[Github documentation](https://help.github.com/en/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository#adding-a-pull-request-template)
+[GitHub documentation](https://help.github.com/en/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository#adding-a-pull-request-template)
+
 #### To add an issue template to your repository:
 
 1. Create a file named `PULL_REQUEST_TEMPLATE.md` inside your **.github** folder
@@ -8,10 +9,9 @@
 3. Open a pull request to your default branch. This will only work if the exact file structure and file name referenced in step 1 is in your default branch.
 4. Have your team review and approve your pull request. Once it is closed, you will have pull request templates
 
-
 ## Sample Pull Request Template
 
-**When you open your pull requests, remove the lines that start and end with underscores (_)**
+**When you open your pull requests, remove the lines that start and end with underscores (\_)**
 
 ```
 ## Changes
@@ -33,5 +33,3 @@ _Links to blog posts, patterns, libraries or addons used to solve this problem_
 _If this closes an issue, reference the issue here. If it doesn't, remove this line_
 Closes #000
 ```
-
-

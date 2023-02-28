@@ -2,22 +2,22 @@
 
 ## Definitions
 
-* __Git__: A distributed source-control tool used to manage changes to
+- **Git**: A distributed source-control tool used to manage changes to
   software during development.
-* __Github__: A cloud-based Git repository hosting service with many
+- **GitHub**: A cloud-based Git repository hosting service with many
   additional features such as issue tracking, visual metrics, automated
   workflows, and much more.
-* __Commit__: Set of one or more file changes recorded in the Git
+- **Commit**: Set of one or more file changes recorded in the Git
   repository that typically has a single parent commit.
-* __Branch__: Named pointer to a commit
-* __Tag__: A static marker that points to a specific commit, used to locate
+- **Branch**: Named pointer to a commit
+- **Tag**: A static marker that points to a specific commit, used to locate
   an important point in the revision history, such as a production release.
-* __Rebase__: Git operation used to move or combine a series of commits
+- **Rebase**: Git operation used to move or combine a series of commits
   along a branch to a new base commit.
-* __Pull__: Git operation involving retrieving commits from a remote
+- **Pull**: Git operation involving retrieving commits from a remote
   repository.
-* __Push__: Git operation that sends commits to a remote repository.
-* __Pull Request__: A collaborative feature of Github that allows developers
+- **Push**: Git operation that sends commits to a remote repository.
+- **Pull Request**: A collaborative feature of GitHub that allows developers
   to send and review formal requests for code to be pulled into a repository
   or branch.
 
@@ -36,7 +36,7 @@ Summer Sprint branch with some fictitious commits.
 <a name="issue-branches"></a><h3>Feature/Issue Branches</h3>
 
 When a feature or fix is identified, an issue is created in the Shift3/ifg
-Github repository. Code changes related to this feature are committed into
+GitHub repository. Code changes related to this feature are committed into
 a feature branch off of the sprint branch. In the below example, Michael
 is assigned an issue regarding sorting data in a table component of the application. An issue branch is created using a lowercase,
 dasherized name briefly describing the feature or fix, always beginning with
@@ -55,13 +55,13 @@ the active release branch—in this case: `summer-sprint`.
 Throughout a sprint, multiple releases may be deployed to the sandbox
 environment for review by the client. Every release has a distinct release branch,
 named `release-<version_number>`, e.g. `release-1.5.0`. Release branches
-__may__ exist at the head of the current sprint branch, or ahead:
+**may** exist at the head of the current sprint branch, or ahead:
 
-__Even__:
+**Even**:
 
 ![Release branch even with sprint branch](assets/contributing-outside/release-branch-even.png)
 
-__Ahead__:
+**Ahead**:
 
 ![Release branch ahead of sprint branch](assets/contributing-outside/release-branch-ahead.png)
 
@@ -73,14 +73,13 @@ tagged and deployed to the production environment. After the successful
 deployment, the release branch is merged into the sprint branch (if not even).
 The sprint branch is then merged into the mainline branch (develop).
 
-__Only if ahead__:
+**Only if ahead**:
 
 ![Release branch merge into sprint branch](assets/contributing-outside/release-branch-merge.png)
 
-__After tagging & mainline merge__:
+**After tagging & mainline merge**:
 
 ![Mainline merge after deployment and tag](assets/contributing-outside/mainline-merge.png)
-
 
 ## Client Collaboration
 
@@ -103,7 +102,7 @@ assignee for issue #900.
 Pull requests will be initiated by the Client developer using the pull
 request template located in the repository under
 `.github/PULL_REQUEST_TEMPLATE.md`. Pull requests will be initiated from the
- repository and will specify the current sprint branch e.g.
+repository and will specify the current sprint branch e.g.
 `summer-sprint` as the base branch. The feature/issue branch in the Client
 repository will be selected as the head branch to be merged. For example, the
 pull request being created below shows the branch `fb-collab-sop` as the
