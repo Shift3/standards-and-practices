@@ -22,7 +22,7 @@ GEM
     coffee-script-source (1.11.1)
     colorator (1.1.0)
     colored2 (3.1.2)
-    commonmarker (0.23.7)
+    commonmarker (0.23.9)
     concurrent-ruby (1.2.0)
     cork (0.3.0)
       colored2 (~> 3.1)
